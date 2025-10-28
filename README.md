@@ -3,6 +3,9 @@
 ## From a practitioner, for practitioners
 
 A compendium of knowledge drawn from commercial project experience and hundreds of thousands of lines of AI-assisted code.
+Feel free to read through this or feed this repository to your chosen AI agent to summarize it and ask questions. 
+The plan is to build some comprehensive, complete guidelines based on my observations and experience on vibecoding and real life commercial projects, which I develop to basically feed my family :) 
+Stars and watchers will be appreciated!
 
 ---
 
