@@ -422,9 +422,9 @@ Stack: Next.js + Supabase / D1 + Tailwind
 Timeline: 2–4 weeks
 
 Process:
-1. PRD + Architecture planning (2–3 days)
-2. Feature-by-feature development (1–3 weeks)
-3. Testing + Debugging (3–5 days)
+1. PRD + Architecture planning 
+2. Feature-by-feature development 
+3. Testing + Debugging
 4. Deployment + monitoring
 
 #### Complex Project (Enterprise, Complex Backend)
@@ -434,7 +434,7 @@ Stack: Tailored to requirements
 Timeline: 1–3 months
 
 Process:
-1. Detailed planning + architectural decisions (1 week)
-2. Incremental development in sprints (6–10 weeks)
+1. Detailed planning + architectural decisions 
+2. Incremental development in sprints
 3. Continuous testing & review
 4. Staged deployment
