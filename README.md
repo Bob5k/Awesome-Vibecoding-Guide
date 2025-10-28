@@ -1,4 +1,4 @@
-# The Comprehensive Vibecoding Guide
+# The Awesome Vibecoding Guide
 ### From a practitioner for practitioners
 
 A compendium of knowledge drawn from commercial project experience and hundreds of thousands of lines of AI-assisted code
