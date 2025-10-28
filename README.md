@@ -400,17 +400,3 @@ My practice:
 Automated deployment:
 Setup CI/CD
 git push → automatic deploy
-
-### Workflows by Project Type
-
-#### Simple Web App (Landing Page, Portfolio)
-
-Stack: Astro + Tailwind + Keystatic CMS (if needed)
-
-Timeline: 1–3 days
-
-Process:
-1. Design brief in ChatGPT
-2. Specification in OpenSpec
-3. Development in Zed + GLM
-4. Deploy on Cloudflare Pages
