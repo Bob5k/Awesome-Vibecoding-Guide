@@ -405,7 +405,7 @@ git push → automatic deploy
 
 #### Simple Web App (Landing Page, Portfolio)
 
-Stack: Astro + Tailwind + Keystatic CMS
+Stack: Astro + Tailwind + Keystatic CMS (if needed)
 
 Timeline: 1–3 days
 
@@ -414,27 +414,3 @@ Process:
 2. Specification in OpenSpec
 3. Development in Zed + GLM
 4. Deploy on Cloudflare Pages
-
-#### Medium Project (SaaS MVP, E-commerce)
-
-Stack: Next.js + Supabase / D1 + Tailwind
-
-Timeline: 2–4 weeks
-
-Process:
-1. PRD + Architecture planning 
-2. Feature-by-feature development 
-3. Testing + Debugging
-4. Deployment + monitoring
-
-#### Complex Project (Enterprise, Complex Backend)
-
-Stack: Tailored to requirements
-
-Timeline: 1–3 months
-
-Process:
-1. Detailed planning + architectural decisions 
-2. Incremental development in sprints
-3. Continuous testing & review
-4. Staged deployment
