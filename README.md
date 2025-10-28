@@ -66,7 +66,7 @@ Pricing:
 - Pro: 15$/month - 600 prompts per 5 hours
 - Max: $$30/year – 2400 prompts per 5 hours
 - Practicality of limits: Very hard to hit even with 2–5 parallel agents on Pro and Max plans
-Also, 10% off link: https://z.ai/subscribe?ic=CUEFJ9ALMX
+- Also, 10% off link: https://z.ai/subscribe?ic=CUEFJ9ALMX
 
 Why GLM?
 - Lowest cost while keeping quality around Sonnet 4 level
