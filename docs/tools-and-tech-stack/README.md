@@ -2,6 +2,9 @@
 
 A practical stack tuned for vibecoding productivity and low cost. Start here for an overview, then dive into dedicated pages.
 
+## Core Tech
+- [Core Technologies I use](./core-technologies.md)
+
 ## Core Stack
 - [Zed.dev — Primary IDE](./zed.md)
 - [Droid CLI — Main Coding Agent](./droid-cli.md)
