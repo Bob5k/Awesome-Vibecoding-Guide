@@ -7,7 +7,7 @@
 - Practicality of limits: Very hard to hit even with 2–5 parallel agents on Pro and Max plans
 - Note: prices are for first month, but can be preserved on this level aswell for quarterly or yearly-basis plans
 - Note2: I'm on Max plan currently, but haven't hit limits when I was on Pro plan for over a month in the past aswell
-- **IMPORTANT** Currently the fastest combo of working with GLM is to conenct it to Claude Code. However - the most efficient combo is to connect it to Droid CLI - due to superior planning and following the plan architecture of Droid.
+- **IMPORTANT:** Currently the fastest combo of working with GLM is to conenct it to Claude Code. However - the most efficient combo is to connect it to Droid CLI - due to superior planning and following the plan architecture of Droid.
 - Optional: 10% off referral link (disclosure): <https://z.ai/subscribe?ic=CUEFJ9ALMX>
 
 ## Why GLM?
