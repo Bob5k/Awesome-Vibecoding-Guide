@@ -78,17 +78,14 @@ Solutions:
 
 ## Context Window Strategy
 
-Models and their limits:
-- Claude Sonnet 3.5: 200k tokens
-- GPT-4o: 128k tokens
-- GLM 4.5: 128k+ tokens
+**Always check your LLM context window size and their limits**
 
 My practice:
-- Use up to 85% of capacity
+- Use up to 85% of capacity (or even better - up to 60% to preserve 'smartness' of the chosen LLM)
 - When approaching the limit: compress
 - Never fill 100% — AI starts to rush to finish
 
 Community pro tip:
-If you have 1M context (Claude), you can fill it but compress around ~200k. The AI won’t feel end‑of‑context pressure and won’t trigger “rush‑to‑finish” behavior.
+If you have 1M context (Qwen3 Coder, Claude Sonnet 4.5 via API etc.), you can fill it but compress around ~200k. The AI won’t feel end‑of‑context pressure and won’t trigger “rush‑to‑finish” behavior.
 
 Back to index: [Top‑level README](../../README.md)
