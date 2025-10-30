@@ -3,7 +3,7 @@
 **Tools:** CI/CD platform + Hosting provider
 
 ## Recommended Platforms
-- Cloudflare Pages/Workers
+- Cloudflare Pages/Workers - free to host Pages project (static ones) - if a 'backend' is needed, use Workers - 100k reuqests / day are free, which sets literally any kind of 'business website' with some backend operations free all the time (usually)
 - Vercel (for Next.js)
 - GitHub Pages (static)
 
