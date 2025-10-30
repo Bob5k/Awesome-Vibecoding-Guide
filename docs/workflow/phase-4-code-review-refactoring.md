@@ -1,7 +1,7 @@
 # Phase 4: Code Review & Refactoring 🔍
 
 ## Process
-1. First pass—Claude 3.5 / GPT‑4o review of the entire feature codebase
+1. First pass—Claude or GPT review of the entire feature codebase
 2. Identify issues
    - Performance problems
    - Security holes
