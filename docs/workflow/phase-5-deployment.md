@@ -1,6 +1,8 @@
 # Phase 5: Deployment 🚢
 
-## My practice
+**Tools:** CI/CD platform + Hosting provider
+
+## Recommended Platforms
 - Cloudflare Pages/Workers
 - Vercel (for Next.js)
 - GitHub Pages (static)

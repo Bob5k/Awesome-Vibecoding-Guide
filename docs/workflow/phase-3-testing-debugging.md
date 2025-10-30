@@ -1,6 +1,6 @@
 # Phase 3: Testing & Debugging 🧪
 
-Tools: DevTools MCP + GLM + Manual Testing
+**Tools:** DevTools MCP + Your coding agent + Manual Testing
 
 ## Process
 
