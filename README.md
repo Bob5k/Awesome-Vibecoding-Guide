@@ -5,7 +5,8 @@
 A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐
 
 Also, this guide is basically a collection of my thoughts - you may disagree with them :)
-Main thought tho - as long as certain steps are followed - the LLM behind used for vibecoding itself matters less - as with proper technique and overall setup even 'worse' LLMs than frontier models will be able to deliver whatever you need (at least in terms of web development)
+
+Main thought - as long as certain steps are followed - **the LLM behind used for vibecoding itself doesn't matter as much as advertised** - as with proper technique and overall setup even 'worse' LLMs than frontier models will be able to deliver whatever you need (at least in terms of web development). Especially in the world of frontier models being **expensive** - usually it makes no sense to pay a lot just for a model being a tiny bit better than opensource (or even free models)
 
 ---
 
