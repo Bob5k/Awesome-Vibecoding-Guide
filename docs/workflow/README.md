@@ -13,8 +13,7 @@ Vibecoding across five phases—from initial ideation through deployment. The mo
 ## Phases
 - [Phase 1: Planning (Pre‑Development)](./phase-1-planning.md) - External chat ideation, PRD creation, OpenSpec project kickoff
 - [Phase 2: Development](./phase-2-development.md) - Environment setup and feature implementation
-- [Phase 3: Testing & Debugging](./phase-3-testing-debugging.md) - Automated and manual testing
-- [Phase 4: Code Review & Refactoring](./phase-4-code-review-refactoring.md) - Code quality improvements
-- [Phase 5: Deployment](./phase-5-deployment.md) - CI/CD and production deployment
+- [Phase 3: Testing, Debugging & Code Review](./phase-3-testing-debugging.md) - Automated testing, debugging, and code quality improvements
+- [Phase 4: Deployment](./phase-4-deployment.md) - CI/CD and production deployment
 
 Back to index: [Top‑level README](../../README.md)
