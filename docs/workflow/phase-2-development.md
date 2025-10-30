@@ -14,13 +14,7 @@ Pick the setup that matches your workflow preferences:
 
 #### Option A: IDE-Based Development
 
-**Cursor** (Recommended for beginners)
-- Built-in AI coding assistant
-- Excellent Claude integration
-- VSCode-compatible extensions
-- Great for visual development
-
-**Zed** (Fast and minimalist)
+**Zed** (Fast and minimalist - my choice)
 - Lightning-fast performance
 - Native AI integration
 - Great for experienced developers
@@ -34,18 +28,18 @@ Pick the setup that matches your workflow preferences:
 
 #### Option B: CLI-Based Development
 
-**Claude Code CLI** (Recommended)
+**Droid** (Recommended)
+- Alternative CLI coding agent
+- Multi-model support
+- Good for advanced users
+- Customizable workflows
+
+**Claude Code CLI**
 - Official Anthropic CLI tool
 - Direct Claude integration
 - Terminal-based workflow
 - Excellent for automation and scripting
 - Works with your preferred text editor
-
-**Droid**
-- Alternative CLI coding agent
-- Multi-model support
-- Good for advanced users
-- Customizable workflows
 
 ### 2. Set Up MCP Servers
 
@@ -53,57 +47,40 @@ MCP (Model Context Protocol) servers extend your coding agent's capabilities.
 
 **Essential MCP Servers:**
 
-**Context7 MCP** - Codebase understanding
-- Provides intelligent context about your codebase
-- Helps AI understand project structure
-- Required for large codebases
+**Context7 MCP** - your chosen tech stack documentation and understanding
 - [Setup guide](../tools-and-tech-stack/mcp-servers.md)
 
 **DevTools MCP** - Browser automation
 - Automated testing in real browsers
 - Debug frontend issues automatically
 - Essential for web development
-- Integrates with Chrome/Firefox
+- Integrates with Chrome
 
-**Web Search MCP** - Internet access
-- Search documentation and Stack Overflow
-- Find solutions to errors
-- Check latest package versions
-- Stay updated on best practices
+**Task Manager MCP** - To easily manage tasks and projects
+- Organize tasks and projects
+- Prioritize tasks
+- Track progress
 
-**Optional but Useful:**
-- **File System MCP** - Enhanced file operations
-- **Database MCP** - Direct database queries
-- **GitHub MCP** - Repository management
-- **Terminal MCP** - Shell command execution
+**Sequential Thinking MCP** - To manage knowledge and plan before coding
+- Organize thoughts and ideas
+- Prioritize tasks
+- Develop right things without overengineering the rest
+- Track the thinking process and have it saved instead of relying only on Agent's memory
+
+**ShadCN MCP** - UI component library
+- Enhance your UI with pre-built components
+- Save time and effort
+- Integrates with your preferred framework
 
 ### 3. Configure Your Coding Agent
 
 Set up your preferred AI model for development:
 
-**GLM** (Great for implementation)
-- Fast and cost-effective
+**GLM** (Great for implementation - my general choice)
+- Fast and cost-effective (SUPER cost-effective compared vs others)
 - Strong coding capabilities
 - Good for rapid prototyping
 - Handles most development tasks
-
-**Claude** (Best for architecture)
-- Excellent reasoning
-- Great for complex problems
-- Strong refactoring abilities
-- Best for code review
-
-**GPT** (Balanced option)
-- Good all-around performance
-- Wide knowledge base
-- Reliable for most tasks
-- Good documentation understanding
-
-**Gemini** (Alternative)
-- Strong analytical skills
-- Good for debugging
-- Handles large contexts well
-- Cost-effective option
 
 ### 4. Verify Your Setup
 
