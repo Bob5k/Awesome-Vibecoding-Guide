@@ -22,7 +22,7 @@ Especially in the world of frontier models being **expensive** - usually it make
   - Claude Code CLI • GitHub Speckit • MCP servers • Compatibility • Tools I dropped
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
-  - Phase 1–5 deep dives
+  - Detailed workflow description, ensuring that the process is clearly defined and reusable
 - [Glossary 📚](docs/glossary.md)
 - [Contributing 🤝](docs/contributing.md)
 - [License 📄](docs/license.md)
