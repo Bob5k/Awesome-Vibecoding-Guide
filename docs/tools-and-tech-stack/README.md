@@ -17,6 +17,9 @@ A practical stack tuned for vibecoding productivity and low cost. Start here for
 - [Claude Code CLI Client — Backup Agent](./claude-code-cli.md)
 - [GitHub Speckit](./github-speckit.md)
 
+## Honorable Mentions — Free/Cheap Alternatives
+- [Free Tools for Getting Started](./honorable-mentions.md)
+
 ## MCP Servers — Recommendations
 - [Overview and picks](./mcp-servers.md)
 
