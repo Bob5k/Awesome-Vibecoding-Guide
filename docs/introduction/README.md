@@ -1,6 +1,14 @@
 # Introduction ✨
 
-Vibecoding is an approach to software creation where you collaborate with AI as a coding partner. This guide is based on real commercial experience—projects delivered for clients using heavily AI‑[...]
+Vibecoding is an approach to software creation where you collaborate with AI as a coding partner. This guide is based on real commercial experience—projects delivered for clients using heavily AI‑assisted workflows.
+
+## Core Philosophy 🎯
+
+Before diving into specific tools and techniques, it's important to understand my approach to tool selection and workflow design. My philosophy focuses on finding the right balance between cost, reliability, integration, and performance.
+
+- [**Read the full philosophy**](./philosophy.md) - My framework for selecting tools and building sustainable development workflows
+
+The key takeaway: Often, the combination of multiple specialized, cost-effective tools outperforms a single expensive "all-in-one" solution.
 
 ## Who am I?
 
