@@ -23,7 +23,7 @@ Especially in the world of frontier models being **expensive** - usually it make
   - [Honorable Mentions](docs/tools-and-tech-stack/honorable-mentions.md) - Free alternatives
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
-  - Detailed workflow description, ensuring that the process is clearly defined and reusable
+  - Phase 0 (Vibecoder Preparation) + Phase 1–4 deep dives
 - [Glossary 📚](docs/glossary.md)
 - [Contributing 🤝](docs/contributing.md)
 - [License 📄](docs/license.md)
