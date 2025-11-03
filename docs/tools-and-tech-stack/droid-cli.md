@@ -1,5 +1,7 @@
 # Droid CLI — The Ultimate Coding Agent 🤖
 
+> **Get Started with Droid CLI:** [Sign up here with my referral link](https://app.factory.ai/r/VAH64803) to support the guide and get access to this powerful coding assistant.
+
 ## Why Droid CLI is a Game-Changer
 
 Droid CLI isn't just another coding assistant—it's a comprehensive development environment that combines intelligent planning with safe, controlled execution. It stands out with features that fundamentally change how you approach software development.
