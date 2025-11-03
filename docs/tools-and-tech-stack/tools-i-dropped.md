@@ -6,6 +6,7 @@ This section documents tools I've personally used and decided to drop from my wo
 
 - [Traycer.ai](#traycerai) - AI-powered development planning and validation
 - [Claude Code](#claude-code) - Anthropic's CLI coding assistant
+- [GitHub Speckit](#github-speckit) - GitHub's native specification tool
 
 ---
 
@@ -45,6 +46,26 @@ You can achieve similar results with OpenSpec + GLM for a fraction of the priceâ
 ### Conclusion
 If you desperately need SOTA model performance, Claude Code might be worth it, but the cost is prohibitive for most developers. The difference in quality between Claude and good open-source models becomes negligible when you have proper vibecoding techniques and a solid workflow around the LLM. Using GLM provides significantly better monthly profit margins while delivering comparable results.
 
+---
 
+## GitHub Speckit
+
+### Why I left
+- **Overly complex specifications** - Creates unnecessarily complicated specs for simple projects
+- **Slower workflow** - Way more complex compared to OpenSpec for rapid development
+- **Integration difficulties** - Not easily integrated with existing projects and repositories
+- **Pace mismatch** - Better suited for larger-scale initiatives, but for fast-paced, vibe-led development, it's too heavyweight
+
+### What was good
+- Excellent for new projects starting from scratch
+- After recent updates, showed promise for pure vibecoding workflows
+- Solid choice for kickstarting clean, well-structured projects
+- Definitely solid pick for complex, big projects with a lot of different features
+- Forces user to use branch-based workflows
+
+### Conclusion
+While GitHub Speckit definitely has value, especially for collaborative projects or larger initiatives, OpenSpec emerges as the clear winner for fast-paced, vibe-led development. OpenSpec is significantly faster to use and enables rapid progression through development tasks. Additionally, OpenSpec can be easily integrated into existing projects and repositories, whereas GitHub Speckit makes this integration challenging. Although they're somewhat different tools with different strengths, for my vibecoding workflow focused on speed and flexibility, OpenSpec provides the better experience.
+
+---
 
 Back: [Tools & Tech Stack](./README.md)
