@@ -19,7 +19,7 @@ This guide describes in general how tools should be compatible with the Awesome 
 ### CLI-Based Coding Agents
 - **Droid CLI**: Command-line interface with BYOK support
 - **Claude Code**: Anthropic's CLI tool with API integration
-- **AmpCode**: Alternative CLI coding assistant
+- **AmpCode**: Alternative CLI coding assistant (see [Honorable Mentions](./honorable-mentions.md) for free tier)
 - **Codex**: GitHub's coding assistant tool
 - **Other similar CLI agents**: Any tool supporting external LLM APIs
 
@@ -61,7 +61,7 @@ This guide describes in general how tools should be compatible with the Awesome 
 
 ## Implementation Guidelines
 
-1. **Start with Core Tools**: Begin with Droid CLI or Claude Code
+1. **Start with Core Tools**: Begin with Droid CLI or Claude Code (or see [free alternatives](./honorable-mentions.md))
 2. **Gradual Integration**: Add MCP servers as needed
 3. **API Management**: Set up secure API key handling
 4. **Monitor Usage**: Track costs and performance across providers
