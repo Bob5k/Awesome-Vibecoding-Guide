@@ -40,7 +40,7 @@ Tip: Keep context lean. Link only relevant files in your prompts and use MCPs (e
 
 If you've found this guide helpful and want to support my work, consider using these referral links for the tools I recommend:
 
-- **[Droid CLI](https://app.factory.ai/r/VAH64803)** - The ultimate coding agent with intelligent planning and safe execution
+- **[Droid CLI / Factory AI](https://app.factory.ai/r/VAH64803)** - The ultimate coding agent with intelligent planning and safe execution
 - **[GLM Coding Plan](https://z.ai/subscribe?ic=CUEFJ9ALMX)** - Your main LLM partner for vibecoding workflows
 - **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Privacy-first AI provider with extensive open-sourcemodel library and competitive pricing
 
