@@ -48,7 +48,7 @@ MCP (Model Context Protocol) servers extend your coding agent's capabilities.
 **Essential MCP Servers:**
 
 **Context7 MCP** - your chosen tech stack documentation and understanding
-- [Setup guide](../tools-and-tech-stack/mcp-servers.md)
+- [Setup guide](../development-tools/mcp-servers.md)
 
 **DevTools MCP** - Browser automation
 - Automated testing in real browsers
