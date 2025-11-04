@@ -22,7 +22,7 @@ Especially in the world of frontier models being **expensive** - usually it make
   - Claude Code CLI • MCP servers • Compatibility • Tools I dropped
   - [Honorable Mentions](docs/development-tools/honorable-mentions.md) - Free alternatives
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
-  - GLM Coding Plan • Factory AI
+  - GLM Coding Plan • Factory AI • Synthetic.new
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
   - Phase 0 (Vibecoder Preparation) + Phase 1–4 deep dives
