@@ -9,4 +9,4 @@ I use:
 
 Note: Don’t use too many MCPs—they will quickly consume your context window!
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Development Tools](./README.md)

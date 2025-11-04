@@ -125,4 +125,4 @@ These tools serve as excellent stepping stones, allowing developers to:
 
 These tools embody the spirit of accessible, efficient development that vibecoding promotes, making AI-assisted coding available to everyone regardless of their budget.
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Development Tools](./README.md)

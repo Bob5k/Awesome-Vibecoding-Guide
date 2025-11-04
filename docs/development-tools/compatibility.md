@@ -67,4 +67,4 @@ This guide describes in general how tools should be compatible with the Awesome 
 4. **Monitor Usage**: Track costs and performance across providers
 5. **Flexibility First**: Choose tools that support multiple integration methods
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Development Tools](./README.md)

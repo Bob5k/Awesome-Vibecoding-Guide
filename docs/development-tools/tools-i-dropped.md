@@ -68,4 +68,4 @@ While GitHub Speckit definitely has value, especially for collaborative projects
 
 ---
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Development Tools](./README.md)

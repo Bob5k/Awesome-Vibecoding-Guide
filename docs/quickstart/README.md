@@ -236,7 +236,8 @@ git status
 You're now ready to start vibecoding! With proper Git workflow and AI assistance, you can develop faster, safer, and more efficiently.
 
 **Recommended Reading:**
-- [Tools & Tech Stack 🧰](../tools-and-tech-stack/README.md)
+- [Development Tools 🛠️](../development-tools/README.md)
+- [AI Model Providers 🤖](../ai-model-providers/README.md)
 - [Workflow & Process 🔄](../workflow/README.md)
 - [Phase 1: Planning](../workflow/phase-1-planning.md)
 
