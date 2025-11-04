@@ -20,7 +20,8 @@ Especially in the world of frontier models being **expensive** - usually it make
 - [Development Tools 🛠️](docs/development-tools/README.md)
   - Zed • Droid CLI • OpenSpec • Context7 MCP • DevTools MCP
   - Claude Code CLI • Sequential Thinking MCP • Task Manager MCP • Shadcn MCP
-  - Compatibility • Tools I dropped • [Honorable Mentions](docs/development-tools/honorable-mentions.md) - Free alternatives
+  - Compatibility • Tools I dropped
+- [Honorable Mentions](docs/development-tools/honorable-mentions.md)
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
   - GLM Coding Plan • Factory AI • Synthetic.new
 - [Context Management 🧠](docs/context-management/README.md)
