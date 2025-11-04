@@ -63,3 +63,9 @@ Compared to alternatives like OpenRouter or Chutes.ai:
 Synthetic.new frequently introduces new models like MiniMax M2, providing easy access to cutting-edge models alongside established ones like DeepSeek. This rapid model rollout keeps developers at the forefront of AI capabilities.
 
 The combination of privacy, performance, competitive pricing, and extensive model selection makes Synthetic.new an intriguing option for developers looking for a comprehensive AI model solution.
+
+---
+
+## Get Started
+
+Ready to try Synthetic.new? [Sign up with my link](https://synthetic.new/?referral=IDyp75aoQpW9YFt) to support the guide and get started with privacy-first AI model access.

@@ -6,7 +6,7 @@ A compendium drawn from real commercial projects and hundreds of thousands of li
 
 Also, this guide is basically a collection of my thoughts - you may disagree with them :)
 
-Main thought - as long as certain steps are followed - **the LLM behind used for vibecoding itself doesn't matter as much as advertised** - as with proper technique and overall setup even 'worse' LLMs than frontier models will be able to deliver whatever you need (at least in terms of web development). 
+Main thought - as long as certain steps are followed - **the LLM behind used for vibecoding itself doesn't matter as much as advertised** - as with proper technique and overall setup even 'worse' LLMs than frontier models will be able to deliver whatever you need (at least in terms of web development).
 
 Especially in the world of frontier models being **expensive** - usually it makes no sense to pay a lot just for a model being a tiny bit better than opensource (or even free) models
 
@@ -42,7 +42,6 @@ If you've found this guide helpful and want to support my work, consider using t
 
 - **[Droid CLI](https://app.factory.ai/r/VAH64803)** - The ultimate coding agent with intelligent planning and safe execution
 - **[GLM Coding Plan](https://z.ai/subscribe?ic=CUEFJ9ALMX)** - Your main LLM partner for vibecoding workflows
+- **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Privacy-first AI provider with extensive open-sourcemodel library and competitive pricing
 
 Using these links helps me continue maintaining and expanding this guide while you get access to excellent tools. No pressure though - the guide will always remain free and open source! ⭐
-
-
