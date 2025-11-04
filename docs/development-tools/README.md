@@ -12,7 +12,9 @@ A comprehensive collection of development tools optimized for vibecoding product
 ### MCP (Model Context Protocol) Integration
 - **[Context7 MCP](./context7-mcp.md)** — Documentation management and retrieval
 - **[DevTools MCP](./devtools-mcp.md)** — Browser automation and testing
-- **[MCP Servers](./mcp-servers.md)** — Recommended server configurations
+- **[Sequential Thinking MCP](./sequential-thinking-mcp.md)** — Structured cognitive enhancement for AI assistants
+- **[Task Manager MCP](./task-manager-mcp.md)** — Persistent task management across conversation sessions
+- **[Shadcn MCP](./shadcn-mcp.md)** — Professional UI components for AI-assisted development
 
 ### Complementary Tools
 - **[Claude Code CLI](./claude-code-cli.md)** — Backup AI coding assistant
@@ -35,10 +37,16 @@ Start with the core stack for optimal vibecoding experience:
 2. Set up [Droid CLI](./droid-cli.md) with your preferred LLM provider
 3. Configure [Context7 MCP](./context7-mcp.md) for documentation access
 4. Add [DevTools MCP](./devtools-mcp.md) for testing capabilities
+5. Install [Sequential Thinking MCP](./sequential-thinking-mcp.md) for enhanced problem-solving
+6. Set up [Task Manager MCP](./task-manager-mcp.md) for persistent workflow management
+7. Add [Shadcn MCP](./shadcn-mcp.md) for professional UI component access
 
 ### 2. Configuration
 - Configure API keys for your preferred LLM providers
-- Set up MCP servers according to the [MCP Servers guide](./mcp-servers.md)
+- Set up essential MCP servers:
+  - [Sequential Thinking MCP](./sequential-thinking-mcp.md) for structured analysis
+  - [Task Manager MCP](./task-manager-mcp.md) for task persistence
+  - [Shadcn MCP](./shadcn-mcp.md) for UI components
 - Review [compatibility guidelines](./compatibility.md) for optimal integration
 
 ### 3. Workflow Integration
@@ -47,6 +55,9 @@ These tools are designed to work together seamlessly:
 - Leverage Droid CLI for AI-assisted coding
 - Access documentation via Context7 MCP
 - Test and debug with DevTools MCP
+- Enhance problem-solving with Sequential Thinking MCP
+- Manage tasks persistently with Task Manager MCP
+- Build professional UIs with Shadcn MCP components
 
 ## Tool Philosophy
 
