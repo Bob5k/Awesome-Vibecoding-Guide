@@ -6,6 +6,7 @@ A curated selection of AI model providers and services optimized for vibecoding 
 
 ### Core LLM Services
 - **[GLM Coding Plan](./glm-coding-plan.md)** — Main LLM provider for coding assistance
+- **[Synthetic.new](./synthetic-new.md)** — Privacy-first provider with extensive model library and competitive pricing
 - **[Factory AI](./factory-ai.md)** — Advanced AI platform for specialized tasks (Coming soon)
 
 ## Integration Philosophy
