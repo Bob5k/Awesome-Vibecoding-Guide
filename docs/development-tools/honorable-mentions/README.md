@@ -11,6 +11,10 @@ This section highlights tools that offer excellent value for developers seeking 
 - **[Windsurf](windsurf.md)** - VS Code fork with integrated AI, free models and affordable paid tiers
 - **[Octofriend](octofriend.md)** - Open-source CLI with seamless Synthetic.new integration, excellent MCP support, and no rate limit headaches
 
+## Native Integration Tools
+
+- **[GitHub Copilot](github-copilot.md)** - Good value at $10 for 300 prompts + unlimited GPT-4o-mini; free for students; VS Code native but limited for heavy vibecoding
+
 ## Tools I Dropped — Honest Assessments
 
 These are tools I personally used in production and decided to drop from my workflow. I'm including them in honorable mentions because they're worth knowing about, and my experience can help you make informed decisions.
