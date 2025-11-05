@@ -43,6 +43,6 @@
 - **Scalable performance**—maintains speed even with complex, AI‑heavy workflows
 - **Developer‑focused design**—created by developers who understand modern AI‑powered coding needs
 
-See also: [GLM Coding Plan](./glm-coding-plan.md), [Droid CLI](./droid-cli.md)
+See also: [GLM Coding Plan](../../ai-model-providers/glm-coding-plan.md), [Droid CLI](./droid-cli.md)
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Tools & Tech Stack](../README.md)
