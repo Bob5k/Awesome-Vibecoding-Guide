@@ -8,6 +8,7 @@ This section highlights tools that offer excellent value for developers seeking 
 - **[Gemini CLI](gemini-cli.md)** - Google's CLI with generous free tier and strong reasoning
 - **[AmpCode](ampcode.md)** - Free tier coding assistance with MCP support
 - **[TRAE](trae.md)** - Cost-effective prompt-based pricing model
+- **[Windsurf](windsurf.md)** - VS Code fork with integrated AI, free models and affordable paid tiers
 
 ## Why These Tools Matter
 
