@@ -27,7 +27,8 @@ A comprehensive collection of development tools optimized for vibecoding product
 
 ## Free & Alternative Options
 
-- **[Honorable Mentions](./honorable-mentions.md)** — Free alternatives and cost-effective options
+- **[Honorable Mentions](./honorable-mentions/README.md)** — Free alternatives and cost-effective options
+  - [Qwen Coder](./honorable-mentions/qwen-coder.md) • [Gemini CLI](./honorable-mentions/gemini-cli.md) • [AmpCode](./honorable-mentions/ampcode.md) • [TRAE](./honorable-mentions/trae.md)
 
 ## Quick Start Guide
 
@@ -83,7 +84,7 @@ Tools selected for:
 
 If you're migrating from other development environments:
 1. Review the [compatibility guide](./compatibility.md) for integration requirements
-2. Check [honorable mentions](./honorable-mentions.md) for free alternatives
+2. Check [honorable mentions](./honorable-mentions/README.md) for free alternatives
 3. See [tools I dropped](./tools-i-dropped.md) for migration experiences
 
 ## Support & Community
