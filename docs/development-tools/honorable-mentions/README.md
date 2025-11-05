@@ -16,7 +16,6 @@ This section highlights tools that offer excellent value for developers seeking 
 These are tools I personally used in production and decided to drop from my workflow. I'm including them in honorable mentions because they're worth knowing about, and my experience can help you make informed decisions.
 
 - **[Traycer.ai](traycer.md)** - AI-powered development planning and validation (dropped: too slow, costly, frustration with hallucinations)
-- **[Claude Subscription](claude-subscription.md)** - Premium AI model access via Claude Code CLI (dropped: prohibitive cost, now using GLM with same CLI)
 - **[GitHub Speckit](github-speckit.md)** - GitHub's native specification tool (dropped: too heavyweight for fast-paced vibecoding, prefer OpenSpec)
 
 ### Why Share Dropped Tools?

@@ -9,6 +9,12 @@ A curated selection of AI model providers and services optimized for vibecoding 
 - **[Synthetic.new](./synthetic-new.md)** — Privacy-first provider with extensive model library and competitive pricing
 - **[Factory AI](./factory-ai.md)** — Advanced AI platform for specialized tasks (Coming soon)
 
+## Honorable Mentions
+Services I've used but don't recommend for primary development work:
+- **[Honorable Mentions](./honorable-mentions/README.md)** — Budget platforms, learning tools, and services with caveats
+
+These providers can be valuable for experimentation and learning, but have reliability, performance, or cost concerns that make them unsuitable for serious professional development.
+
 ## Integration Philosophy
 
 ### Bring Your Own Key (BYOK) Approach
