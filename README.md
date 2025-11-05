@@ -18,19 +18,21 @@ Especially in the world of frontier models being **expensive** - usually it make
 
 ## Contents
 - [Development Tools 🛠️](docs/development-tools/README.md)
-  - Zed • Droid CLI • OpenSpec • Context7 MCP • DevTools MCP
-  - Claude Code CLI • Sequential Thinking MCP • Task Manager MCP • Shadcn MCP
-  - Compatibility • Tools I dropped
+  - **Recommended Tools**: Zed • Droid CLI • OpenSpec • Warp • Claude Code CLI
+  - **MCP Servers**: Context7 • DevTools • Sequential Thinking • Task Manager • Shadcn
+  - **Additional**: Compatibility Guide
 - [Honorable Mentions 🏆](docs/development-tools/honorable-mentions/README.md)
-  - Qwen Coder • Gemini CLI • AmpCode • TRAE
+  - **Free & Cost-Effective**: Qwen Coder • Gemini CLI • AmpCode • TRAE • Windsurf • Octofriend
+  - **Tools I Dropped**: Traycer • Claude Subscription • GitHub Speckit
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
   - GLM Coding Plan • Factory AI • Synthetic.new
+- [Core Technologies 🧰](docs/core-technologies.md)
+  - Astro • Tailwind CSS • Cloudflare Pages
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
   - Phase 0 (Vibecoder Preparation) + Phase 1–4 deep dives
 - [Glossary 📚](docs/glossary.md)
 - [Contributing 🤝](docs/contributing.md)
-- [License 📄](docs/license.md)
 
 ---
 
