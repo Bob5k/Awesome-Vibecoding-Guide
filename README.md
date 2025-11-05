@@ -23,9 +23,10 @@ Especially in the world of frontier models being **expensive** - usually it make
   - **Additional**: Compatibility Guide
 - [Honorable Mentions 🏆](docs/development-tools/honorable-mentions/README.md)
   - **Free & Cost-Effective**: Qwen Coder • Gemini CLI • AmpCode • TRAE • Windsurf • Octofriend
-  - **Tools I Dropped**: Traycer • Claude Subscription • GitHub Speckit
+  - **Tools I Dropped**: Traycer • GitHub Speckit
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
-  - GLM Coding Plan • Factory AI • Synthetic.new
+  - **Primary Providers**: GLM Coding Plan • Factory AI • Synthetic.new
+  - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter) • Over-expensive options (Claude Subscription)
 - [Core Technologies 🧰](docs/core-technologies.md)
   - Astro • Tailwind CSS • Cloudflare Pages
 - [Context Management 🧠](docs/context-management/README.md)
