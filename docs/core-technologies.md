@@ -40,7 +40,7 @@ Integrations and common patterns
 - Image optimization via build-time or edge utilities to keep pages light.
 - Contact form pattern: client submits a POST to a /api/contact endpoint backed by a Cloudflare Function that verifies Turnstile and forwards email via a serverless email integration.
 
-Practical starter checklist (opinionated, based on QualixSoftware workflow)
+Practical starter checklist
 - Node: use Node.js v20+ for predictable builds.
 - Install and bootstrap: npm install → npm run dev for local development.
 - Build for production: npm run build → deploy dist/ to Cloudflare Pages.
