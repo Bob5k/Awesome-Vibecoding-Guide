@@ -58,4 +58,4 @@ When to consider something else
 - If you need heavy server rendering for personalized content on every request, use edge functions but be mindful of cache strategy and server costs.
 
 Conclusion
-Astro + Tailwind CSS + Cloudflare Pages is a practical, high-velocity stack for Vibecoding. It lets you ship pages that score well on Core Web Vitals, keeps CSS and JavaScript payloads small, and simplifies hosting and deployment. The example repositories (qualixsoftware and sonia-foto) show how this stack scales from portfolio sites to small company websites while keeping development fast and pleasant.
+Astro + Tailwind CSS + Cloudflare Pages is a practical, high-velocity stack for Vibecoding. It lets you ship pages that score well on Core Web Vitals, keeps CSS and JavaScript payloads small, and simplifies hosting and deployment.
