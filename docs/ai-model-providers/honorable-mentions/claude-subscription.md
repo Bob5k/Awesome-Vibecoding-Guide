@@ -44,4 +44,4 @@ The key insight is that vibecoding technique and workflow matter more than raw m
 
 **Official Resources**: [claude.ai](https://claude.ai) | [Claude Code CLI](https://github.com/anthropics/claude-code)
 
-Back: [Honorable Mentions](README.md)
+Back: [Honorable Mentions](README.md) | [AI Model Providers](../README.md)
