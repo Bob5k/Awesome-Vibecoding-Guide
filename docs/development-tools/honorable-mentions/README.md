@@ -2,13 +2,30 @@
 
 This section highlights tools that offer excellent value for developers seeking free or cost-effective alternatives to implement vibecoding workflows. While these tools may not have the same polish or feature completeness as my main stack, they provide solid foundations for getting started without financial commitment.
 
-## Tools
+## Free & Cost-Effective Tools
 
 - **[Qwen Coder / Qwen CLI](qwen-coder.md)** - Alibaba's free, open-source coding assistant with MCP support
 - **[Gemini CLI](gemini-cli.md)** - Google's CLI with generous free tier and strong reasoning
 - **[AmpCode](ampcode.md)** - Free tier coding assistance with MCP support
 - **[TRAE](trae.md)** - Cost-effective prompt-based pricing model
 - **[Windsurf](windsurf.md)** - VS Code fork with integrated AI, free models and affordable paid tiers
+
+## Tools I Dropped — Honest Assessments
+
+These are tools I personally used in production and decided to drop from my workflow. I'm including them in honorable mentions because they're worth knowing about, and my experience can help you make informed decisions.
+
+- **[Traycer.ai](traycer.md)** - AI-powered development planning and validation (dropped: too slow, costly, frustration with hallucinations)
+- **[Claude Subscription](claude-subscription.md)** - Premium AI model access via Claude Code CLI (dropped: prohibitive cost, now using GLM with same CLI)
+- **[GitHub Speckit](github-speckit.md)** - GitHub's native specification tool (dropped: too heavyweight for fast-paced vibecoding, prefer OpenSpec)
+
+### Why Share Dropped Tools?
+These tools aren't failures—they're valuable products that didn't fit my specific vibecoding workflow. By sharing honest assessments based on real production experience, I can help you:
+- **Avoid costly mistakes**: Learn from my experience before investing money and time
+- **Make informed choices**: Understand the trade-offs between different approaches
+- **Find better alternatives**: Discover more cost-effective or faster solutions
+- **Recognize use cases**: Some of these tools might be perfect for your specific needs even if they didn't fit mine
+
+The goal is transparency: showing not just what works, but also what I tried and why I moved on.
 
 ## Why These Tools Matter
 
