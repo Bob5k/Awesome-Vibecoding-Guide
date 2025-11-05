@@ -17,6 +17,7 @@ These are tools I personally used in production and decided to drop from my work
 
 - **[Traycer.ai](traycer.md)** - AI-powered development planning and validation (dropped: too slow, costly, frustration with hallucinations)
 - **[GitHub Speckit](github-speckit.md)** - GitHub's native specification tool (dropped: too heavyweight for fast-paced vibecoding, prefer OpenSpec)
+- **[Cline / Roo Code / Kilo Code](cline-roo-kilo.md)** - VSCode plugins for GUI-based vibecoding with GLM/Synthetic.new integration (dropped: unnecessary complexity, tool/MCP call reliability issues)
 
 ### Why Share Dropped Tools?
 These tools aren't failures—they're valuable products that didn't fit my specific vibecoding workflow. By sharing honest assessments based on real production experience, I can help you:
