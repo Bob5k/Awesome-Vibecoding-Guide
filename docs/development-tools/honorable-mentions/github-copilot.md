@@ -39,7 +39,7 @@ While it won't architect and build full applications end-to-end, for fixing issu
 - **CLI-First Developers**: If you primarily work via command-line agents, other solutions fit better
 - **Heavy Vibecoding Users**: 300 prompts/month creates anxiety if you code heavily with AI
 - **Full-Project Builders**: Better agents exist for developing complete applications
-- **Unlimited-Seekers**: Platforms like [Synthetic.new](../synthetic-new.md) (135 prompts per 5 hours using quality open-source models) or other providers offer different trade-offs
+- **Unlimited-Seekers**: Platforms like [Synthetic.new](../../ai-model-providers/synthetic-new.md) (135 prompts per 5 hours using quality open-source models) or other providers offer different trade-offs
 
 ## Recommendation
 GitHub Copilot occupies an interesting middle ground:
@@ -52,10 +52,10 @@ GitHub Copilot occupies an interesting middle ground:
 - Excellent value for students (free) and budget-conscious developers ($10/month)
 - The only $10 subscription giving you unlimited GPT-4o-mini access in your editor
 
-**Bottom Line**: If you're a student, get it (it's free). If you want a straightforward VS Code native agent and don't need unlimited heavy vibecoding, it's a solid choice. If you're building entire projects regularly via CLI agents or need unlimited usage without prompt anxiety, look at other options in the main [AI Model Providers](../README.md) section.
+**Bottom Line**: If you're a student, get it (it's free). If you want a straightforward VS Code native agent and don't need unlimited heavy vibecoding, it's a solid choice. If you're building entire projects regularly via CLI agents or need unlimited usage without prompt anxiety, look at other options in the main [AI Model Providers](../../ai-model-providers/README.md) section.
 
 ## Personal Note
-I used Copilot quite often and found it valuable, but ultimately moved away because I work primarily via CLI agents and dislike the anxiety of monthly/weekly prompt limits. For my workflow, services like [Synthetic.new](../synthetic-new.md) offering time-based limits (135 prompts per 5 hours) with quality open-source models fit better. But if you're in VS Code all day and want something that "just works" without complexity, Copilot delivers.
+I used Copilot quite often and found it valuable, but ultimately moved away because I work primarily via CLI agents and dislike the anxiety of monthly/weekly prompt limits. For my workflow, services like [Synthetic.new](../../ai-model-providers/synthetic-new.md) offering time-based limits (135 prompts per 5 hours) with quality open-source models fit better. But if you're in VS Code all day and want something that "just works" without complexity, Copilot delivers.
 
 **Official Resources**: [GitHub Copilot](https://github.com/features/copilot)
 
