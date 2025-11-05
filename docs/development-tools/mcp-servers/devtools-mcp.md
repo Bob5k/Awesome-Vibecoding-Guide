@@ -14,4 +14,4 @@ Pro tip: It’s more efficient to tell the LLM “use MCP” instead of writing 
 
 Pro tip 2: For web development, it can even perform its own tests using Chrome DevTools MCP when prompted correctly.
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Tools & Tech Stack](../README.md)

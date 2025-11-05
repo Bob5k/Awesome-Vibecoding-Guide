@@ -89,7 +89,7 @@ One of OpenSpec's most powerful capabilities is enabling different LLMs for diff
 **Example Workflow:**
 ```
 Phase 1: Planning & Specification
-→ Use GPT-5-high (via [Droid CLI](./droid-cli.md)) for complex architectural decisions
+→ Use GPT-5-high (via Droid CLI) for complex architectural decisions
 → Generate comprehensive plans and detailed specifications
 
 Phase 2: Implementation
@@ -192,6 +192,6 @@ Phase 4: Polish & Optimization (Tasks 15-18)
 
 OpenSpec CLI transforms vague ideas into concrete, actionable development plans while preserving the natural, conversational vibecoding experience. Unlike complex CLI tools that require memorizing commands and syntax, OpenSpec lets you continue talking to your AI agent in plain English while automatically generating structured specifications. By creating detailed specifications that work with any coding agent, it enables reliable, scalable development while maintaining the flexibility to use different LLMs for different tasks. The result is a systematic approach to building anything from simple features to complex enterprise applications without disrupting your natural development workflow.
 
-See also: [Droid CLI](./droid-cli.md), [GLM Coding Plan](./glm-coding-plan.md), [DevTools MCP](./devtools-mcp.md)
+See also: [Droid CLI](./droid-cli.md), [GLM Coding Plan](../../ai-model-providers/glm-coding-plan.md), [DevTools MCP](../mcp-servers/devtools-mcp.md)
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Tools & Tech Stack](../README.md)
