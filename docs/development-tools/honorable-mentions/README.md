@@ -9,6 +9,7 @@ This section highlights tools that offer excellent value for developers seeking 
 - **[AmpCode](ampcode.md)** - Free tier coding assistance with MCP support
 - **[TRAE](trae.md)** - Cost-effective prompt-based pricing model
 - **[Windsurf](windsurf.md)** - VS Code fork with integrated AI, free models and affordable paid tiers
+- **[Octofriend](octofriend.md)** - Open-source CLI with seamless Synthetic.new integration, excellent MCP support, and no rate limit headaches
 
 ## Tools I Dropped — Honest Assessments
 
