@@ -29,6 +29,9 @@ Especially in the world of frontier models being **expensive** - usually it make
   - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter) • Over-expensive options (Claude Subscription)
 - [Core Technologies 🧰](docs/core-technologies.md)
   - Astro • Tailwind CSS • Cloudflare Pages
+- [Hosting Tools 🌐](hosting-tools/README.md)
+  - **Free & Scalable Hosting**: Cloudflare Pages • Workers • R2 Storage • D1 Database • KV
+  - Complete edge platform for building and deploying production apps
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
   - Phase 0 (Vibecoder Preparation) + Phase 1–4 deep dives
