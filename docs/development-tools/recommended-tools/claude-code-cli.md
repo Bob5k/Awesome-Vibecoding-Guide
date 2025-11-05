@@ -9,4 +9,4 @@
 - Small diffs, quick refactors, and single‑file changes
 - When I need a fast turnaround aligned with the GLM plan
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Tools & Tech Stack](../README.md)

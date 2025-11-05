@@ -184,6 +184,6 @@ Droid CLI represents a fundamental shift in how we interact with AI for software
 
 The combination of autonomous planning and safety-first execution makes Droid CLI not just another tool, but a complete development environment that can replace multiple tools in your workflow while providing unprecedented control and safety.
 
-See also: [OpenSpec CLI](./openspec-cli.md), [DevTools MCP](./devtools-mcp.md)
+See also: [OpenSpec CLI](./openspec-cli.md), [DevTools MCP](../mcp-servers/devtools-mcp.md)
 
-Back: [Tools & Tech Stack](./README.md)
+Back: [Tools & Tech Stack](../README.md)

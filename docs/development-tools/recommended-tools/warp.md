@@ -80,4 +80,4 @@ Works well alongside:
 - **Quality of life improvements** rather than essential vibecoding tools
 - **Better alternatives** exist for AI-powered development tasks
 
-Back: [Development Tools](./README.md)
+Back: [Development Tools](../README.md)
