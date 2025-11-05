@@ -46,3 +46,13 @@ If you've found this guide helpful and want to support my work, consider using t
 - **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Privacy-first AI provider with extensive open-sourcemodel library and competitive pricing
 
 Using these links helps me continue maintaining and expanding this guide while you get access to excellent tools. No pressure though - the guide will always remain free and open source! ⭐
+
+## Star History
+
+<a href="https://www.star-history.com/#Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Bob5k/Awesome-Vibecoding-Guide&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left" />
+ </picture>
+</a>
