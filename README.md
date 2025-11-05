@@ -26,7 +26,7 @@ Especially in the world of frontier models being **expensive** - usually it make
   - **Tools I Dropped**: Traycer • GitHub Speckit
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
   - **Primary Providers**: GLM Coding Plan • Factory AI • Synthetic.new
-  - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter) • Over-expensive options (Claude Subscription)
+  - **Honorable Mentions**: GitHub Copilot • Budget platforms (Chutes.ai • OpenRouter) • Over-expensive options (Claude Subscription)
 - [Core Technologies 🧰](docs/core-technologies.md)
   - Astro • Tailwind CSS • Cloudflare Pages
 - [Hosting Tools 🌐](hosting-tools/README.md)

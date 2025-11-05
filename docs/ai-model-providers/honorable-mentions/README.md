@@ -18,6 +18,9 @@ However, they all share common limitations that prevent me from recommending the
 
 ## The Providers
 
+### Value & Native Integration
+- **[GitHub Copilot](github-copilot.md)** - Good value at $10 for 300 prompts + unlimited GPT-4o-mini; free for students; VS Code native but limited for heavy vibecoding
+
 ### Budget & Experimentation Platforms
 - **[Chutes.ai](chutes.ai.md)** - Extremely affordable but unreliable; good for learning, not for production
 - **[OpenRouter](openrouter.md)** - Massive model selection with free tier; great for exploration but inconsistent reliability
