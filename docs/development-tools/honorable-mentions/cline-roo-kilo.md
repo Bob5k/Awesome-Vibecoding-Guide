@@ -47,6 +47,6 @@ That said, these are genuinely popular tools in the vibecoding industry for good
 ## Official Resources
 - **Cline**: [github.com/cline/cline](https://github.com/cline/cline)
 - **Roo Code**: [github.com/RooVetGit/Roo-Cline](https://github.com/RooVetGit/Roo-Cline)
-- **Kilo Code**: Check VSCode marketplace for latest information
+- **Kilo Code**: [Official website](https://kilocode.ai/)
 
 Back: [Honorable Mentions](README.md)
