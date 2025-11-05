@@ -11,9 +11,9 @@ A curated selection of AI model providers and services optimized for vibecoding 
 
 ## Honorable Mentions
 Services I've used but don't recommend for primary development work:
-- **[Honorable Mentions](./honorable-mentions/README.md)** — Budget platforms, learning tools, and services with caveats
+- **[Honorable Mentions](./honorable-mentions/README.md)** — Services with caveats, learning platforms, budget platforms, or over-expensive options
 
-These providers can be valuable for experimentation and learning, but have reliability, performance, or cost concerns that make them unsuitable for serious professional development.
+These providers can be valuable for experimentation and learning, but have reliability, performance, or cost concerns (from too cheap/unreliable to prohibitively expensive) that make them unsuitable for serious professional development.
 
 ## Integration Philosophy
 
