@@ -4,20 +4,23 @@ A comprehensive collection of development tools optimized for vibecoding product
 
 ## Core Development Stack
 
-### Primary Tools
-- **[Zed.dev](./zed.md)** — Primary IDE for fast, modern development
-- **[Droid CLI](./droid-cli.md)** — Main coding agent with BYOK support
-- **[OpenSpec CLI](./openspec-cli.md)** — Specification framework for project planning
+### Recommended Tools
+Development tools optimized for vibecoding productivity:
+- **[Zed.dev](./recommended-tools/zed.md)** — Primary IDE for fast, modern development
+- **[Droid CLI](./recommended-tools/droid-cli.md)** — Main coding agent with BYOK support
+- **[OpenSpec CLI](./recommended-tools/openspec-cli.md)** — Specification framework for project planning
+- **[Warp](./recommended-tools/warp.md)** — Modern terminal for enhanced productivity
+- **[Claude Code CLI](./recommended-tools/claude-code-cli.md)** — Backup AI coding assistant
 
-### MCP (Model Context Protocol) Integration
-- **[Context7 MCP](./context7-mcp.md)** — Documentation management and retrieval
-- **[DevTools MCP](./devtools-mcp.md)** — Browser automation and testing
-- **[Sequential Thinking MCP](./sequential-thinking-mcp.md)** — Structured cognitive enhancement for AI assistants
-- **[Task Manager MCP](./task-manager-mcp.md)** — Persistent task management across conversation sessions
-- **[Shadcn MCP](./shadcn-mcp.md)** — Professional UI components for AI-assisted development
+### MCP Servers
+Model Context Protocol servers for enhanced capabilities:
+- **[Context7 MCP](./mcp-servers/context7-mcp.md)** — Documentation management and retrieval
+- **[DevTools MCP](./mcp-servers/devtools-mcp.md)** — Browser automation and testing
+- **[Sequential Thinking MCP](./mcp-servers/sequential-thinking-mcp.md)** — Structured cognitive enhancement for AI assistants
+- **[Task Manager MCP](./mcp-servers/task-manager-mcp.md)** — Persistent task management across conversation sessions
+- **[Shadcn MCP](./mcp-servers/shadcn-mcp.md)** — Professional UI components for AI-assisted development
 
-### Complementary Tools
-- **[Claude Code CLI](./claude-code-cli.md)** — Backup AI coding assistant
+### Additional Resources
 - **[Tools I Dropped](./tools-i-dropped.md)** — Previously used tools and migration rationale
 
 ## Configuration & Compatibility
@@ -34,20 +37,20 @@ A comprehensive collection of development tools optimized for vibecoding product
 
 ### 1. Essential Setup
 Start with the core stack for optimal vibecoding experience:
-1. Install [Zed](./zed.md) as your primary IDE
-2. Set up [Droid CLI](./droid-cli.md) with your preferred LLM provider
-3. Configure [Context7 MCP](./context7-mcp.md) for documentation access
-4. Add [DevTools MCP](./devtools-mcp.md) for testing capabilities
-5. Install [Sequential Thinking MCP](./sequential-thinking-mcp.md) for enhanced problem-solving
-6. Set up [Task Manager MCP](./task-manager-mcp.md) for persistent workflow management
-7. Add [Shadcn MCP](./shadcn-mcp.md) for professional UI component access
+1. Install [Zed](./recommended-tools/zed.md) as your primary IDE
+2. Set up [Droid CLI](./recommended-tools/droid-cli.md) with your preferred LLM provider
+3. Configure [Context7 MCP](./mcp-servers/context7-mcp.md) for documentation access
+4. Add [DevTools MCP](./mcp-servers/devtools-mcp.md) for testing capabilities
+5. Install [Sequential Thinking MCP](./mcp-servers/sequential-thinking-mcp.md) for enhanced problem-solving
+6. Set up [Task Manager MCP](./mcp-servers/task-manager-mcp.md) for persistent workflow management
+7. Add [Shadcn MCP](./mcp-servers/shadcn-mcp.md) for professional UI component access
 
 ### 2. Configuration
 - Configure API keys for your preferred LLM providers
 - Set up essential MCP servers:
-  - [Sequential Thinking MCP](./sequential-thinking-mcp.md) for structured analysis
-  - [Task Manager MCP](./task-manager-mcp.md) for task persistence
-  - [Shadcn MCP](./shadcn-mcp.md) for UI components
+  - [Sequential Thinking MCP](./mcp-servers/sequential-thinking-mcp.md) for structured analysis
+  - [Task Manager MCP](./mcp-servers/task-manager-mcp.md) for task persistence
+  - [Shadcn MCP](./mcp-servers/shadcn-mcp.md) for UI components
 - Review [compatibility guidelines](./compatibility.md) for optimal integration
 
 ### 3. Workflow Integration

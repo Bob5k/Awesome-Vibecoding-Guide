@@ -17,7 +17,7 @@ The platform offers exceptional value, especially with:
 
 ### 🛠️ Integration with Development Tools
 Factory AI pairs exceptionally well with:
-- **[Droid CLI](../development-tools/droid-cli.md)** - Native support allows for extensive coding workflows
+- **[Droid CLI](../development-tools/recommended-tools/droid-cli.md)** - Native support allows for extensive coding workflows
 - **[GLM-4.6](glm-coding-plan.md)** - Use for development phases while saving more expensive models for planning
 
 ## Real-World Performance
@@ -56,6 +56,6 @@ The $20/month investment becomes a strategic asset for developers who want to le
 - [Main README](../README.md)
 - [Development Tools](../development-tools/README.md)
 - [AI Model Providers README](./README.md)
-- [Droid CLI Guide](../development-tools/droid-cli.md)
+- [Droid CLI Guide](../development-tools/recommended-tools/droid-cli.md)
 - [GLM Coding Guide](glm-coding-plan.md)
 - [Sign up for Factory AI](https://app.factory.ai/r/VAH64803) (supports this guide)
