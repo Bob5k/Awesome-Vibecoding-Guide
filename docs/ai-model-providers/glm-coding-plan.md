@@ -22,4 +22,41 @@
 - Codex Pro: €229 in EU with VAT per month
 - Most alternatives will be more expensive than GLM considering the fact that GLM Coding Plan efficiently gives you A TON of tokens per 5h, not even talking about per month.
 
-Back: [Tools & Tech Stack](./README.md)
+## Recommended Workflow Integration
+
+**Best Used In:**
+- [Phase 1: Planning](../workflow/phase-1-planning.md) - PRD refinement and architecture discussions
+- [Phase 2: Development](../workflow/phase-2-development.md) - Code generation and debugging
+- [Core Technologies Implementation](../core-technologies.md) - Astro + Tailwind development
+
+**Budget Considerations:**
+- Compare with [free alternatives](./honorable-mentions/README.md) before upgrading
+- See [Phase 0 tool selection](../workflow/phase-0-vibecoder-preparation.md) for upgrade timing
+
+**Integration Setup:**
+- [Droid CLI](../development-tools/recommended-tools/droid-cli.md) — Most efficient integration for planning and architecture
+- [Claude Code CLI](../development-tools/recommended-tools/claude-code-cli.md) — Fastest working combination
+- [Context7 MCP](../development-tools/mcp-servers/context7-mcp.md) — Documentation access during development
+
+**Workflow Phases by Usage:**
+
+**Phase 0 (Preparation):**
+- Evaluate against [free alternatives](../workflow/phase-0-vibecoder-preparation.md#free-option-perfect-for-getting-started)
+- Upgrade from [budget options](../workflow/phase-0-vibecoder-preparation.md#budget-option-professional-grade) when hitting limits
+
+**Phase 1 (Planning):**
+- Use for PRD refinement and feature breakdown
+- Combine with [OpenSpec CLI](../development-tools/recommended-tools/openspec-cli.md) for structured planning
+- Architecture discussions for [Core Technologies](../core-technologies.md) stack
+
+**Phase 2 (Development):**
+- Daily coding assistance and debugging
+- [DevTools MCP](../development-tools/mcp-servers/devtools-mcp.md) integration for automated testing
+- Component generation for Astro + Tailwind projects
+
+**Phase 3 (Testing & Debugging):**
+- Bug analysis and resolution
+- Code review and optimization
+- Integration with [testing workflows](../workflow/phase-3-testing-debugging.md)
+
+Back: [AI Model Providers](./README.md)

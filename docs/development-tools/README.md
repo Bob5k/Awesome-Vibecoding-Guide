@@ -35,7 +35,13 @@ Model Context Protocol servers for enhanced capabilities:
 
 ## Quick Start Guide
 
-### 1. Essential Setup
+### When to Use This Guide
+This tool stack is designed for **Phase 0-2** of the vibecoding workflow:
+- [Phase 0: Vibecoder Preparation](../workflow/phase-0-vibecoder-preparation.md) - Initial tool selection
+- [Phase 1: Planning](../workflow/phase-1-planning.md) - OpenSpec integration
+- [Phase 2: Development](../workflow/phase-2-development.md) - Daily coding workflow
+
+### 1. Essential Setup (Phase 0)
 Start with the core stack for optimal vibecoding experience:
 1. Install [Zed](./recommended-tools/zed.md) as your primary IDE
 2. Set up [Droid CLI](./recommended-tools/droid-cli.md) with your preferred LLM provider

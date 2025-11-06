@@ -282,6 +282,23 @@ Start fresh with new feature context...
 
 ---
 
+## Pre-requisites & Next Steps
+
+**Requires completion of:**
+- [Phase 1: Planning](./phase-1-planning.md) — Feature specifications and project structure
+- [Core Technologies setup](../core-technologies.md) — Astro + Tailwind + Cloudflare stack
+- [Tool preparation](./phase-0-vibecoder-preparation.md) — Development environment and coding agent
+
+**Prepares for:**
+- [Phase 3: Testing & Debugging](./phase-3-testing-debugging.md) — Comprehensive testing and quality assurance
+- [Phase 4: Deployment](./phase-4-deployment.md) — Production deployment and CI/CD
+- [Business strategy](../introduction/README.md) — Client delivery and maintenance workflows
+
+**Related Reading:**
+- [Development Tools](../development-tools/README.md) — Detailed tool configuration and usage
+- [AI Model Providers](../ai-model-providers/README.md) — Optimization for different development tasks
+- [Context Management](../context-management/README.md) — Efficient context handling during development
+
 ## Next Steps
 
 Once you've implemented your features:
@@ -289,7 +306,8 @@ Once you've implemented your features:
 1. ✅ All features are implemented
 2. ✅ Code is committed to version control
 3. ✅ Manual testing shows core functionality works
-4. → **Next**: [Comprehensive testing and debugging](./phase-3-testing-debugging.md)
+4. ✅ Context management practices followed
+5. → **Next**: [Comprehensive testing and debugging](./phase-3-testing-debugging.md)
 
 ---
 

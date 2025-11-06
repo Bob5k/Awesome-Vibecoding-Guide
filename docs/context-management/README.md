@@ -1741,6 +1741,64 @@ Do I need external data?
 └─ Project files → Direct file read (NOT MCP)
 ```
 
+## Workflow Integration
+
+**Used Throughout All Phases:**
+
+**Phase 1: Planning**
+- Context management for [PRD and specification management](../workflow/phase-1-planning.md)
+- [OpenSpec CLI](../development-tools/recommended-tools/openspec-cli.md) integration for plan externalization
+- Architecture decisions documented in [docs/decisions/](./#file-organization-for-context-management) for future reference
+
+**Phase 2: Development**
+- [Droid CLI](../development-tools/recommended-tools/droid-cli.md) plan/act workflow utilizing .md files
+- Feature-by-feature context management per [development workflow](../workflow/phase-2-development.md#feature-by-feature-implementation)
+- [Zed IDE](../development-tools/recommended-tools/zed.md) auto-compression and workflow management
+
+**Phase 3: Testing & Debugging**
+- Debug context and error tracking for [comprehensive testing](../workflow/phase-3-testing-debugging.md)
+- [DevTools MCP](../development-tools/mcp-servers/devtools-mcp.md) externalizes browser debugging context
+- Session handoffs between debugging sessions using [docs/context/](./#session-handoffs) pattern
+
+**Phase 4: Deployment**
+- Project handover documentation using [context management patterns](./#multi-session-project)
+- Configuration and decision preservation for [client projects](./#real-world-scenarios)
+- Knowledge transfer through [living documentation](./#living-documentation)
+
+**Tool Integration:**
+
+**Context7 MCP**
+- Externalizes framework documentation to reduce context usage
+- Integrates with [Core Technologies](../core-technologies.md) implementation
+- Saves context for [AI Model Providers](../ai-model-providers/README.md) during architecture discussions
+
+**Task Manager MCP**
+- Persistent task management across [workflow phases](../workflow/)
+- Context-aware task tracking using [task decomposition patterns](./#task-decomposition)
+- Integration with [Phase 2 development workflow](../workflow/phase-2-development.md)
+
+**Sequential Thinking MCP**
+- Enhanced problem-solving context using [cognitive enhancement techniques](./#advanced-strategies)
+- Strategic thinking preservation in [docs/decisions/](./#file-organization-for-context-management)
+- Integration with [planning workflows](../workflow/phase-1-planning.md)
+
+**MCP Server Context Optimization:**
+- [Context7 MCP](../development-tools/mcp-servers/context7-mcp.md) — Framework documentation externalization
+- [DevTools MCP](../development-tools/mcp-servers/devtools-mcp.md) — Browser debugging context management
+- [Task Manager MCP](../development-tools/mcp-servers/task-manager-mcp.md) — Persistent workflow context
+- [Sequential Thinking MCP](../development-tools/mcp-servers/sequential-thinking-mcp.md) — Problem-solving context
+- [Shadcn MCP](../development-tools/mcp-servers/shadcn-mcp.md) — UI component context for [Phase 2 development](../workflow/phase-2-development.md)
+
+**Business Strategy Integration:**
+- [Client project handover](./#client-project-considerations) using context management best practices
+- [Freelance workflow optimization](../introduction/README.md) through efficient context usage
+- [Cost-effective development](../workflow/phase-0-vibecoder-preparation.md) via reduced AI token consumption
+
+**Related Documentation:**
+- [Learning Path](../../README.md#learning-path) for context management integration
+- [Glossary](../glossary.md) for context-related terminology
+- [Contributing](../contributing.md) for context management in documentation
+
 ---
 
 **Back to:** [Top-level README](../../README.md)

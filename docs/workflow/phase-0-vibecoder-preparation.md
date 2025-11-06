@@ -23,15 +23,17 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 ### Choose Your Stack Based on Budget
 
 #### FREE Option (Perfect for Getting Started)
-- **Coding Agent**: Qwen CLI or Gemini CLI (completely free)
-- **IDE**: VS Code or Zed (both have excellent free versions)
-- **Documentation**: Browser-based research and free MCP servers / OpenSpec
+- **Coding Agent**: [Qwen CLI](../development-tools/honorable-mentions/qwen-coder.md) or [Gemini CLI](../development-tools/honorable-mentions/gemini-cli.md) (completely free)
+- **IDE**: [VS Code](https://code.visualstudio.com/) or [Zed](../development-tools/recommended-tools/zed.md) (both have excellent free versions)
+- **Documentation**: Browser-based research and free MCP servers / [OpenSpec CLI](../development-tools/recommended-tools/openspec-cli.md)
+- **AI Providers**: [Budget AI Options](../ai-model-providers/README.md#honorable-mentions) - Free tiers available
 - **Total Cost**: $0/month
 
 #### Budget Option (Professional Grade)
-- **Coding Agent**: GLM subscription
-- **IDE**: Zed with premium features
-- **Documentation**: Browser-based research and free MCP servers / OpenSpec
+- **Coding Agent**: [GLM Coding Plan](../ai-model-providers/glm-coding-plan.md) subscription
+- **IDE**: [Zed](../development-tools/recommended-tools/zed.md) with premium features
+- **Terminal**: [Warp](../development-tools/recommended-tools/warp.md) for enhanced productivity
+- **MCP Servers**: [Context7](../development-tools/mcp-servers/context7-mcp.md) + [DevTools](../development-tools/mcp-servers/devtools-mcp.md)
 - **Total Cost**: $5-20/month
 
 ### Essential Setup Steps

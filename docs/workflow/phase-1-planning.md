@@ -175,6 +175,41 @@ Features split into actionable development tasks
 
 ---
 
+## Business Planning Integration 💼
+
+### Client Project Considerations
+If building for clients, include these planning elements:
+
+**Pricing Strategy:**
+- Define project scope boundaries based on features planned
+- Set clear deliverables and timelines
+- Plan for testing and revision cycles
+
+**Technical Approach:**
+- Choose [cost-effective hosting](../hosting-tools/README.md) for client sites
+- Plan for maintenance and update workflows
+- Consider client technical expertise for handover
+
+**Value Proposition:**
+- Focus on performance benefits of your [core tech stack](../core-technologies.md)
+- Highlight faster deployment and lower hosting costs
+- Plan for SEO and performance optimization
+
+### Personal Project Considerations
+If building for your own business:
+
+**Market Validation:**
+- Research competition during external chat phase
+- Define monetization strategy early
+- Plan for user acquisition and growth
+
+**MVP Planning:**
+- Focus on core features that solve the main problem
+- Plan iterative improvement based on user feedback
+- Consider [budget-friendly tools](../workflow/phase-0-vibecoder-preparation.md) initially
+
+---
+
 ## Next Steps
 
 Once you have your planning docs ready:
@@ -182,7 +217,13 @@ Once you have your planning docs ready:
 1. ✅ You have a clear PRD and architecture
 2. ✅ Features are specified and broken into tasks
 3. ✅ Tech stack and infrastructure are defined
-4. → **Next**: [Set up your environment and start development](./phase-2-development.md)
+4. ✅ Business considerations are documented
+5. → **Next**: [Set up your environment and start development](./phase-2-development.md)
+
+**Related Reading:**
+- [Introduction: Business Model](../introduction/README.md) - Freelance strategy details
+- [Phase 0: Cost-Effective Tools](../workflow/phase-0-vibecoder-preparation.md) - Budget planning
+- [Core Technologies](../core-technologies.md) - Client-friendly tech stack
 
 ---
 

@@ -66,6 +66,27 @@ The combination of privacy, performance, competitive pricing, and extensive mode
 
 ---
 
+## Workflow Integration
+
+**Best Used In:**
+- [Phase 1: Planning](../workflow/phase-1-planning.md) - Privacy-first planning discussions
+- [Phase 2: Development](../workflow/phase-2-development.md) - Code generation with privacy assurance
+- [Phase 3: Testing & Debugging](../workflow/phase-3-testing-debugging.md) - Secure debugging sessions
+
+**Privacy-First Workflows:**
+- [Droid CLI](../development-tools/recommended-tools/droid-cli.md) — Private coding assistance
+- [Context7 MCP](../development-tools/mcp-servers/context7-mcp.md) — Secure documentation access
+- [Octofriend CLI](../development-tools/honorable-mentions/octofriend.md) — Tested integration
+
+**Budget Comparison:**
+- Compare with [GLM Coding Plan](glm-coding-plan.md) for cost analysis
+- Consider [free alternatives](./honorable-mentions/README.md) for budget constraints
+- See [Phase 0 tool selection](../workflow/phase-0-vibecoder-preparation.md) for upgrade timing
+
+**Performance Integration:**
+- [DevTools MCP](../development-tools/mcp-servers/devtools-mcp.md) — Testing with fast 200 tokens/sec response
+- [Sequential Thinking MCP](../development-tools/mcp-servers/sequential-thinking-mcp.md) — Enhanced problem-solving with multiple models
+
 ## Get Started
 
 Ready to try Synthetic.new? [Sign up with my link](https://synthetic.new/?referral=IDyp75aoQpW9YFt) to support the guide and get started with privacy-first AI model access.
