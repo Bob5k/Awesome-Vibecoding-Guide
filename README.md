@@ -44,21 +44,25 @@ Especially in the world of frontier models being **expensive** - usually it make
 ## 🧭 Learning Path
 
 **New to Vibecoding:**
+
 1. [Introduction](docs/introduction/README.md) → Understanding the approach
 2. [Quickstart](docs/quickstart/README.md) → Getting started with Git and basic setup
 3. [Phase 0](docs/workflow/phase-0-vibecoder-preparation.md) → Tool selection and mindset
 
 **Building Your First Project:**
+
 4. [Phase 1: Planning](docs/workflow/phase-1-planning.md) → Project structure and specifications
 5. [Phase 2: Development](docs/workflow/phase-2-development.md) → Implementation workflow
 6. [Core Technologies](docs/core-technologies.md) → Recommended tech stack
 
 **Scaling and Optimization:**
+
 7. [Development Tools](docs/development-tools/README.md) → Advanced tool configuration
 8. [AI Model Providers](docs/ai-model-providers/README.md) → Optimizing AI assistance
 9. [Phase 3-4](docs/workflow/) → Testing, debugging, and deployment
 
 **Business Focus:**
+
 10. [Hosting Tools](docs/hosting-tools/README.md) → Cost-effective infrastructure
 11. [Context Management](docs/context-management/README.md) → Efficient workflows
 
