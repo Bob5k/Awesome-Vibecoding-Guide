@@ -10,6 +10,7 @@ This section highlights tools that offer excellent value for developers seeking 
 - **[TRAE](trae.md)** - Cost-effective prompt-based pricing model
 - **[Windsurf](windsurf.md)** - VS Code fork with integrated AI, free models and affordable paid tiers
 - **[Octofriend](octofriend.md)** - Open-source CLI with seamless Synthetic.new integration, excellent MCP support, and no rate limit headaches
+- **[Ghostty](ghostty.md)** - Fast, lightweight terminal emulator as an alternative to system defaults and Warp
 
 ## Native Integration Tools
 
