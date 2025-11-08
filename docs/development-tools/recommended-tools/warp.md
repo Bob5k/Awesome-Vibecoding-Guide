@@ -1,4 +1,4 @@
-```# Warp.dev — Modern Terminal Emulator 🚀
+# Warp.dev — Modern Terminal Emulator 🚀
 
 ## Overview
 
