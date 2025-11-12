@@ -144,37 +144,37 @@ Quality improved: First output is production-ready
 **17 copy-paste ready prompt templates:**
 
 **Feature Implementation:**
-- Template 1: Simple Feature Addition
-- Template 2: API Endpoint Creation
-- Template 3: React Component Creation
+- [Template 1: Simple Feature Addition](./template-library.md#template-1-simple-feature-addition)
+- [Template 2: API Endpoint Creation](./template-library.md#template-2-api-endpoint-creation)
+- [Template 3: React Component Creation](./template-library.md#template-3-react-component-creation)
 
 **Debugging:**
-- Template 4: Runtime Error Debugging
-- Template 5: Logic Bug Debugging
+- [Template 4: Runtime Error Debugging](./template-library.md#template-4-runtime-error-debugging)
+- [Template 5: Logic Bug Debugging](./template-library.md#template-5-logic-bug-debugging)
 
 **Refactoring:**
-- Template 6: Component Refactoring
-- Template 7: Architecture Refactoring
+- [Template 6: Component Refactoring](./template-library.md#template-6-component-refactoring)
+- [Template 7: Architecture Refactoring](./template-library.md#template-7-architecture-refactoring)
 
 **Testing:**
-- Template 8: Unit Test Generation
-- Template 9: Integration Test
+- [Template 8: Unit Test Generation](./template-library.md#template-8-unit-test-generation)
+- [Template 9: Integration Test](./template-library.md#template-9-integration-test)
 
 **Documentation:**
-- Template 10: Function/API Documentation
-- Template 11: README/Guide Creation
+- [Template 10: Function/API Documentation](./template-library.md#template-10-functionapi-documentation)
+- [Template 11: README/Guide Creation](./template-library.md#template-11-readmeguide-creation)
 
 **Code Review:**
-- Template 12: Pull Request Review
-- Template 13: Security Audit
+- [Template 12: Pull Request Review](./template-library.md#template-12-pull-request-review)
+- [Template 13: Security Audit](./template-library.md#template-13-security-audit)
 
 **Performance:**
-- Template 14: Performance Optimization
-- Template 15: Performance Analysis
+- [Template 14: Performance Optimization](./template-library.md#template-14-performance-optimization)
+- [Template 15: Performance Analysis](./template-library.md#template-15-performance-analysis)
 
 **Security:**
-- Template 16: Security Fix
-- Template 17: Input Validation
+- [Template 16: Security Fix](./template-library.md#template-16-security-fix)
+- [Template 17: Input Validation](./template-library.md#template-17-input-validation)
 
 **How to use:** Copy template → Fill {{PLACEHOLDERS}} → Send to AI
 
@@ -326,37 +326,37 @@ Before sending any prompt, verify:
 ```
 Your Task:
 ├─ New feature
-│  ├─ Simple                → Template 1
-│  ├─ API endpoint          → Template 2
-│  └─ React component       → Template 3
+│  ├─ Simple                → [Template 1](./template-library.md#template-1-simple-feature-addition)
+│  ├─ API endpoint          → [Template 2](./template-library.md#template-2-api-endpoint-creation)
+│  └─ React component       → [Template 3](./template-library.md#template-3-react-component-creation)
 │
 ├─ Fix bug
-│  ├─ Runtime error         → Template 4
-│  └─ Logic bug             → Template 5
+│  ├─ Runtime error         → [Template 4](./template-library.md#template-4-runtime-error-debugging)
+│  └─ Logic bug             → [Template 5](./template-library.md#template-5-logic-bug-debugging)
 │
 ├─ Improve code
-│  ├─ Component refactor    → Template 6
-│  └─ Architecture refactor → Template 7
+│  ├─ Component refactor    → [Template 6](./template-library.md#template-6-component-refactoring)
+│  └─ Architecture refactor → [Template 7](./template-library.md#template-7-architecture-refactoring)
 │
 ├─ Add tests
-│  ├─ Unit tests            → Template 8
-│  └─ Integration tests     → Template 9
+│  ├─ Unit tests            → [Template 8](./template-library.md#template-8-unit-test-generation)
+│  └─ Integration tests     → [Template 9](./template-library.md#template-9-integration-test)
 │
 ├─ Write docs
-│  ├─ Function/API docs     → Template 10
-│  └─ README/guides         → Template 11
+│  ├─ Function/API docs     → [Template 10](./template-library.md#template-10-functionapi-documentation)
+│  └─ README/guides         → [Template 11](./template-library.md#template-11-readmeguide-creation)
 │
 ├─ Review code
-│  ├─ Pull request          → Template 12
-│  └─ Security audit        → Template 13
+│  ├─ Pull request          → [Template 12](./template-library.md#template-12-pull-request-review)
+│  └─ Security audit        → [Template 13](./template-library.md#template-13-security-audit)
 │
 ├─ Optimize performance
-│  ├─ Fix slow code         → Template 14
-│  └─ Analyze performance   → Template 15
+│  ├─ Fix slow code         → [Template 14](./template-library.md#template-14-performance-optimization)
+│  └─ Analyze performance   → [Template 15](./template-library.md#template-15-performance-analysis)
 │
 └─ Security
-   ├─ Fix vulnerability     → Template 16
-   └─ Add validation        → Template 17
+   ├─ Fix vulnerability     → [Template 16](./template-library.md#template-16-security-fix)
+   └─ Add validation        → [Template 17](./template-library.md#template-17-input-validation)
 ```
 
 ---
@@ -397,11 +397,13 @@ Your Task:
 
 ### Phase 2: Development
 - Apply [Feature Implementation Patterns](./task-specific-patterns.md#feature-implementation)
+- Use [Feature Implementation Templates](./template-library.md#feature-implementation-templates)
 - Use [Multi-Step Workflows](./advanced-techniques.md#multi-step-workflows) for complex features
 - Follow [Template Library](./template-library.md) for consistency
 
 ### Phase 3: Testing & Debugging
 - Use [Debugging Patterns](./task-specific-patterns.md#debugging--error-resolution)
+- Use [Debugging Templates](./template-library.md#debugging-templates)
 - Apply [Testing Templates](./template-library.md#testing-templates)
 - Follow [Error Recovery Prompting](./advanced-techniques.md#error-recovery-prompting)
 
