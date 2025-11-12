@@ -33,6 +33,9 @@ Especially in the world of frontier models being **expensive** - usually it make
 - [Hosting Tools 🌐](docs/hosting-tools/README.md)
   - **Free & Scalable Hosting**: Cloudflare Pages • Workers • R2 Storage • D1 Database • KV
   - Complete edge platform for building and deploying production apps
+- [Business Model 💼](docs/business-model/README.md)
+  - **Real Income Strategy**: Building websites for local businesses
+  - Reality Check • The Model • Pricing & Economics • Value Proposition
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
   - Phase 0 (Vibecoder Preparation) + Phase 1–4 deep dives
@@ -63,8 +66,9 @@ Especially in the world of frontier models being **expensive** - usually it make
 
 **Business Focus:**
 
-10. [Hosting Tools](docs/hosting-tools/README.md) → Cost-effective infrastructure
-11. [Context Management](docs/context-management/README.md) → Efficient workflows
+10. [Business Model](docs/business-model/README.md) → Making real money with vibecoding
+11. [Hosting Tools](docs/hosting-tools/README.md) → Cost-effective infrastructure
+12. [Context Management](docs/context-management/README.md) → Efficient workflows
 
 **Quick Reference:**
 - [Glossary](docs/glossary.md) → Key terms and definitions
