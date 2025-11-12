@@ -279,12 +279,64 @@ Quality improved: First output is production-ready
 
 ### "Complex features overwhelm AI"
 
-**→ Solution:** Break into steps
+**→ Solution 1 (Prompt-Based):** Break into steps
 
 **Fix:**
 1. Read [Advanced Techniques: Multi-Step Workflows](./advanced-techniques.md#multi-step-workflows)
 2. Use [Prompt Chaining](./advanced-techniques.md#prompt-chaining)
 3. Verify at each step
+
+**→ Solution 2 (Spec-Driven):** Use structured specifications
+
+**Fix:**
+1. Generate specs with [OpenSpec](../development-tools/recommended-tools/openspec-cli.md)
+2. Break feature into phases and tasks automatically
+3. Prompt AI for each phase individually with clear context
+4. **Best for:** Projects with 10+ features or complex multi-component systems
+
+---
+
+## Prompts vs Specifications: When to Use Each
+
+**Understanding the difference:**
+- **Prompts** = Communication layer (HOW you talk to AI)
+- **Specifications** = Planning layer (WHAT you're building)
+- **Together** = Super robust vibecoding workflow
+
+### Decision Matrix
+
+```
+┌──────────────────────────────────────────────┐
+│  Project Type → Recommended Approach         │
+├──────────────────────────────────────────────┤
+│  Bug fix               → Prompts only        │
+│  Small feature (1-5h)  → Prompts + templates │
+│  Medium feature (5-20h)→ Prompts + multi-step│
+│  Large project (20h+)  → OpenSpec + prompts  │
+│  Team collaboration    → OpenSpec required   │
+└──────────────────────────────────────────────┘
+```
+
+### The Spec-Driven Workflow
+
+**When you use [OpenSpec](../development-tools/recommended-tools/openspec-cli.md):**
+
+1. **Planning Phase:** OpenSpec transforms your PRD into structured specifications
+   - Generates phased implementation plan
+   - Creates task breakdowns
+   - Documents architecture decisions
+
+2. **Implementation Phase:** Use this prompting guide to execute each phase
+   - Load phase specs into context
+   - Apply [Feature Implementation Templates](./template-library.md#feature-implementation-templates)
+   - Use [Multi-Step Workflows](./advanced-techniques.md#multi-step-workflows) for complex tasks
+
+3. **Quality Phase:** Combine both for validation
+   - Verify implementation against spec acceptance criteria
+   - Use [Self-Correcting Prompts](./advanced-techniques.md#self-correcting-prompts)
+   - Iterate between phases as needed
+
+**The result:** Structured project planning + Quality AI communication = Reliable, scalable development
 
 ---
 
@@ -314,6 +366,7 @@ Before sending any prompt, verify:
 │  Need template now      → Template Library │
 │  Specific task          → Task-Specific    │
 │  Complex scenario       → Advanced         │
+│  Large project planning → OpenSpec + Prompts│
 │  Debugging prompt issue → Foundations      │
 │  Optimizing workflow    → Advanced         │
 └────────────────────────────────────────────┘
@@ -392,8 +445,21 @@ Your Task:
 - Set up [.cursorrules with project conventions](./advanced-techniques.md#strategy-2-use-cursorrules-effectively)
 
 ### Phase 1: Planning
-- Use prompts to generate PRDs
+
+**Choose your approach based on project complexity:**
+
+**Approach 1: Prompts-Only (Small Projects)**
+- Use prompts to generate PRDs and start coding directly
 - Reference [Documentation Templates](./template-library.md#documentation-templates)
+- Best for: Quick features, 1-5 tasks, solo development
+
+**Approach 2: Spec-Driven (Large Projects) ⭐**
+- Use [OpenSpec](../development-tools/recommended-tools/openspec-cli.md) to transform PRDs into structured specifications
+- OpenSpec breaks features into phases and generates markdown documentation
+- Then apply prompting templates to implement each phase
+- Best for: Complex features, 10+ tasks, team projects
+
+**The Robust Combination:** OpenSpec provides structure → Prompts ensure quality implementation
 
 ### Phase 2: Development
 - Apply [Feature Implementation Patterns](./task-specific-patterns.md#feature-implementation)
@@ -425,6 +491,10 @@ Your Task:
 **Tool-specific guidance:**
 - [Development Tools](../development-tools/README.md) → IDE/CLI setup
 - [AI Model Providers](../ai-model-providers/README.md) → Choosing the right model
+
+**Specification-Driven Development:**
+- [OpenSpec CLI](../development-tools/recommended-tools/openspec-cli.md) → Transform PRDs into structured project plans with phased implementation
+- Combines with this prompting guide for super robust vibecoding workflow
 
 ---
 
