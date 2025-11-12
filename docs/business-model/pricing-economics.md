@@ -251,20 +251,22 @@ Don't sacrifice quality for speed. But do:
 
 ## Payment Structure
 
+### What I Recommend / Prefer
+- Get paid after work done - worst case scenario you're losing time. Best case scenario - you'll win loyal client
+- This shows your trust and essentially builds relationship from start
+**Cons:** Client might disappear before paying 
+**Pros:** It's safe, because if you'll deploy the website for client and they'll not pay - you just turn website down. So it's a safety net for you
+
+### Other options, best to worst IMO
+
 ### Option 1: 50/50 Split
 - 50% upfront (before starting)
 - 50% on delivery (before domain transfer)
 
 **Pros:** Cash flow, commitment from client
-**Cons:** Client might disappear after first payment
+**Cons:** Client might disappear after first payment (which is bad because you might be legally forced to return the money - check your local law on those cases)
 
-### Option 2: 100% Upfront
-- Full payment before starting work
-
-**Pros:** No payment risk, validates serious clients
-**Cons:** Harder to sell, clients may hesitate
-
-### Option 3: Milestone-Based
+### Option 2: Milestone-Based
 - 30% on agreement
 - 40% on design approval
 - 30% on launch
@@ -272,7 +274,11 @@ Don't sacrifice quality for speed. But do:
 **Pros:** Fair to both parties, spreads risk
 **Cons:** More administrative overhead
 
-**Recommended:** Start with 50/50, move to 100% upfront as you build reputation.
+### Option 3 - DON'T RECOMMEND - 100% Upfront
+- Full payment before starting work
+
+**Pros:** No payment risk, validates serious clients
+**Cons:** Harder to sell, clients may hesitate
 
 ## Pricing Psychology
 
