@@ -30,7 +30,7 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 - **Total Cost**: $0/month
 
 #### Budget Option (Professional Grade)
-- **Coding Agent**: [GLM Coding Plan](../ai-model-providers/glm-coding-plan.md) subscription
+- **Coding Agent**: [Synthetic](../ai-model-providers/synthetic-new.md) subscription or [GLM Coding Plan](../ai-model-providers/glm-coding-plan.md)
 - **IDE**: [Zed](../development-tools/recommended-tools/zed.md) with premium features
 - **Terminal**: [Warp](../development-tools/recommended-tools/warp.md) for enhanced productivity
 - **MCP Servers**: [Context7](../development-tools/mcp-servers/context7-mcp.md) + [DevTools](../development-tools/mcp-servers/devtools-mcp.md)
