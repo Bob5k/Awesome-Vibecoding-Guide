@@ -11,6 +11,7 @@ This section highlights tools that offer excellent value for developers seeking 
 - **[Windsurf](windsurf.md)** - VS Code fork with integrated AI, free models and affordable paid tiers
 - **[Octofriend](octofriend.md)** - Open-source CLI with seamless Synthetic.new integration, excellent MCP support, and no rate limit headaches
 - **[Ghostty](ghostty.md)** - Fast, lightweight terminal emulator as an alternative to system defaults and Warp
+- **[iTerm2](iterm2.md)** - A powerful, customizable terminal emulator for macOS with AI integration.
 
 ## Native Integration Tools
 
