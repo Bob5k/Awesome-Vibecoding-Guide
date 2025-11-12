@@ -2,6 +2,30 @@
 
 This guide covers everything you need to go from zero to your first paying clients, based on real commercial experience building websites for local businesses.
 
+---
+
+## ⚠️ Read This First
+
+**Before diving into this getting-started guide**, you should understand the foundational business structure and why this model works. This guide focuses on *execution* - but execution only works when you understand the underlying principles.
+
+### Essential Reading (in order):
+
+1. **[Reality Check](reality-check.md)** - Understand what this business really is (and isn't)
+2. **[The Model](the-model.md)** - Learn the core business structure and how it works
+3. **[Value Proposition](value-proposition.md)** - Discover why clients choose your services over alternatives
+
+**Why this matters:**
+
+Understanding *why* the business model works is just as important as knowing *how* to execute it. These documents explain:
+- The realistic expectations vs. common misconceptions
+- The technical and economic advantages you're selling
+- How to position yourself effectively against competitors (especially WordPress)
+- Why this approach is sustainable long-term
+
+**Once you've read these essentials**, come back to this getting-started guide to learn the practical steps for finding clients, pricing your services, and building your business.
+
+---
+
 ## Table of Contents
 
 1. [Prerequisites: Before You Start](#prerequisites-before-you-start)
