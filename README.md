@@ -39,6 +39,16 @@ Especially in the world of frontier models being **expensive** - usually it make
 - [Context Management 🧠](docs/context-management/README.md)
 - [Workflow & Process 🔄](docs/workflow/README.md)
   - Phase 0 (Vibecoder Preparation) + Phase 1–4 deep dives
+- [Mastering AI Prompts 🎯](docs/prompting/README.md)
+  - **Foundations**: Anatomy of good prompts • Universal principles • Anti-patterns
+  - **Task-Specific**: Feature dev • Debugging • Refactoring • Code review • Testing
+  - **Advanced**: Multi-step workflows • Prompt chaining • Error recovery • Optimization
+  - **Templates**: 17 ready-to-use prompt templates for common scenarios
+- [Troubleshooting Guide 🔧](docs/troubleshooting/README.md)
+  - **Quick Reference**: 40+ symptom → solution lookup tables
+  - **Emergency Flowcharts**: AI producing garbage • Can't debug • High costs • Breaking changes
+  - **Common Issues**: AI behavior • Code quality • Workflow bottlenecks • Tool problems
+  - **Integrated**: Phase-specific troubleshooting in workflow docs
 - [Glossary 📚](docs/glossary.md)
 - [Contributing 🤝](docs/contributing.md)
 
@@ -64,14 +74,21 @@ Especially in the world of frontier models being **expensive** - usually it make
 8. [AI Model Providers](docs/ai-model-providers/README.md) → Optimizing AI assistance
 9. [Phase 3-4](docs/workflow/) → Testing, debugging, and deployment
 
+**Improving Your Skills:**
+
+10. [Mastering AI Prompts](docs/prompting/README.md) → Effective communication with AI
+11. [Troubleshooting Guide](docs/troubleshooting/README.md) → Solving common problems
+
 **Business Focus:**
 
-10. [Business Model](docs/business-model/README.md) → Making real money with vibecoding
-11. [Hosting Tools](docs/hosting-tools/README.md) → Cost-effective infrastructure
-12. [Context Management](docs/context-management/README.md) → Efficient workflows
+12. [Business Model](docs/business-model/README.md) → Making real money with vibecoding
+13. [Hosting Tools](docs/hosting-tools/README.md) → Cost-effective infrastructure
+14. [Context Management](docs/context-management/README.md) → Efficient workflows
 
 **Quick Reference:**
 - [Glossary](docs/glossary.md) → Key terms and definitions
+- [Troubleshooting](docs/troubleshooting/README.md) → Quick problem→solution lookup
+- [Prompt Templates](docs/prompting/template-library.md) → Copy-paste ready prompts
 - [Contributing](docs/contributing.md) → How to contribute to this guide
 
 ---

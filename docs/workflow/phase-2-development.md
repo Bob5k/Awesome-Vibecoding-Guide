@@ -248,6 +248,385 @@ Start fresh with new feature context...
 
 ---
 
+## Development Troubleshooting
+
+**Common problems during feature implementation and their solutions**
+
+### AI Generates Code That Doesn't Match Spec
+
+**Symptoms:**
+- Implements wrong feature
+- Missing required functionality
+- Different behavior than expected
+
+**Quick fix:**
+```
+"The code doesn't match the spec. Specifically:
+
+Spec says: [exact requirement from spec]
+Your code does: [what was actually implemented]
+
+Expected behavior: [detailed description]
+Actual behavior: [what happens]
+
+Please update to match spec exactly."
+```
+
+**Prevention:**
+- Reference spec file explicitly: "Per docs/plans/feature-x.md, implement..."
+- Include examples in spec
+- Define success criteria clearly
+- Review code against spec before moving on
+
+**Related:** [AI Misunderstands Requirements](../troubleshooting/README.md#ai-misunderstands-requirements)
+
+---
+
+### Code Quality Issues
+
+#### Missing Error Handling
+
+**Symptom:** Code works in happy path but crashes on errors.
+
+**Quick fix:**
+```
+"Add comprehensive error handling:
+
+```typescript
+// Current code
+const user = await db.users.findById(id);
+return user.name; // Crashes if user is null
+```
+
+Add error handling:
+- Check if user exists (return 404 if not)
+- Try-catch around database calls
+- User-friendly error messages
+- Log errors for debugging
+
+Follow error pattern from src/api/posts.ts"
+```
+
+**Prevention:**
+- Always specify error handling in initial prompt
+- Use [Error Handling Template](../prompting/template-library.md#template-16-security-fix)
+- Reference existing error patterns
+
+---
+
+#### Missing Input Validation
+
+**Symptom:** No validation on user input, potential security issues.
+
+**Quick fix:**
+```
+"Add input validation:
+
+Required validation:
+- Email: valid format, max 255 chars
+- Password: min 8 chars, complexity requirements
+- Age: number, 18-120 range
+
+Use [your validation library] for validation.
+Return 400 with field-specific errors for invalid input."
+```
+
+**Prevention:**
+- Specify validation in initial prompt
+- Use validation library (Zod, Joi, express-validator)
+- Create validation template
+
+**Related:** [Missing Input Validation](../troubleshooting/README.md#missing-input-validation)
+
+---
+
+#### Security Vulnerabilities
+
+**Symptom:** Code review reveals SQL injection, XSS, or other vulnerabilities.
+
+**Quick fix:**
+```
+"Security audit this code:
+
+[paste code]
+
+Fix:
+- SQL injection: use parameterized queries
+- XSS: sanitize user input before rendering
+- Authentication: verify JWT on protected routes
+- Authorization: check user permissions
+- Secrets: move to environment variables
+
+Follow security patterns from src/api/auth.ts"
+```
+
+**Prevention:**
+- Mention security in every prompt
+- Use [Security Templates](../prompting/template-library.md#security-templates)
+- Regular security audits
+- Follow OWASP guidelines
+
+**Related:** [Insecure Code Generation](../troubleshooting/README.md#insecure-code-generation)
+
+---
+
+### Integration Problems
+
+#### New Code Breaks Existing Features
+
+**Symptoms:**
+- Tests that previously passed now fail
+- Features that worked now broken
+- Unexpected side effects
+
+**Quick diagnosis:**
+```bash
+# Run tests to identify breakage
+npm test
+
+# Check git diff to see what changed
+git diff main...feature-branch
+
+# Identify integration points
+grep -r "functionThatChanged" src/
+```
+
+**Quick fix:**
+```
+"The new [feature] breaks [existing feature].
+
+What breaks:
+- [Specific test/feature that fails]
+- Error: [error message]
+
+Integration points:
+- [New code] calls [existing code]
+- [Existing code] expects [interface] but gets [different interface]
+
+Fix requirements:
+- Maintain backward compatibility
+- Update [existing code] if needed
+- Ensure all tests pass
+- No breaking changes to public API"
+```
+
+**Prevention:**
+- Always specify: "Don't break existing features"
+- Run tests after each change
+- Write integration tests
+- Review changes carefully
+
+**Related:** [Breaking Changes Flowchart](../troubleshooting/README.md#flowchart-4-breaking-changes)
+
+---
+
+#### API Contract Mismatches
+
+**Symptom:** Frontend expects different response format than backend provides.
+
+**Quick fix:**
+```
+"API contract mismatch:
+
+Frontend expects:
+{ data: { id, name, email }, success: true }
+
+Backend returns:
+{ id, name, email }
+
+Update backend to match frontend contract OR update frontend to handle backend format.
+
+Preferred: Update backend (less disruption).
+Ensure consistent API response format across all endpoints."
+```
+
+**Prevention:**
+- Define API contracts upfront (docs/api/endpoints.md)
+- Use TypeScript interfaces shared between FE/BE
+- Generate types from OpenAPI spec
+- Integration tests for API contracts
+
+---
+
+### Context Management Failures During Development
+
+#### AI Loses Track of Architecture
+
+**Symptom:** AI suggests solutions that violate project architecture or patterns.
+
+**Quick fix:**
+```
+"You suggested [solution] but our architecture uses [different approach].
+
+Our architecture (from docs/architecture/overview.md):
+- [Key principle 1]
+- [Key principle 2]
+
+Please revise solution to match our architecture.
+Specifically: [what needs to change]"
+```
+
+**Prevention:**
+- Reference architecture docs at session start
+- Create .cursorrules with architecture notes
+- Remind AI of architecture when it deviates
+- Keep architecture docs updated
+
+**Related:** [Context-Aware Prompting](../prompting/advanced-techniques.md#context-aware-prompting)
+
+---
+
+#### Forgets Coding Standards
+
+**Symptom:** Code style inconsistent with project (tabs vs spaces, naming, patterns).
+
+**Quick fix:**
+```
+"Code style doesn't match project standards.
+
+Your code uses:
+- camelCase for file names (we use kebab-case)
+- Class components (we use functional only)
+- .then() chains (we use async/await)
+
+Please rewrite following our standards in .cursorrules"
+```
+
+**Prevention:**
+- Create .cursorrules with all conventions
+- Reference style guide in prompts
+- Use code formatter (Prettier)
+- Regular style checks
+
+**Related:** [Code Style Issues](../troubleshooting/README.md#code-style-doesnt-match-project)
+
+---
+
+### Prompt Quality Issues
+
+#### Too Many Iterations
+
+**Symptom:** Takes 5-10 attempts to get working code.
+
+**Root causes:**
+- Vague initial prompt
+- Missing examples
+- No success criteria
+
+**Quick fix:**
+Apply 4-component framework:
+
+```
+[CLARITY]: Implement user profile update endpoint
+
+[CONTEXT]:
+- Pattern: Follow POST /users pattern in src/api/users.ts
+- Validation: Use ValidationMiddleware from src/middleware/validation.ts
+- Schema: User model in src/models/User.ts
+
+[CONSTRAINTS]:
+- User can only update own profile (or admin can update any)
+- Updatable fields: name, email, bio (NOT password, role)
+- Email must remain unique
+- Max bio length: 500 characters
+
+[CRITERIA]:
+- PUT /api/users/:id returns updated user (200)
+- Returns 403 if user tries to update another user's profile
+- Returns 409 if email already exists
+- Returns 400 for validation errors
+- Tests pass
+```
+
+**Prevention:**
+- Study [Prompt Foundations](../prompting/foundations.md)
+- Use [Prompt Templates](../prompting/template-library.md)
+- Always include examples
+- Define success criteria
+
+---
+
+#### AI Ignores Requirements
+
+**Symptom:** Generated code missing specified features or violating constraints.
+
+**Quick fix:**
+```
+"Your code is missing these requirements:
+
+Required but missing:
+1. [Requirement 1] - NOT implemented
+2. [Requirement 2] - NOT implemented
+
+Please add missing requirements. I'll verify:
+- [Check 1]
+- [Check 2]
+before accepting the code."
+```
+
+**Prevention:**
+- Use numbered lists for requirements (harder to miss)
+- Add "MUST" or "REQUIRED" for critical items
+- Request AI confirms understanding before implementing
+- Use self-checking prompts
+
+**Related:** [AI Ignores Constraints](../troubleshooting/README.md#ai-ignores-constraints)
+
+---
+
+## Debugging Checklist for Development Phase
+
+When something goes wrong during development:
+
+### Before Asking AI for Help
+
+- [ ] Read error message completely
+- [ ] Check file:line from stack trace
+- [ ] Verify all required files exist
+- [ ] Check for typos in variable/function names
+- [ ] Ensure dependencies installed (npm install)
+- [ ] Try simplest possible reproduction
+
+### Gathering Context for AI
+
+- [ ] Error message (full text)
+- [ ] Stack trace (relevant lines)
+- [ ] Code at error location (with context)
+- [ ] What you were trying to do
+- [ ] What you've already tried
+- [ ] Minimal reproduction if possible
+
+### Prompt for Debugging
+
+Use this template:
+
+```
+"Debug this error:
+
+ERROR MESSAGE:
+[exact error text]
+
+STACK TRACE:
+[relevant lines with file:line]
+
+CODE ([file]):
+[code snippet around error]
+
+CONTEXT:
+- Doing: [action that triggered error]
+- Environment: [dev/prod]
+- Started when: [recent change]
+
+EXPECTED: [what should happen]
+ACTUAL: [what actually happens]
+
+TRIED:
+- [Attempt 1] → [result]
+- [Attempt 2] → [result]"
+```
+
+---
+
 ## Tips for Effective Development
 
 ✅ **Take breaks between features** - Fresh mind catches more issues

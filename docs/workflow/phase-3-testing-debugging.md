@@ -283,6 +283,441 @@ Agent will:
 
 ---
 
+## Debugging Troubleshooting
+
+**Common debugging challenges and solutions during testing phase**
+
+### AI Can't Find the Bug
+
+**Symptom:** Despite providing error messages and code, AI can't identify the root cause.
+
+**Root causes:**
+1. Insufficient diagnostic information
+2. Bug is environmental (not in code itself)
+3. Complex interaction between components
+4. Timing/async issue
+
+**Solutions:**
+
+**Solution 1: Provide Complete Diagnostic Data**
+```
+"Help debug this issue:
+
+ERROR MESSAGE:
+[full error text, not truncated]
+
+STACK TRACE:
+[complete stack trace with all frames]
+
+BROWSER CONSOLE:
+[all console messages, warnings, errors]
+
+NETWORK TAB:
+- Request URL: [URL]
+- Status: [status code]
+- Response: [response body]
+- Headers: [relevant headers]
+
+CODE AT ERROR LOCATION ([file:line]):
+[10-20 lines around error]
+
+USER ACTION THAT TRIGGERS IT:
+[exact steps to reproduce]
+
+ENVIRONMENT:
+- Browser: [Chrome 120 / Firefox 115]
+- OS: [macOS / Windows / Linux]
+- Node version: [18.16.0]
+- Framework version: [React 18.2.0]"
+```
+
+**Solution 2: Create Minimal Reproduction**
+```
+"I've isolated the bug to minimal reproduction:
+
+[Minimal code that demonstrates issue]
+
+This code alone triggers the error.
+No other dependencies or components needed.
+
+Expected: [behavior]
+Actual: [behavior]
+
+Debug this minimal case."
+```
+
+**Solution 3: Use DevTools MCP**
+```
+"Use DevTools MCP to debug this issue:
+1. Navigate to http://localhost:3000/problem-page
+2. Open DevTools and monitor:
+   - Console for errors
+   - Network for failed requests
+   - Elements for DOM issues
+3. Reproduce the bug by [steps]
+4. Analyze what happens and identify root cause"
+```
+
+**Prevention:**
+- Always provide complete error info (don't truncate)
+- Include stack traces
+- Describe reproduction steps
+- Check browser compatibility
+
+**Related:** [Can't Debug Issue Flowchart](../troubleshooting/README.md#flowchart-2-cant-debug-issue)
+
+---
+
+### Tests Failing After Changes
+
+**Symptom:** Tests that previously passed now fail.
+
+**Quick diagnosis:**
+```bash
+# Run tests to see failures
+npm test
+
+# Run specific failing test
+npm test -- UserService.test.ts
+
+# Check git diff
+git diff HEAD~1 HEAD
+
+# Identify what changed
+git log --oneline -5
+```
+
+**Quick fix:**
+```
+"Tests failing after recent changes:
+
+FAILING TEST:
+[test name and description]
+
+ERROR MESSAGE:
+[test error output]
+
+RECENT CHANGES (git diff):
+[relevant code changes]
+
+Expected behavior: [what test expects]
+Actual behavior: [what's happening]
+
+Fix options:
+1. Update implementation to match test
+2. Update test to match new implementation (if requirements changed)
+
+Which is correct: [implementation or test]?"
+```
+
+**Prevention:**
+- Run tests before committing
+- Write tests alongside code changes
+- Keep test coverage high
+- Use test-driven development (TDD)
+
+---
+
+### Performance Issues Hard to Debug
+
+**Symptom:** App is slow but profiling doesn't show obvious bottleneck.
+
+**Diagnostic approach:**
+```
+"Analyze performance issue:
+
+SYMPTOM:
+- [Page/feature] takes [X seconds] to load
+- Target: < [Y seconds]
+
+CURRENT METRICS (from Chrome DevTools Performance tab):
+- Total time: [X ms]
+- Scripting: [X ms]
+- Rendering: [X ms]
+- Painting: [X ms]
+- Network: [X ms]
+
+PROFILING DATA:
+[Screenshot or export from Performance tab]
+
+NETWORK TAB:
+- Total requests: [number]
+- Largest requests: [list top 5]
+- Slow requests: [>1s]
+
+CODE:
+[Relevant component/function code]
+
+Identify:
+1. Primary bottleneck
+2. Quick wins for improvement
+3. Recommended optimizations"
+```
+
+**Common performance issues:**
+- N+1 database queries
+- Large bundle sizes
+- Unoptimized images
+- No code splitting
+- Memory leaks
+- Excessive re-renders (React)
+
+**Quick wins:**
+```
+1. Database:
+   - Add indexes
+   - Use eager loading
+   - Implement pagination
+
+2. Frontend:
+   - Code splitting
+   - Lazy loading
+   - Image optimization
+   - Memoization (React.memo, useMemo)
+
+3. Network:
+   - Enable gzip/brotli compression
+   - Use CDN
+   - Implement caching
+   - Reduce request count
+```
+
+**Related:** [Performance Optimization](../troubleshooting/README.md#poor-performance)
+
+---
+
+### Race Conditions and Timing Issues
+
+**Symptom:** Bug happens intermittently, hard to reproduce consistently.
+
+**Indicators:**
+- "Works sometimes, not others"
+- "Only fails in production (fast server)"
+- "Only fails on slow connections"
+- Data inconsistency
+
+**Diagnosis:**
+```
+"Debug race condition:
+
+SYMPTOM:
+- [Behavior happens intermittently]
+- Success rate: ~[X%]
+
+SUSPECTED RACE CONDITION:
+[Describe async operations happening simultaneously]
+
+CODE:
+```typescript
+// Example:
+async function loadData() {
+  const user = await fetchUser();  // Async 1
+  const posts = await fetchPosts();  // Async 2
+  // Race: If fetchPosts returns before user updates state...
+  setUserPosts(posts);  // May use stale user data
+}
+```
+
+EXPECTED: [ordered behavior]
+ACTUAL: [race outcome]
+
+Add proper sequencing/synchronization."
+```
+
+**Solutions:**
+```typescript
+// Solution 1: Sequential (when order matters)
+const user = await fetchUser();
+const posts = await fetchPosts(user.id);
+
+// Solution 2: Parallel with Promise.all (when independent)
+const [user, posts] = await Promise.all([
+  fetchUser(),
+  fetchPosts()
+]);
+
+// Solution 3: Locking/semaphore (for critical sections)
+if (isLoading) return;  // Prevent concurrent execution
+isLoading = true;
+try {
+  await doOperation();
+} finally {
+  isLoading = false;
+}
+
+// Solution 4: Debouncing (for rapid triggers)
+const debouncedSearch = debounce(search, 500);
+```
+
+---
+
+### Complex Debugging Failures
+
+**Symptom:** Spending >2 hours debugging without progress.
+
+**Emergency protocol:**
+
+**Step 1: Take a break**
+- Walk away for 15 minutes
+- Fresh perspective helps
+
+**Step 2: Rubber duck debugging**
+```
+"Explain this bug to me as if I know nothing:
+
+What the code is supposed to do:
+[explanation]
+
+What it actually does:
+[explanation]
+
+Why I think this happens:
+[hypothesis]
+
+Walk through the code flow step by step."
+```
+
+Often explaining helps AI (and you) see the issue.
+
+**Step 3: Binary search debugging**
+```
+"Let's debug systematically:
+
+1. Does issue happen with feature X disabled?
+   - Yes → Issue in feature X
+   - No → Issue in interaction between features
+
+2. Does issue happen with minimal data?
+   - Yes → Not data-related
+   - No → Specific data triggers it
+
+3. Does issue happen in isolated environment?
+   - Yes → Code problem
+   - No → Environmental problem
+
+Guide me through binary search to isolate the issue."
+```
+
+**Step 4: Ask for human help**
+If still stuck after 3 hours:
+- Ask teammate for code review
+- Post on Stack Overflow (with MCVE)
+- Check GitHub issues for libraries used
+- Consider pair programming session
+
+**Related:** [When to Ask for Help](../troubleshooting/README.md#when-to-ask-for-help)
+
+---
+
+### Test Generation Issues
+
+#### Tests Don't Cover Edge Cases
+
+**Symptom:** AI-generated tests only cover happy path.
+
+**Quick fix:**
+```
+"Expand test coverage to include edge cases:
+
+FUNCTION TO TEST:
+[function code]
+
+CURRENT TESTS:
+[existing tests]
+
+MISSING EDGE CASES:
+- Null/undefined inputs
+- Empty arrays/objects
+- Boundary values (0, -1, MAX_INT)
+- Invalid input types
+- Concurrent calls
+- Network failures
+- Timeout scenarios
+
+Add tests for all edge cases.
+Target coverage: 90%+"
+```
+
+**Prevention:**
+- Always specify edge cases in test prompt
+- Use [Test Templates](../prompting/template-library.md#testing-templates)
+- Review test coverage reports
+
+---
+
+#### Tests Are Too Slow
+
+**Symptom:** Test suite takes >5 minutes to run.
+
+**Quick diagnosis:**
+```bash
+# Identify slow tests
+npm test -- --verbose
+
+# Check for:
+- Real API calls (should be mocked)
+- Database operations (should use test DB)
+- Sleep/wait statements
+- Large data sets
+```
+
+**Quick fix:**
+```
+"Optimize slow tests:
+
+SLOW TEST:
+[test name] takes [X seconds]
+
+CODE:
+[test code]
+
+Optimizations:
+- Mock external API calls
+- Use in-memory database for tests
+- Reduce test data size
+- Parallelize independent tests
+- Remove unnecessary wait/sleep
+
+Target: <100ms per test"
+```
+
+---
+
+### Debugging Checklist
+
+When debugging isn't working:
+
+**Information gathering:**
+- [ ] Full error message (not truncated)
+- [ ] Complete stack trace
+- [ ] Browser console output
+- [ ] Network tab (failed requests)
+- [ ] Reproduction steps (exact)
+- [ ] Environment details
+- [ ] Code at error location
+
+**Isolation:**
+- [ ] Can reproduce consistently?
+- [ ] Minimal reproduction created?
+- [ ] Works in isolation?
+- [ ] Works in different browser?
+- [ ] Works in different environment?
+
+**Analysis:**
+- [ ] Searched error message online?
+- [ ] Checked framework/library issues?
+- [ ] Reviewed recent code changes?
+- [ ] Identified affected components?
+- [ ] Formed hypothesis?
+
+**Communication with AI:**
+- [ ] Provided complete context?
+- [ ] Used [Debug Template](../prompting/template-library.md#template-4-runtime-error-debugging)?
+- [ ] Described expected vs actual?
+- [ ] Listed what you've tried?
+
+---
+
 ## 📋 Final Quality Assurance Checklist
 
 **Before moving to deployment:**

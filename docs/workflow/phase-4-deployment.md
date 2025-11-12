@@ -426,6 +426,351 @@ async function handleRequest(request) {
 }
 ```
 
+## Deployment Troubleshooting
+
+**Common problems during deployment and their solutions**
+
+### Build Failures
+
+**Symptom:** Build process fails with errors not present in development.
+
+**Common causes:**
+- Environment variable missing
+- Dependency version mismatch
+- Build optimization issues
+- Memory/resource limits
+
+**Quick fix:**
+```
+"Build failing in production but works in development:
+
+BUILD ERROR:
+[error message from build log]
+
+ENVIRONMENT:
+- Development: Node 18.16.0, works fine
+- Production: [platform, Node version]
+
+RECENT CHANGES:
+[what was changed before failure]
+
+Check:
+1. Environment variables (are all set in production?)
+2. Dependency versions (package-lock.json committed?)
+3. Build configuration (vite.config.ts, next.config.js, etc.)
+4. Memory limits (increase if needed)
+5. Missing files (.gitignore hiding required files?)"
+```
+
+**Prevention:**
+- Test build locally: `npm run build`
+- Commit package-lock.json/yarn.lock
+- Document all required environment variables
+- Test in staging environment first
+
+---
+
+### Environment-Specific Issues
+
+**Symptom:** Code works locally but fails in production.
+
+**Quick diagnosis:**
+```bash
+# Check environment variables
+"List all environment variables used in code"
+
+# Check configuration differences
+"Compare development vs production configs"
+
+# Check dependencies
+"Check if all dependencies available in production"
+```
+
+**Quick fix:**
+```
+"Works in development, fails in production:
+
+ERROR IN PRODUCTION:
+[error message]
+
+ENVIRONMENT DIFFERENCES:
+Development:
+- Database: localhost:5432
+- API URL: http://localhost:3000
+- Node ENV: development
+
+Production:
+- Database: [production DB URL]
+- API URL: [production URL]
+- Node ENV: production
+
+SUSPECTED ISSUE:
+[What might be different]
+
+Debug and fix environment-specific issue."
+```
+
+**Common environment issues:**
+- Database connection strings
+- API endpoints (localhost vs production)
+- CORS configuration
+- File paths (absolute vs relative)
+- SSL/HTTPS requirements
+
+---
+
+### DNS/Domain Problems
+
+**Symptom:** Domain not pointing to deployment, or SSL certificate issues.
+
+**Quick diagnosis:**
+```bash
+# Check DNS propagation
+dig yourdomain.com
+nslookup yourdomain.com
+
+# Check DNS records
+# Should show:
+# A record → Your server IP
+# or CNAME → Your hosting platform
+```
+
+**Quick fix (Cloudflare Pages):**
+```
+1. Add custom domain in Cloudflare Pages dashboard
+2. Add DNS records:
+   - yourdomain.com → CNAME → your-project.pages.dev
+   - www.yourdomain.com → CNAME → your-project.pages.dev
+3. Enable "Automatic HTTPS Rewrites"
+4. Wait for SSL certificate (5-30 minutes)
+5. Test: https://yourdomain.com
+```
+
+**Prevention:**
+- Set up DNS before announcing site
+- Wait 24-48h for full DNS propagation
+- Test both www and non-www versions
+- Enable SSL/HTTPS from start
+
+---
+
+### Deployment Pipeline Failures
+
+**Symptom:** CI/CD pipeline fails during deployment.
+
+**Quick diagnosis:**
+```bash
+# Check pipeline logs
+# Look for:
+- Failed tests
+- Build errors
+- Deployment errors
+- Permission issues
+```
+
+**Quick fix:**
+```
+"CI/CD pipeline failing:
+
+PIPELINE LOG:
+[relevant error from CI/CD]
+
+STAGE THAT FAILS:
+- [ ] Tests
+- [ ] Build
+- [ ] Deploy
+- [ ] Post-deploy checks
+
+SUSPECTED CAUSE:
+[hypothesis]
+
+Fix the pipeline configuration."
+```
+
+**Common pipeline issues:**
+- Tests failing in CI but passing locally
+- Missing environment variables in CI
+- Different Node/dependency versions
+- Insufficient permissions
+- Timeout limits exceeded
+
+---
+
+### Performance Degradation After Deployment
+
+**Symptom:** Site is slow in production despite being fast locally.
+
+**Quick diagnosis:**
+```
+Use Chrome DevTools (on production site):
+1. Open Network tab
+2. Hard refresh (Cmd+Shift+R / Ctrl+Shift+R)
+3. Check:
+   - Total load time
+   - Largest requests
+   - Failed requests
+   - Slow API calls
+
+Use Lighthouse:
+1. Run Lighthouse audit
+2. Check Core Web Vitals:
+   - LCP (should be <2.5s)
+   - FID (should be <100ms)
+   - CLS (should be <0.1)
+```
+
+**Quick fixes:**
+```
+Common performance issues in production:
+
+1. Images not optimized
+   - Solution: Use image optimization service
+   - Solution: Use modern formats (WebP, AVIF)
+   - Solution: Implement lazy loading
+
+2. No caching
+   - Solution: Configure cache headers
+   - Solution: Enable CDN caching
+   - Solution: Use service workers
+
+3. Slow API calls
+   - Solution: Add database indexes
+   - Solution: Implement caching (Redis)
+   - Solution: Use CDN for static data
+
+4. Large bundle sizes
+   - Solution: Code splitting
+   - Solution: Tree shaking
+   - Solution: Remove unused dependencies
+
+5. No compression
+   - Solution: Enable gzip/brotli compression
+   - Solution: Configure in hosting platform
+```
+
+---
+
+### Database Connection Issues
+
+**Symptom:** Can't connect to database from production.
+
+**Quick fix:**
+```
+"Database connection failing in production:
+
+ERROR:
+[connection error message]
+
+CONFIGURATION:
+- Database host: [host]
+- Port: [port]
+- SSL required: [yes/no]
+- Firewall rules: [configured?]
+
+CONNECTION STRING:
+[connection string with password redacted]
+
+Check:
+1. Database server running and accessible
+2. Firewall allows connections from production server
+3. Database credentials correct in environment variables
+4. SSL/TLS configured if required
+5. Connection pool settings appropriate
+6. Database not at connection limit"
+```
+
+**Prevention:**
+- Test database connection from production environment before deploying
+- Use connection pooling
+- Set reasonable connection limits
+- Monitor connection count
+- Enable database logs for debugging
+
+---
+
+### Rollback Procedures
+
+**When to rollback:**
+- Critical bug discovered in production
+- Performance severely degraded
+- Data corruption risk
+- Security vulnerability
+
+**Quick rollback (Cloudflare Pages):**
+```bash
+# Via Dashboard:
+1. Go to Cloudflare Pages dashboard
+2. Select your project
+3. View deployments
+4. Click "Rollback" on previous stable deployment
+
+# Via CLI:
+wrangler pages deployment list
+wrangler pages deployment rollback [DEPLOYMENT_ID]
+```
+
+**Quick rollback (Git-based):**
+```bash
+# Find last good commit
+git log --oneline
+
+# Revert to last good commit
+git revert [bad-commit-hash]
+git push origin main
+
+# Or hard reset (if safe)
+git reset --hard [last-good-commit]
+git push --force origin main
+```
+
+**After rollback:**
+1. Notify users if needed
+2. Document what went wrong
+3. Fix issue in development
+4. Test thoroughly
+5. Deploy fix
+
+---
+
+### Deployment Checklist
+
+Before deploying to production:
+
+**Pre-Deployment:**
+- [ ] All tests passing locally
+- [ ] Build succeeds locally (`npm run build`)
+- [ ] Tested in staging environment
+- [ ] Environment variables documented
+- [ ] Database migrations ready (if any)
+- [ ] Rollback plan prepared
+
+**Configuration:**
+- [ ] Production environment variables set
+- [ ] Database connection configured
+- [ ] API endpoints point to production
+- [ ] CORS configured correctly
+- [ ] SSL/HTTPS enabled
+- [ ] Domain DNS configured
+
+**Post-Deployment:**
+- [ ] Deployment successful (check logs)
+- [ ] Site accessible at domain
+- [ ] Core functionality works
+- [ ] API calls working
+- [ ] Database operations working
+- [ ] No console errors
+- [ ] Performance acceptable
+- [ ] SSL certificate valid
+
+**Monitoring:**
+- [ ] Error tracking enabled (Sentry, etc.)
+- [ ] Performance monitoring active
+- [ ] Uptime monitoring configured
+- [ ] Backup system running
+- [ ] Logs accessible
+
+---
+
 ## Pre-requisites & Next Steps
 
 **Requires completion of:**
