@@ -23,13 +23,13 @@ Vibecoding across five phases—from vibecoder preparation through deployment. T
 **You DON'T need to spend $200+ to start vibecoding!** 
 
 ### Free Option (Perfect for Beginners)
-- **Tools**: Qwen CLI + VS Code + Free MCP servers
+- **Tools**: Qwen CLI + VS Code + MCP servers
 - **Cost**: $0/month
 - **Capabilities**: Full-stack web development, APIs, databases
 - **Commercial Viability**: Yes, can deliver professional websites and applications
 
 ### Budget Option (Professional Grade)
-- **Tools**: GLM subscription + Zed + Premium MCP servers
+- **Tools**: Synthetic / GLM subscription + Zed + MCP servers
 - **Cost**: $5-20/month  
 - **Capabilities**: Enhanced AI assistance, better integrations
 - **Commercial Viability**: Enterprise-level project delivery
