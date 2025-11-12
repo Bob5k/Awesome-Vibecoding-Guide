@@ -325,32 +325,27 @@ New code breaks existing features?
 **Solutions:**
 
 **Solution 1: Use Examples**
-```
-Bad:
-"Create a form with validation"
-
-Good:
-"Create a form with these exact behaviors:
-- Email field: validate format on blur, show error 'Invalid email' below field
-- Submit disabled until all fields valid
-- Example: user types 'test@' → blur → red border + error shown"
-```
+> **Bad:** “Create a form with validation.”
+>
+> **Good:** “Create a form with these exact behaviors:
+> - Email field: validate format on blur, show error ‘Invalid email’ below field.
+> - Submit disabled until all fields valid.
+> - Example: user types ‘test@’ → blur → red border + error shown.”
 
 **Solution 2: Define Success Criteria**
-```
-Add to every prompt:
-"Success means:
-- [Specific measurable outcome 1]
-- [Specific measurable outcome 2]
-- [Specific measurable outcome 3]"
-```
+> Add to every prompt:
+>
+> “Success means:
+> - [Specific measurable outcome 1]
+> - [Specific measurable outcome 2]
+> - [Specific measurable outcome 3]”
 
 **Solution 3: Show, Don't Just Tell**
-```
-Instead of: "Make it look professional"
-Show: "Use this design: [link to screenshot or design]"
-Or: "Match the style of [existing component]"
-```
+> Instead of: “Make it look professional.”
+>
+> Show: “Use this design: [link to screenshot or design].”
+>
+> Or: “Match the style of [existing component].”
 
 **Prevention:**
 - Read [Prompt Foundations](../prompting/foundations.md#principle-2-show-dont-just-tell)
@@ -379,33 +374,28 @@ user.validateMagically(); // DOESN'T EXIST!
 **Solutions:**
 
 **Solution 1: Reference Real Code**
-```
-"Use the existing validation pattern from src/utils/validation.ts:
-
-```typescript
-export function validateEmail(email: string): boolean {
-  return EMAIL_REGEX.test(email);
-}
-```
-
-Don't make up new functions. Use this exact pattern."
-```
+> Use the existing validation pattern from `src/utils/validation.ts`:
+>
+> ```typescript
+> export function validateEmail(email: string): boolean {
+>   return EMAIL_REGEX.test(email);
+> }
+> ```
+>
+> Don’t make up new functions. Use this exact pattern.
 
 **Solution 2: Be Explicit About What Exists**
-```
-"Available utilities in src/utils/:
-- validation.ts: validateEmail, validatePassword
-- crypto.ts: hash, verify
-- strings.ts: slugify, truncate
-
-Use ONLY these. Don't create new utilities."
-```
+> Available utilities in `src/utils/`:
+> - `validation.ts`: `validateEmail`, `validatePassword`
+> - `crypto.ts`: `hash`, `verify`
+> - `strings.ts`: `slugify`, `truncate`
+>
+> Use **only** these. Don’t create new utilities.
 
 **Solution 3: Verify After Generation**
-```
-"After generating code, verify that all imported functions exist.
-If you're unsure, ask me before including it in your response."
-```
+> After generating code, verify that all imported functions exist.
+>
+> If you’re unsure, ask before including them in your response.
 
 **Prevention:**
 - Provide explicit file references
@@ -432,34 +422,28 @@ AI: *Installs 5 npm packages*
 **Solutions:**
 
 **Solution 1: Emphasize Constraints**
-```
-"CRITICAL CONSTRAINTS (must follow):
-1. NO external dependencies (use only Node.js built-ins)
-2. File size MAX 100 lines
-3. NO database queries (work with in-memory data)
-
-If any constraint is impossible, tell me before generating code."
-```
+> CRITICAL CONSTRAINTS (must follow):
+> 1. **No** external dependencies (use only Node.js built-ins).
+> 2. File size **max 100 lines**.
+> 3. **No** database queries (work with in-memory data).
+>
+> If any constraint is impossible, ask before generating code.
 
 **Solution 2: Front-Load Constraints**
-```
-Structure prompt:
-1. Constraints FIRST
-2. Requirements second
-3. Implementation details last
-
-This ensures AI reads constraints before thinking about solution.
-```
+> Structure your prompt:
+> 1. Constraints **first**.
+> 2. Requirements second.
+> 3. Implementation details last.
+>
+> This ensures the AI processes constraints before the solution.
 
 **Solution 3: Use Self-Verifying Prompts**
-```
-"After generating code, verify:
-- [ ] No external dependencies used
-- [ ] File is <100 lines
-- [ ] No database queries
-
-If any check fails, revise the code before responding."
-```
+> After generating code, verify:
+> - [ ] No external dependencies used.
+> - [ ] File is under 100 lines.
+> - [ ] No database queries.
+>
+> If any check fails, revise the code before responding.
 
 **Prevention:**
 - Always list constraints first
@@ -486,37 +470,31 @@ AI: *Creates abstract factory pattern with interfaces, dependency injection, str
 **Solutions:**
 
 **Solution 1: YAGNI Principle**
-```
-"Create a simple function to add two numbers.
-
-Requirements:
-- Just add two numbers, nothing more
-- No abstractions, interfaces, or design patterns
-- Keep it simple (KISS principle)
-- YAGNI: You Aren't Gonna Need It
-- Maximum 5 lines of code"
-```
+> “Create a simple function to add two numbers.
+>
+> Requirements:
+> - Just add two numbers, nothing more.
+> - No abstractions, interfaces, or design patterns.
+> - Keep it simple (KISS principle).
+> - YAGNI: You Aren’t Gonna Need It.
+> - Maximum 5 lines of code.”
 
 **Solution 2: Specify Scope Explicitly**
-```
-"Implement ONLY what's needed for the current use case.
-Don't add:
-- Abstract base classes
-- Dependency injection
-- Strategy patterns
-- Configuration systems
-- Logging frameworks
-
-Just solve the immediate problem."
-```
+> “Implement **only** what’s needed for the current use case.
+> Don’t add:
+> - Abstract base classes.
+> - Dependency injection.
+> - Strategy patterns.
+> - Configuration systems.
+> - Logging frameworks.
+>
+> Just solve the immediate problem.”
 
 **Solution 3: Reference Simple Examples**
-```
-"Follow the simplicity of this example:
-[paste simple, direct code]
-
-Keep the same level of simplicity. No additional complexity."
-```
+> “Follow the simplicity of this example:
+> [paste simple, direct code]
+>
+> Keep the same level of simplicity—no additional complexity.”
 
 **Prevention:**
 - Always add "Keep it simple"
@@ -538,39 +516,29 @@ Keep the same level of simplicity. No additional complexity."
 **Solutions:**
 
 **Solution 1: Session Handoff**
-```
-"Write a summary of our work to docs/context/session-handoff.md:
-
-Include:
-- What we've implemented
-- Decisions made (with reasoning)
-- Current state
-- Next steps
-
-Be comprehensive - I'll start a new session after this."
-
-[New session]
-"Read docs/context/session-handoff.md and continue from where we left off."
-```
+> Write a summary of your work to `docs/context/session-handoff.md`:
+> - What was implemented.
+> - Decisions made (with reasoning).
+> - Current state.
+> - Next steps.
+>
+> Be comprehensive—you’ll start a new session after this.
+>
+> **New session prompt:** “Read `docs/context/session-handoff.md` and continue from where we left off.”
 
 **Solution 2: Externalize Decisions**
-```
-When AI makes important decision:
-"Document this decision to docs/decisions/[number]-[topic].md:
-- What we decided
-- Why we decided it
-- Alternatives considered
-- Implications"
-
-Future prompts: "Per docs/decisions/003-auth-approach.md, implement..."
-```
+> When the AI makes an important decision, document it in `docs/decisions/[number]-[topic].md`:
+> - What you decided.
+> - Why you decided it.
+> - Alternatives considered.
+> - Implications.
+>
+> Future prompts: “Per `docs/decisions/003-auth-approach.md`, implement …”
 
 **Solution 3: Context Refresh**
-```
-If context >70% full:
-"Summarize our key decisions and current progress.
-Then we'll start fresh with that summary."
-```
+> If context usage exceeds 70%:
+>
+> “Summarize our key decisions and current progress. Then we’ll start fresh with that summary.”
 
 **Prevention:**
 - Monitor context usage (60-85% rule)
@@ -592,33 +560,27 @@ Then we'll start fresh with that summary."
 **Solutions:**
 
 **Solution 1: Reduce Context**
-```
-"Remove all files from context except:
-- src/api/users.ts (relevant to current task)
-- docs/architecture/api-design.md
-
-Now implement [task]."
-```
+> “Remove all files from context except:
+> - `src/api/users.ts` (relevant to the current task).
+> - `docs/architecture/api-design.md`.
+>
+> Now implement [task].”
 
 **Solution 2: Progressive Loading**
-```
-Don't load all files at once.
-Start with: minimal context + architecture overview
-Add files: only as needed for current step
-Remove files: when task complete
-```
+> Don’t load all files at once.
+> - Start with minimal context plus an architecture overview.
+> - Add files only as needed for the current step.
+> - Remove files when a task is complete.
 
 **Solution 3: Use Faster Model**
-```
-For simple tasks:
-- Use GLM (fast, cheap)
-- Use Gemini Flash
-- Use Qwen Coder
-
-For complex tasks:
-- Use Claude Sonnet
-- Use Claude Opus (only when necessary)
-```
+> For simple tasks:
+> - Use GLM (fast, cheap).
+> - Use Gemini Flash.
+> - Use Qwen Coder.
+>
+> For complex tasks:
+> - Use Claude Sonnet.
+> - Use Claude Opus (only when necessary).
 
 **Prevention:**
 - Keep context under 50k tokens when possible
@@ -639,28 +601,22 @@ For complex tasks:
 **Solutions:**
 
 **Solution 1: Ask to Continue**
-```
-"Continue from where you left off."
-
-Or more specifically:
-"Continue the function implementation from line 45."
-```
+> “Continue from where you left off.”
+>
+> Or be more specific: “Continue the function implementation from line 45.”
 
 **Solution 2: Request Smaller Chunks**
-```
-Instead of: "Implement entire authentication system"
-Do: "Implement just the login function (Step 1 of 5)"
-
-Complete each step before moving to next.
-```
+> Instead of: “Implement entire authentication system.”
+>
+> Do: “Implement just the login function (Step 1 of 5).”
+>
+> Complete each step before moving to the next.
 
 **Solution 3: Reduce Prompt Size**
-```
-Shorten your prompts:
-- Use template references instead of full requirements
-- Reference docs instead of pasting content
-- Focus on current subtask only
-```
+> Shorten your prompts:
+> - Use template references instead of full requirements.
+> - Reference docs instead of pasting content.
+> - Focus on the current subtask only.
 
 **Prevention:**
 - Break large tasks into steps
@@ -681,53 +637,49 @@ Shorten your prompts:
 **Solutions:**
 
 **Solution 1: Create .cursorrules**
-```
-Create `.cursorrules` in project root:
 
-# Code Style Guide
-
-## Formatting
-- Indentation: 2 spaces (not tabs)
-- Quotes: single quotes for strings
-- Semicolons: required
-- Line length: max 100 characters
-
-## Naming Conventions
-- Files: kebab-case (user-service.ts)
-- Components: PascalCase (UserCard)
-- Functions: camelCase (getUserById)
-- Constants: UPPER_SNAKE_CASE (API_URL)
-
-## Patterns
-- React: functional components only (no classes)
-- Async: use async/await (no .then())
-- Errors: custom error classes (not generic Error)
-- Imports: group by type (external, internal, relative)
-
-## Examples
-[Include code snippets showing style]
-```
-
-Now AI automatically follows these conventions.
+> Create `.cursorrules` in the project root:
+>
+> ```markdown
+> # Code Style Guide
+>
+> ## Formatting
+> - Indentation: 2 spaces (not tabs)
+> - Quotes: single quotes for strings
+> - Semicolons: required
+> - Line length: max 100 characters
+>
+> ## Naming Conventions
+> - Files: kebab-case (user-service.ts)
+> - Components: PascalCase (UserCard)
+> - Functions: camelCase (getUserById)
+> - Constants: UPPER_SNAKE_CASE (API_URL)
+>
+> ## Patterns
+> - React: functional components only (no classes)
+> - Async: use async/await (no .then())
+> - Errors: custom error classes (not generic Error)
+> - Imports: group by type (external, internal, relative)
+>
+> ## Examples
+> [Include code snippets showing style]
+> ```
+>
+> Now the AI automatically follows these conventions.
 
 **Solution 2: Reference Style Examples**
-```
-"Follow the exact code style from src/components/UserCard.tsx:
-- Same formatting
-- Same naming patterns
-- Same import structure
-- Same comment style"
-```
+> “Follow the exact code style from `src/components/UserCard.tsx`:
+> - Same formatting.
+> - Same naming patterns.
+> - Same import structure.
+> - Same comment style.”
 
 **Solution 3: Request Style Match**
-```
-"Generate code matching the style of [existing file].
-Specifically match:
-- Indentation
-- Naming conventions
-- Function structure
-- Comment style"
-```
+> “Generate code matching the style of [existing file]. Specifically match:
+> - Indentation.
+> - Naming conventions.
+> - Function structure.
+> - Comment style.”
 
 **Prevention:**
 - Always create .cursorrules early
@@ -751,42 +703,36 @@ Specifically match:
 **Solutions:**
 
 **Solution 1: Add Test Cases to Prompt**
-```
-"Create function to calculate factorial.
-
-Must handle:
-- factorial(0) = 1
-- factorial(1) = 1
-- factorial(5) = 120
-- factorial(-1) = Error('Negative numbers not allowed')
-- factorial(100) = use BigInt for large numbers
-
-Include test cases demonstrating all scenarios work correctly."
-```
+> “Create a function to calculate factorial.
+>
+> Must handle:
+> - `factorial(0) = 1`
+> - `factorial(1) = 1`
+> - `factorial(5) = 120`
+> - `factorial(-1)` throws `Error('Negative numbers not allowed')`
+> - `factorial(100)` uses `BigInt` for large numbers.
+>
+> Include test cases demonstrating all scenarios work correctly.”
 
 **Solution 2: Request Self-Verification**
-```
-"After generating code, verify:
-1. Code compiles without errors
-2. All test cases pass
-3. Edge cases handled
-4. No obvious bugs
-
-If verification fails, fix before responding."
-```
+> “After generating code, verify:
+> 1. Code compiles without errors.
+> 2. All test cases pass.
+> 3. Edge cases are handled.
+> 4. No obvious bugs remain.
+>
+> If verification fails, fix the code before responding.”
 
 **Solution 3: Provide More Context**
-```
-"Implement user login.
-
-Context:
-- Uses JWT authentication (src/utils/jwt.ts)
-- Password hashing with bcrypt (src/utils/crypto.ts)
-- User model in src/models/User.ts
-- Error handling pattern from src/api/posts.ts
-
-Reference these files for patterns and interfaces."
-```
+> “Implement user login.
+>
+> Context:
+> - Uses JWT authentication (`src/utils/jwt.ts`).
+> - Password hashing with bcrypt (`src/utils/crypto.ts`).
+> - User model in `src/models/User.ts`.
+> - Error handling pattern from `src/api/posts.ts`.
+>
+> Reference these files for patterns and interfaces.”
 
 **Prevention:**
 - Use detailed prompts with examples
@@ -807,41 +753,36 @@ Reference these files for patterns and interfaces."
 **Solutions:**
 
 **Solution 1: Explicit Error Requirements**
-```
-"Implement file upload endpoint.
-
-Error handling requirements:
-- File too large (>10MB) → 400 'File exceeds maximum size'
-- Invalid file type → 400 'Only PDF, PNG, JPG allowed'
-- Network error during upload → 500 'Upload failed, please retry'
-- Missing file in request → 400 'No file provided'
-- S3 upload fails → 500 'Storage error' + log error
-
-Use try-catch blocks.
-Return consistent error format: { error: { code, message } }"
-```
+> “Implement a file upload endpoint.
+>
+> Error handling requirements:
+> - File too large (>10MB) → `400` with ‘File exceeds maximum size’.
+> - Invalid file type → `400` with ‘Only PDF, PNG, JPG allowed’.
+> - Network error during upload → `500` with ‘Upload failed, please retry’.
+> - Missing file in request → `400` with ‘No file provided’.
+> - S3 upload fails → `500` with ‘Storage error’ and log the error.
+>
+> Use try-catch blocks. Return consistent error format: `{ error: { code, message } }`.”
 
 **Solution 2: Reference Error Patterns**
-```
-"Follow error handling pattern from src/api/users.ts:
-- Try-catch around async operations
-- Specific error messages for different failures
-- Proper HTTP status codes
-- Error logging
-- User-friendly error messages"
-```
+> “Follow the error handling pattern from `src/api/users.ts`:
+> - Try-catch around async operations.
+> - Specific error messages for different failures.
+> - Proper HTTP status codes.
+> - Error logging.
+> - User-friendly error messages.”
 
 **Solution 3: Add to .cursorrules**
-```
-In .cursorrules:
-
-## Error Handling
-- ALWAYS use try-catch for async operations
-- ALWAYS validate input
-- ALWAYS return user-friendly error messages
-- ALWAYS log errors with context
-- Use custom error classes (ValidationError, NotFoundError, etc.)
-```
+> Add this to `.cursorrules`:
+>
+> ```markdown
+> ## Error Handling
+> - ALWAYS use try-catch for async operations.
+> - ALWAYS validate input.
+> - ALWAYS return user-friendly error messages.
+> - ALWAYS log errors with context.
+> - Use custom error classes (`ValidationError`, `NotFoundError`, etc.).
+> ```
 
 **Prevention:**
 - Always mention error handling in prompts
@@ -862,56 +803,40 @@ In .cursorrules:
 **Solutions:**
 
 **Solution 1: Specify Validation Rules**
-```
-"Create user registration endpoint.
-
-Validation requirements:
-- Email:
-  - Required
-  - Valid email format (RFC 5322)
-  - Max 255 characters
-  - Unique (check database)
-- Password:
-  - Required
-  - Min 8 characters
-  - Must include: uppercase, lowercase, number, special char
-- Name:
-  - Required
-  - Min 2, max 100 characters
-  - Letters and spaces only (no special chars)
-
-Return 400 with field-specific errors for validation failures."
-```
+> “Create a user registration endpoint.
+>
+> Validation requirements:
+> - **Email:** required, valid format (RFC 5322), max 255 characters, unique (check database).
+> - **Password:** required, minimum 8 characters, must include uppercase, lowercase, number, special character.
+> - **Name:** required, 2–100 characters, letters and spaces only (no special characters).
+>
+> Return `400` with field-specific errors for validation failures.”
 
 **Solution 2: Use Validation Library**
-```
-"Use Zod for validation (already installed):
-
-```typescript
-const registerSchema = z.object({
-  email: z.string().email().max(255),
-  password: z.string().min(8).regex(/[A-Z]/).regex(/[a-z]/).regex(/[0-9]/),
-  name: z.string().min(2).max(100).regex(/^[a-zA-Z ]+$/)
-});
-```
-
-Validate request body against this schema before processing."
-```
+> “Use Zod for validation (already installed):
+>
+> ```typescript
+> const registerSchema = z.object({
+>   email: z.string().email().max(255),
+>   password: z.string().min(8).regex(/[A-Z]/).regex(/[a-z]/).regex(/[0-9]/),
+>   name: z.string().min(2).max(100).regex(/^[a-zA-Z ]+$/)
+> });
+> ```
+>
+> Validate the request body against this schema before processing.”
 
 **Solution 3: Security-First Prompt**
-```
-"Implement [feature] with security as top priority:
-
-Input validation:
-- Sanitize all user input
-- Validate types and formats
-- Check length limits
-- Prevent SQL injection
-- Prevent XSS
-- Whitelist approach (accept only known-good)
-
-Fail securely: reject invalid input, don't try to fix it."
-```
+> “Implement [feature] with security as the top priority.
+>
+> Input validation:
+> - Sanitize all user input.
+> - Validate types and formats.
+> - Check length limits.
+> - Prevent SQL injection.
+> - Prevent XSS.
+> - Use a whitelist approach (accept only known-good data).
+>
+> Fail securely: reject invalid input rather than trying to fix it.”
 
 **Prevention:**
 - Always specify validation in prompts
@@ -932,48 +857,39 @@ Fail securely: reject invalid input, don't try to fix it."
 **Solutions:**
 
 **Solution 1: Specify Performance Requirements**
-```
-"Implement user search with performance requirements:
-
-Current: 5 seconds for 10,000 users
-Target: <500ms for 10,000 users
-
-Optimization requirements:
-- Use database indexes (email, name columns)
-- Pagination (20 results per page)
-- Debounce search input (500ms)
-- Cache results (5 minutes)
-- No N+1 queries
-
-Measure and verify performance meets target."
-```
+> “Implement user search with performance requirements.
+>
+> Current: 5 seconds for 10,000 users.
+> Target: under 500 ms for 10,000 users.
+>
+> Optimization requirements:
+> - Use database indexes (email, name columns).
+> - Pagination (20 results per page).
+> - Debounce search input (500 ms).
+> - Cache results (5 minutes).
+> - Avoid N+1 queries.
+>
+> Measure and verify the performance meets the target.”
 
 **Solution 2: Review and Optimize**
-```
-"Review this code for performance issues:
-
-[paste code]
-
-Identify:
-- N+1 query problems
-- Inefficient algorithms (O(n²) or worse)
-- Missing indexes
-- Unnecessary computations
-- Memory leaks
-
-Then optimize to meet <500ms target."
-```
+> “Review this code for performance issues:
+> [paste code]
+>
+> Identify:
+> - N+1 query problems.
+> - Inefficient algorithms (O(n²) or worse).
+> - Missing indexes.
+> - Unnecessary computations.
+> - Memory leaks.
+>
+> Then optimize to meet the <500 ms target.”
 
 **Solution 3: Request Complexity Analysis**
-```
-"Implement [algorithm] with:
-
-Time complexity: O(n log n) or better
-Space complexity: O(n) or better
-
-Include Big-O analysis in comments.
-If can't meet complexity target, explain why."
-```
+> “Implement [algorithm] with:
+> - Time complexity: `O(n log n)` or better.
+> - Space complexity: `O(n)` or better.
+>
+> Include Big-O analysis in comments. If the complexity target can’t be met, explain why.”
 
 **Prevention:**
 - Always mention performance requirements
@@ -995,65 +911,58 @@ If can't meet complexity target, explain why."
 **Solutions:**
 
 **Solution 1: Security Audit Prompt**
-```
-"Security audit this code:
-
-[paste code]
-
-Check for:
-- SQL injection vulnerabilities
-- XSS vulnerabilities
-- CSRF vulnerabilities
-- Insecure authentication/authorization
-- Sensitive data exposure
-- Insecure cryptography
-- Injection flaws
-- Broken access control
-
-For each vulnerability found:
-- Severity (Critical/High/Medium/Low)
-- Exploitation scenario
-- Fix with secure code example"
-```
+> “Security audit this code:
+> [paste code]
+>
+> Check for:
+> - SQL injection vulnerabilities.
+> - XSS vulnerabilities.
+> - CSRF vulnerabilities.
+> - Insecure authentication/authorization.
+> - Sensitive data exposure.
+> - Insecure cryptography.
+> - Injection flaws.
+> - Broken access control.
+>
+> For each vulnerability found, provide:
+> - Severity (Critical/High/Medium/Low).
+> - Exploitation scenario.
+> - Fix with secure code example.”
 
 **Solution 2: Security Requirements Upfront**
-```
-"Implement user authentication with these security requirements:
-
-Authentication:
-- Passwords hashed with argon2 (not bcrypt or plain)
-- Salt unique per user
-- JWT tokens with expiration
-- Secure random token generation
-- HTTPS only (no HTTP)
-
-Authorization:
-- User can only access own resources
-- Admin role checked server-side
-- No client-side auth checks
-
-Input validation:
-- SQL parameterized queries (prevent injection)
-- HTML sanitization (prevent XSS)
-- CSRF tokens for state-changing operations
-
-Follow OWASP Top 10 best practices."
-```
+> “Implement user authentication with these security requirements:
+>
+> **Authentication:**
+> - Passwords hashed with argon2 (not bcrypt or plain).
+> - Salt unique per user.
+> - JWT tokens with expiration.
+> - Secure random token generation.
+> - HTTPS only (no HTTP).
+>
+> **Authorization:**
+> - User can only access their own resources.
+> - Admin role checked server-side.
+> - No client-side auth checks.
+>
+> **Input validation:**
+> - SQL parameterized queries (prevent injection).
+> - HTML sanitization (prevent XSS).
+> - CSRF tokens for state-changing operations.
+>
+> Follow OWASP Top 10 best practices.”
 
 **Solution 3: Use Security Checklist**
-```
-"After generating code, verify security:
-- [ ] No SQL injection (parameterized queries)
-- [ ] No XSS (input sanitization)
-- [ ] No CSRF (tokens for POST/PUT/DELETE)
-- [ ] Passwords hashed (argon2/bcrypt)
-- [ ] JWT secure (secret in env, expiration set)
-- [ ] Authorization checked server-side
-- [ ] Sensitive data not logged
-- [ ] HTTPS enforced
-
-If any check fails, fix before responding."
-```
+> “After generating code, verify security:
+> - [ ] No SQL injection (parameterized queries).
+> - [ ] No XSS (input sanitization).
+> - [ ] No CSRF (tokens for POST/PUT/DELETE).
+> - [ ] Passwords hashed (argon2/bcrypt).
+> - [ ] JWT secure (secret in env, expiration set).
+> - [ ] Authorization checked server-side.
+> - [ ] Sensitive data not logged.
+> - [ ] HTTPS enforced.
+>
+> If any check fails, fix the code before responding.”
 
 **Prevention:**
 - Security-first prompting
@@ -1077,41 +986,31 @@ If any check fails, fix before responding."
 **Solutions:**
 
 **Solution 1: Study Prompt Foundations**
-```
-Take 30 minutes to read:
-[Prompt Foundations Guide](../prompting/foundations.md)
-
-Learn the 4-component framework:
-1. Clarity: What you want (specific)
-2. Context: What AI needs (files, patterns)
-3. Constraints: Boundaries (limits, requirements)
-4. Criteria: Success (how to verify)
-
-Apply to next prompt.
-```
+> Take 30 minutes to read the [Prompt Foundations Guide](../prompting/foundations.md).
+>
+> Learn the four-component framework:
+> 1. **Clarity:** What you want (be specific).
+> 2. **Context:** What the AI needs (files, patterns).
+> 3. **Constraints:** Boundaries (limits, requirements).
+> 4. **Criteria:** Success metrics (how to verify).
+>
+> Apply it to the next prompt.
 
 **Solution 2: Use Templates**
-```
-Don't write prompts from scratch.
-Use [Template Library](../prompting/template-library.md):
-
-1. Find template matching your task
-2. Fill in {{PLACEHOLDERS}}
-3. Send to AI
-
-First-try success rate: 70-90%
-```
+> Don’t write prompts from scratch. Use the [Template Library](../prompting/template-library.md):
+> 1. Find a template matching your task.
+> 2. Fill in the `{{PLACEHOLDERS}}`.
+> 3. Send it to the AI.
+>
+> First-try success rate: 70–90%.
 
 **Solution 3: Add Examples**
-```
-Every prompt should include:
-
-Example 1: [Input] → [Expected output]
-Example 2: [Input] → [Expected output]
-Example 3: [Edge case] → [Expected handling]
-
-Examples eliminate ambiguity.
-```
+> Every prompt should include examples:
+> - Example 1: [Input] → [Expected output].
+> - Example 2: [Input] → [Expected output].
+> - Example 3: [Edge case] → [Expected handling].
+>
+> Examples eliminate ambiguity.
 
 **Prevention:**
 - Always use detailed prompts
@@ -1132,59 +1031,57 @@ Examples eliminate ambiguity.
 **Solutions:**
 
 **Solution 1: Create .cursorrules**
-```
-Create `.cursorrules` in project root with all conventions:
-
-# Project Conventions
-
-## Tech Stack
-- Frontend: React + TypeScript + Tailwind + Vite
-- Backend: Node.js + Express + TypeScript
-- Database: PostgreSQL + Prisma ORM
-- Testing: Jest + React Testing Library
-
-## Code Style
-[Your style guide]
-
-## Patterns
-[Your common patterns]
-
-## Don't Repeat
-- Always use argon2 for passwords (not bcrypt)
-- Always use Prisma (not raw SQL)
-- Always use functional components (not classes)
-- [Other frequent instructions]
-```
-
-Now AI automatically knows these without you repeating.
+> Create `.cursorrules` in the project root with all conventions:
+>
+> ```markdown
+> # Project Conventions
+>
+> ## Tech Stack
+> - Frontend: React + TypeScript + Tailwind + Vite
+> - Backend: Node.js + Express + TypeScript
+> - Database: PostgreSQL + Prisma ORM
+> - Testing: Jest + React Testing Library
+>
+> ## Code Style
+> [Your style guide]
+>
+> ## Patterns
+> [Your common patterns]
+>
+> ## Don’t Repeat
+> - Always use argon2 for passwords (not bcrypt).
+> - Always use Prisma (not raw SQL).
+> - Always use functional components (not classes).
+> - [Other frequent instructions]
+> ```
+>
+> Now the AI automatically knows these without you repeating.
 
 **Solution 2: Create docs/conventions.md**
-```
-Create detailed conventions document:
-
-docs/conventions/
-├── code-style.md
-├── api-design.md
-├── database-patterns.md
-├── testing-guidelines.md
-└── security-requirements.md
-
-Reference in prompts:
-"Follow conventions in docs/conventions/api-design.md"
-```
+> Create a detailed conventions directory:
+>
+> ```text
+> docs/conventions/
+> ├── code-style.md
+> ├── api-design.md
+> ├── database-patterns.md
+> ├── testing-guidelines.md
+> └── security-requirements.md
+> ```
+>
+> Reference it in prompts: “Follow conventions in `docs/conventions/api-design.md`.”
 
 **Solution 3: Session Setup Prompt**
-```
-At start of each session:
-"Project setup:
-- Read .cursorrules
-- Read docs/architecture/overview.md
-- Follow patterns from src/api/users.ts
-
-Confirm you understand the project structure."
-
-Then proceed with specific task.
-```
+> At the start of each session:
+>
+> “Project setup:
+> - Read `.cursorrules`.
+> - Read `docs/architecture/overview.md`.
+> - Follow patterns from `src/api/users.ts`.
+>
+> Confirm you understand the project structure.”
+>
+> Then proceed with the specific task.
 
 **Prevention:**
 - Create .cursorrules early
@@ -1205,59 +1102,57 @@ Then proceed with specific task.
 **Solutions:**
 
 **Solution 1: Session Handoff Pattern**
-```
-At end of each work session:
-"Create session handoff document at docs/context/session-[date].md:
-
-## Completed Today
-- [What was implemented]
-- [What was fixed]
-- [What was decided]
-
-## Current State
-- [Feature X]: 80% complete (need: task A, task B)
-- [Feature Y]: Not started
-- [Bug Z]: Fixed and tested
-
-## Important Context
-- [Architectural decisions made]
-- [Technical challenges encountered]
-- [Workarounds implemented]
-
-## Next Session
-1. [First task to tackle]
-2. [Second task]
-3. [Third task]
-
-## Files Modified
-- [List of files changed]"
-```
+> At the end of each work session:
+>
+> “Create a session handoff document at `docs/context/session-[date].md`:
+>
+> ## Completed Today
+> - [What was implemented]
+> - [What was fixed]
+> - [What was decided]
+>
+> ## Current State
+> - [Feature X]: 80% complete (needs task A, task B)
+> - [Feature Y]: Not started
+> - [Bug Z]: Fixed and tested
+>
+> ## Important Context
+> - [Architectural decisions made]
+> - [Technical challenges encountered]
+> - [Workarounds implemented]
+>
+> ## Next Session
+> 1. [First task to tackle]
+> 2. [Second task]
+> 3. [Third task]
+>
+> ## Files Modified
+> - [List of files changed]
+> ”
 
 **Solution 2: Current State Document**
-```
-Maintain docs/context/current-state.md:
-
-Update after major changes:
-"Update docs/context/current-state.md with:
-- Recently completed features
-- In-progress features
-- Known issues
-- Next priorities"
-```
+> Maintain `docs/context/current-state.md`.
+>
+> After major changes: “Update `docs/context/current-state.md` with:
+> - Recently completed features.
+> - In-progress features.
+> - Known issues.
+> - Next priorities.”
 
 **Solution 3: Git Commit History**
-```
-Write detailed commit messages:
-"feat(auth): implement JWT token refresh
-
-- Added refresh token to user model
-- Created /auth/refresh endpoint
-- Tokens expire after 24h, refresh extends
-- Tests added for token refresh flow
-
-Related to feature spec: docs/plans/auth-feature.md
-Next: Implement logout (invalidate tokens)"
-```
+> Write detailed commit messages, e.g.:
+>
+> ```text
+> feat(auth): implement JWT token refresh
+>
+> - Added refresh token to user model
+> - Created /auth/refresh endpoint
+> - Tokens expire after 24h, refresh extends
+> - Tests added for token refresh flow
+>
+> Related to feature spec: docs/plans/auth-feature.md
+> Next: Implement logout (invalidate tokens)
+> ```
 
 **Prevention:**
 - End-of-session handoffs
@@ -1279,53 +1174,47 @@ Next: Implement logout (invalidate tokens)"
 **Solutions:**
 
 **Solution 1: Track Usage**
-```
-Monitor:
-- Tokens per feature (prompt + response)
-- Model used for each task
-- Context size per session
-
-Baseline: "Feature X took 50k tokens with Claude Sonnet = $1.50"
-Target: "Feature X should take 10k tokens = $0.30"
-```
+> Monitor:
+> - Tokens per feature (prompt + response).
+> - Model used for each task.
+> - Context size per session.
+>
+> Baseline: “Feature X took 50k tokens with Claude Sonnet = $1.50.”
+> Target: “Feature X should take 10k tokens = $0.30.”
 
 **Solution 2: Use Right Model for Task**
-```
-Task complexity vs Model cost:
-
-Simple (boilerplate, templates):
-→ GLM (super cheap, 5h coding time limit)
-→ Qwen Coder (cheap)
-→ Gemini Flash (cheap)
-
-Standard (most features):
-→ Claude Sonnet (balanced)
-→ GLM (great price/performance)
-
-Complex (architecture, debugging):
-→ Claude Sonnet (reliable)
-→ Claude Opus (only when necessary)
-
-Cost difference: 10-50× between models
-```
+> Task complexity vs. model cost:
+>
+> **Simple (boilerplate, templates):**
+> → GLM (super cheap, 5h coding time limit).
+> → Qwen Coder (cheap).
+> → Gemini Flash (cheap).
+>
+> **Standard (most features):**
+> → Claude Sonnet (balanced).
+> → GLM (great price/performance).
+>
+> **Complex (architecture, debugging):**
+> → Claude Sonnet (reliable).
+> → Claude Opus (only when necessary).
+>
+> Cost difference: 10–50× between models.
 
 **Solution 3: Optimize Prompts**
-```
-Apply token optimization:
-
-Before (50k tokens):
-"[Paste entire architecture doc]
-[Paste 10 code files]
-[Detailed explanation]
-Now implement feature X"
-
-After (5k tokens):
-"Reference docs/architecture/overview.md (read earlier).
-Implement feature X following pattern in src/api/users.ts.
-Requirements: [concise list]"
-
-90% token reduction!
-```
+> Apply token optimization:
+>
+> **Before (50k tokens):**
+> “[Paste entire architecture doc]
+> [Paste 10 code files]
+> [Detailed explanation]
+> Now implement feature X.”
+>
+> **After (5k tokens):**
+> “Reference `docs/architecture/overview.md` (read earlier).
+> Implement feature X following the pattern in `src/api/users.ts`.
+> Requirements: [concise list].”
+>
+> 90% token reduction!
 
 **Prevention:**
 - Use [Prompt Optimization](../prompting/advanced-techniques.md#prompt-optimization)
@@ -1343,17 +1232,9 @@ Requirements: [concise list]"
 
 **Solutions:**
 
-```bash
-# Use Glob tool (not bash find)
-"Use Glob tool to find *.tsx files in src/components/"
-
-# Be specific with patterns
-"Find files matching src/api/**/*.ts"
-
-# Check current directory
-"What is the current working directory?
-List files in this directory."
-```
+- Use the **Glob** tool (not bash `find`): “Find files matching `src/components/*.tsx`.”
+- Be specific with patterns: “Find files matching `src/api/**/*.ts`.”
+- Check the current directory: “What is the current working directory? List files in this directory.”
 
 ---
 
@@ -1363,20 +1244,15 @@ List files in this directory."
 
 **Solutions:**
 
-```
-# Choose right agent
-Explore agent: "Quick search for authentication files"
-Plan agent: "Plan multi-step feature implementation"
-General: "Complex research requiring multiple tools"
-
-# Specify thoroughness
-"Use Explore agent with 'very thorough' mode to find all test files"
-
-# Break down task if too complex
-Instead of: "Agent: research entire codebase"
-Do: "Agent: find authentication-related files in src/"
-Then: "Agent: analyze authentication flow in [found files]"
-```
+- Choose the right agent:
+  - Explore agent: “Quick search for authentication files.”
+  - Plan agent: “Plan multi-step feature implementation.”
+  - General: “Complex research requiring multiple tools.”
+- Specify thoroughness: “Use Explore agent with ‘very thorough’ mode to find all test files.”
+- Break down tasks if too complex:
+  - Instead of: “Agent: research entire codebase.”
+  - Do: “Agent: find authentication-related files in `src/`.”
+  - Then: “Agent: analyze authentication flow in [found files].”
 
 ---
 
@@ -1386,19 +1262,14 @@ Then: "Agent: analyze authentication flow in [found files]"
 
 **Solutions:**
 
-```
-# Reduce file count in composer
-- Include max 5-10 files
-- Use @codebase sparingly (very expensive)
-- Be specific with @file references
-
-# Clear context
-Cmd+K → Clear context → Start fresh
-
-# Use Chat instead for complex tasks
-Composer: Quick edits, small changes
-Chat: Research, planning, complex features
-```
+- Reduce file count in Composer:
+  - Include a maximum of 5–10 files.
+  - Use `@codebase` sparingly (very expensive).
+  - Reference specific files with `@file`.
+- Clear context: press `Cmd+K` → Clear context → start fresh.
+- Use Chat instead for complex tasks:
+  - Composer: quick edits, small changes.
+  - Chat: research, planning, complex features.
 
 ---
 
@@ -1407,21 +1278,14 @@ Chat: Research, planning, complex features
 **Symptom:** Droid's plan mode gets stuck or generates poor plans.
 
 **Solutions:**
-
-```bash
-# Be more specific with planning request
-droid plan "Implement JWT authentication with refresh tokens,
-including user registration, login, token refresh endpoints"
-
-# Break large plan into phases
-droid plan "Phase 1: User registration and login"
-# Complete Phase 1
-droid plan "Phase 2: JWT refresh token mechanism"
-
-# Review and edit plan before executing
-# Plans are in .tasks/ directory
-# Edit manually if needed
-```
+ 
+- Be specific with planning requests: `droid plan "Implement JWT authentication with refresh tokens, including user registration, login, token refresh endpoints"`.
+- Break large plans into phases:
+  - `droid plan "Phase 1: User registration and login"`.
+  - After completing Phase 1, run `droid plan "Phase 2: JWT refresh token mechanism"`.
+- Review and edit the generated plan before executing:
+  - Plans are stored in the `.tasks/` directory.
+  - Edit them manually if needed.
 
 ---
 
@@ -1431,14 +1295,11 @@ droid plan "Phase 2: JWT refresh token mechanism"
 
 **Solutions:**
 
-```
-1. Check Chrome/Edge is running
-2. Check DevTools protocol enabled:
-   Chrome: --remote-debugging-port=9222
-3. Restart MCP server
-4. Check MCP configuration in settings
-5. Verify no firewall blocking localhost:9222
-```
+1. Check that Chrome or Edge is running.
+2. Ensure the DevTools protocol is enabled (`--remote-debugging-port=9222`).
+3. Restart the MCP server.
+4. Verify MCP configuration in settings.
+5. Confirm no firewall is blocking `localhost:9222`.
 
 ---
 
@@ -1454,16 +1315,14 @@ droid plan "Phase 2: JWT refresh token mechanism"
 - Async timing issue (accessing before loaded)
 
 **AI prompting fix:**
-```
-"Fix null pointer error:
-[paste error + code]
-
-Add null checks:
-- Check if object exists before accessing
-- Use optional chaining (?.)
-- Provide default values
-- Handle loading/error states"
-```
+> “Fix null pointer error:
+> [paste error + code]
+>
+> Add null checks:
+> - Check if the object exists before accessing.
+> - Use optional chaining (`?.`).
+> - Provide default values.
+> - Handle loading/error states.”
 
 ---
 
@@ -1478,17 +1337,15 @@ Add null checks:
 - Incorrect relative path
 
 **AI prompting fix:**
-```
-"Fix module not found error:
-Error: Cannot find module './components/UserCard'
-
-Context:
-- File structure: [describe]
-- Trying to import from: [file]
-- Target file location: [path]
-
-Verify file exists and fix import path."
-```
+> “Fix module not found error:
+> Error: Cannot find module './components/UserCard'
+>
+> Context:
+> - File structure: [describe].
+> - Trying to import from: [file].
+> - Target file location: [path].
+>
+> Verify the file exists and fix the import path.”
 
 ---
 
@@ -1502,15 +1359,13 @@ Verify file exists and fix import path."
 - useEffect with missing dependency array
 
 **AI prompting fix:**
-```
-"Fix infinite recursion:
-[paste error + code]
-
-Find and fix:
-- Missing base case in recursion
-- Circular dependencies
-- useEffect causing infinite loop"
-```
+> “Fix infinite recursion:
+> [paste error + code]
+>
+> Find and fix:
+> - Missing base case in recursion.
+> - Circular dependencies.
+> - `useEffect` causing an infinite loop.”
 
 ---
 
@@ -1574,34 +1429,28 @@ When stuck, go through this systematically:
 
 ### Where to Ask
 
-```
-1. Project Documentation
-   - Check docs/ for answers
-   - Search commit history
-   - Review architecture decisions
-
-2. AI Assistance
-   - Use comprehensive debug prompts
-   - Provide all context
-   - Try different models
-
-3. Search Online
-   - Google error message
-   - Stack Overflow
-   - GitHub issues for libraries
-   - Official documentation
-
-4. Community Help
-   - Project Discord/Slack
-   - Stack Overflow (with MCVE)
-   - Reddit communities
-   - Framework-specific forums
-
-5. Professional Help
-   - Hire expert for consultation
-   - Code review service
-   - Mentor/senior developer
-```
+1. **Project Documentation**
+   - Check `docs/` for answers.
+   - Search commit history.
+   - Review architecture decisions.
+2. **AI Assistance**
+   - Use comprehensive debug prompts.
+   - Provide all context.
+   - Try different models.
+3. **Search Online**
+   - Google the error message.
+   - Check Stack Overflow.
+   - Review GitHub issues for libraries.
+   - Read official documentation.
+4. **Community Help**
+   - Project Discord/Slack.
+   - Stack Overflow (with MCVE).
+   - Reddit communities.
+   - Framework-specific forums.
+5. **Professional Help**
+   - Hire an expert for consultation.
+   - Use a code review service.
+   - Ask a mentor/senior developer.
 
 ---
 
