@@ -27,7 +27,7 @@ Especially in the world of frontier models being **expensive** - usually it make
   - **Tools I Dropped**: Traycer • GitHub Speckit
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
   - **Primary Providers**: GLM Coding Plan • Factory AI • Synthetic.new
-  - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter) • Over-expensive options (Claude Subscription)
+  - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter • nanoGPT) • Over-expensive options (Claude Subscription)
 - [Core Technologies 🧰](docs/core-technologies.md)
   - Astro • Tailwind CSS • Cloudflare Pages
 - [Hosting Tools 🌐](docs/hosting-tools/README.md)
@@ -79,9 +79,10 @@ Tip: Keep context lean. Link only relevant files in your prompts and use MCPs (e
 ## 🫶 Support the Author
 
 If you've found this guide helpful and want to support my work, consider using these referral links for the tools I recommend:
-- **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Generous, 5h limit, privacy-first AI provider with extensive open-sourcemodel library and competitive pricing 
+- **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Generous, 5h limit, privacy-first AI provider with extensive open-sourcemodel library and competitive pricing ($10 first month on standard plan)
 - **[GLM Coding Plan](https://z.ai/subscribe?ic=CUEFJ9ALMX)** - Cheap and reliable provider of a coding plan with generous 5h limit and GLM model(s) support
 - **[Droid CLI / Factory AI](https://app.factory.ai/r/VAH64803)** - The ultimate coding agent with intelligent planning and safe execution
+- **[nanoGPT](https://nano-gpt.com/invite/9yrQteBR)** - Backup provider option with generous rate limits (60k requests/month for $8) and extensive model variety; good for experimentation but has privacy concerns (5% discount)
 
 
 Using these links helps me continue maintaining and expanding this guide while you get access to excellent tools. No pressure though - the guide will always remain free and open source! ⭐
