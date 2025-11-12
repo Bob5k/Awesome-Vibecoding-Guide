@@ -34,7 +34,7 @@ Often, the combination of multiple specialized, cost-effective tools outperforms
 
 **Example:**
 Instead of paying $100/month for a premium AI coding assistant:
-- GLM Coding Plan: $20/month for solid LLM capabilities
+- Synthetic Standard Plan: $20/month for solid LLM capabilities
 - OpenSpec: Free for project planning
 - DevTools MCP: Free for testing automation
 - Combined cost: $20/month with 90% of the functionality
