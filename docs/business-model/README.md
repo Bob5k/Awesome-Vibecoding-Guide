@@ -21,7 +21,7 @@ Unlike the common narrative of "build a SaaS and get rich with vibecoding," this
 2. **[The Business Model](the-model.md)** - Detailed breakdown of how this works
 3. **[Pricing & Economics](pricing-economics.md)** - What to charge and why
 4. **[Value Proposition](value-proposition.md)** - How to differentiate from WordPress and competition
-5. **[Getting Started](getting-started.md)** *(coming soon)* - Marketing, finding clients, and first steps
+5. **[Getting Started](getting-started.md)** - Marketing, finding clients, and first steps
 
 ## Quick Stats
 
