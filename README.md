@@ -109,8 +109,6 @@ Using these links helps me continue maintaining and expanding this guide while y
 
 ## Star History
 
-## Star History
-
 <a href="https://www.star-history.com/#Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Bob5k/Awesome-Vibecoding-Guide&type=date&theme=dark&legend=top-left" />
@@ -118,5 +116,3 @@ Using these links helps me continue maintaining and expanding this guide while y
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left" />
  </picture>
 </a>
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left)](https://www.star-history.com/#Bob5k/Awesome-Vibecoding-Guide&type=date&legend=top-left)
