@@ -11,6 +11,7 @@ Development tools optimized for vibecoding productivity:
 - **[OpenSpec CLI](./recommended-tools/openspec-cli.md)** — Specification framework for project planning
 - **[Warp](./recommended-tools/warp.md)** — Modern terminal for enhanced productivity
 - **[Claude Code CLI](./recommended-tools/claude-code-cli.md)** — Backup AI coding assistant
+- **[Clavix](./recommended-tools/clavix.md)** — Prompt optimization engine for maximum AI effectiveness
 
 ### MCP Servers
 Model Context Protocol servers for enhanced capabilities:

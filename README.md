@@ -18,7 +18,7 @@ Especially in the world of frontier models being **expensive** - usually it make
 
 ## Contents
 - [Development Tools 🛠️](docs/development-tools/README.md)
-  - **Recommended Tools**: Zed • Droid CLI • OpenSpec • Warp • Claude Code CLI
+  - **Recommended Tools**: Zed • Droid CLI • OpenSpec • Warp • Claude Code CLI • Clavix
   - **MCP Servers**: Context7 • DevTools • Sequential Thinking • Task Manager • Shadcn
   - **Additional**: Compatibility Guide
 - [Honorable Mentions 🏆](docs/development-tools/honorable-mentions/README.md)
