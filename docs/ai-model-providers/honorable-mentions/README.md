@@ -23,6 +23,9 @@ However, they all share common limitations that prevent me from recommending the
 - **[OpenRouter](openrouter.md)** - Massive model selection with free tier; great for exploration but inconsistent reliability
 - **[nanoGPT](nanogpt.md)** - Generous subscription limits and extensive model variety, but significant privacy concerns due to third-party routing; good as backup or for non-sensitive projects
 
+### Development Platforms
+- **[Factory AI](factory-ai.md)** - Cost-effective platform with intelligent caching and Droid CLI integration; good token efficiency but not recommended as primary provider
+
 ### Premium Services with Caveats
 - **[Claude Subscription](claude-subscription.md)** - Outstanding model quality but prohibitive cost structure for regular development
 

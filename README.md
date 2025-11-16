@@ -102,7 +102,6 @@ Tip: Keep context lean. Link only relevant files in your prompts and use MCPs (e
 If you've found this guide helpful and want to support my work, consider using these referral links for the tools I recommend:
 - **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Generous, 5h limit, privacy-first AI provider with extensive open-sourcemodel library and competitive pricing ($10 first month on standard plan)
 - **[GLM Coding Plan](https://z.ai/subscribe?ic=CUEFJ9ALMX)** - Cheap and reliable provider of a coding plan with generous 5h limit and GLM model(s) support
-- **[Droid CLI / Factory AI](https://app.factory.ai/r/VAH64803)** - The ultimate coding agent with intelligent planning and safe execution
 
 
 Using these links helps me continue maintaining and expanding this guide while you get access to excellent tools. No pressure though - the guide will always remain free and open source! ⭐

@@ -2,12 +2,13 @@
 
 A curated selection of AI model providers and services optimized for vibecoding workflows. These providers offer the intelligence and reasoning capabilities that power modern development workflows.
 
+**Not sure which provider to choose?** Check out our comprehensive [**Provider Comparison Guide**](./choosing-your-provider.md) for budget-based recommendations, feature comparisons, and use case scenarios.
+
 ## Primary AI Providers
 
 ### Core LLM Services
 - **[GLM Coding Plan](./glm-coding-plan.md)** — Main LLM provider for coding assistance
 - **[Synthetic.new](./synthetic-new.md)** — Privacy-first provider with extensive model library and competitive pricing
-- **[Factory AI](./factory-ai.md)** — Advanced AI platform for specialized tasks (Coming soon)
 
 ## Honorable Mentions
 Services I've used but don't recommend for primary development work:
@@ -105,7 +106,6 @@ Different tasks benefit from different AI models:
 ## Future Roadmap
 
 ### Upcoming Features
-- **Factory AI Integration**: Enhanced AI platform with specialized capabilities
 - **Multi-Provider Orchestration**: Automatic provider selection based on tasks
 - **Cost Optimization**: Advanced cost management and optimization tools
 - **Performance Monitoring**: Real-time performance tracking and analytics
