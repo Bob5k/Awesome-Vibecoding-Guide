@@ -19,16 +19,16 @@ The AI provider landscape has matured significantly, offering options from budge
 
 | Provider | Monthly Cost | Rate Limits | Privacy | Model Access | Best For |
 |----------|-------------|-------------|---------|--------------|----------|
-| **GLM Standard** | $3-6 | 120 prompts/5h | Good | GLM-4.6 | Best value-to-price ratio |
-| **GLM Lite** | $11 | 120 prompts/5h | Good | GLM-4.6 | Budget coding |
+| **GLM Lite** | $3-6 | 120 prompts/5h | Good | GLM-4.6 | Best value-to-price ratio |
+| **GLM Lite + NanoGPT** | $11 | 120 prompts/5h | Good | GLM-4.6 | Budget coding |
 | **GLM Pro** | $15-30* | 600 prompts/5h | Good | GLM-4.6 | Regular development |
 | **Synthetic Standard** | $10-20* | 135 prompts/5h | Excellent | 20+ models | Privacy & flexibility |
 | **GLM Max** | $60 | 2400 prompts/5h | Good | GLM-4.6 | Heavy usage (overkill) |
 | **Synthetic Pro** | $60 | 1350 prompts/5h | Excellent | 20+ models | Heavy usage (recommended) |
 | **nanoGPT** | $8 | 60k req/month | Poor | Many models | Backup/experimentation only |
 | **Claude Pro** | ~$20 | Weekly limits | Excellent | Claude models | NOT recommended** |
-| **OpenRouter** | Pay-per-use | Varies | Varies | Many models | Unreliable |
-| **Chutes.ai** | Pay-per-use | Varies | Poor | Many models | Too unreliable |
+| **OpenRouter** | Pay-per-use / Free models | Varies | Varies | Many models | Unreliable |
+| **Chutes.ai** | Pay-per-use / Plans from 3$ | Varies | Poor | Many models | Unreliable |
 
 \* First purchase discount available
 \*\* Despite similar price point, tiny quota and weekly limits make it poor value vs alternatives
@@ -70,7 +70,7 @@ The AI provider landscape has matured significantly, offering options from budge
 
 ---
 
-### 🎯 Tier 2: ~$11/month — Budget Heavy Usage
+### 🎯 Tier 2: ~$11/month — Budget Friendly for Heavy Usage
 
 **Primary Recommendation: GLM Lite + nanoGPT Combination**
 

@@ -5,9 +5,9 @@
 #!.gitignore
 
 # Explicitly ignore agent directories
-.agents/
-.claude/
-.octo/
+agents.md
+claude.md
+octo.md
 ```
 
 Now I'll check if any of these directories are currently tracked by git and remove them from the remote repository:
