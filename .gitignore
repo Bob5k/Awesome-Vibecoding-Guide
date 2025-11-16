@@ -1,0 +1,13 @@
+# Ignore all dotfiles/directories by default
+.*
+
+# However, keep these specific dotfiles (uncomment if needed)
+#!.gitignore
+
+# Explicitly ignore agent directories
+.agents/
+.claude/
+.octo/
+```
+
+Now I'll check if any of these directories are currently tracked by git and remove them from the remote repository:
