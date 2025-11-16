@@ -26,7 +26,7 @@ The AI provider landscape has matured significantly, offering options from budge
 | **GLM Max** | $60 | 2400 prompts/5h | Good | GLM-4.6 | Heavy usage (overkill) |
 | **Synthetic Pro** | $60 | 1350 prompts/5h | Excellent | 20+ models | Heavy usage (recommended) |
 | **nanoGPT** | $8 | 60k req/month | Poor | Many models | Backup/experimentation only |
-| **Claude Pro** | ~$20 | Weekly limits | Excellent | Claude models | NOT recommended** |
+| **Claude Pro** | ~$20 | Weekly limits | Excellent | Claude models | Low usage hobbyists** |
 | **OpenRouter** | Pay-per-use / Free models | Varies | Varies | Many models | Unreliable |
 | **Chutes.ai** | Pay-per-use / Plans from 3$ | Varies | Poor | Many models | Unreliable |
 
