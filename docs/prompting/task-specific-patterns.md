@@ -418,6 +418,135 @@ Error message + Context + Expected vs Actual + Already tried
 
 ---
 
+### Pattern 0: Context-First Debugging (Start Here!)
+
+**Use when:** Anything is broken, before trying any other debugging pattern
+
+**Key principle:** 95% of debugging failures are context failures, not AI failures
+
+**The Problem:**
+```
+❌ Bad: "It's broken, fix it"
+❌ Bad: "Login doesn't work"
+❌ Bad: "Getting an error"
+
+✅ Good: [See template below with COMPLETE context]
+```
+
+**Before asking AI to debug, YOU must:**
+
+1. **Open DevTools** (F12 or Cmd+Option+I)
+2. **Check Console tab** - Copy ALL error messages
+3. **Check Network tab** - Find failed requests (red status)
+4. **Reproduce the issue** - Write exact steps
+5. **Document expected vs actual** - Be specific
+
+**Template:**
+
+```
+[WHAT I WAS TRYING TO DO]:
+[User's goal - what they expected to accomplish]
+
+[WHAT HAPPENED INSTEAD]:
+[Actual behavior observed]
+
+[CONTEXT I GATHERED]:
+
+Console Errors:
+[Paste complete error message + stack trace from browser console]
+
+Network Requests:
+[Failed request URL, method, status code, response]
+Example: POST /api/login → 401 Unauthorized → {"error": "Invalid token"}
+
+Reproduction Steps:
+1. [Exact step 1]
+2. [Exact step 2]
+3. [Exact step 3]
+→ Error appears at step [X]
+
+Environment:
+- Browser: [Chrome 120, Safari 17, etc.]
+- Device: [Desktop/Mobile/Tablet]
+- OS: [macOS, Windows, iOS, Android]
+
+Code Location (if known):
+File: [path/to/file.js:line]
+
+[EXPECTED vs ACTUAL]:
+- Expected: [specific behavior]
+- Actual: [specific behavior]
+
+[ALREADY TRIED] (optional):
+- [attempt] → [result]
+
+Now, based on this complete context, can you identify the root cause?
+```
+
+**Real Example:**
+
+```
+[WHAT I WAS TRYING TO DO]:
+Submit contact form with user's name, email, and message
+
+[WHAT HAPPENED INSTEAD]:
+Form doesn't submit, no error message shown to user
+
+[CONTEXT I GATHERED]:
+
+Console Errors:
+TypeError: Cannot read property 'value' of null
+    at submitForm (contact.js:45)
+    at HTMLButtonElement.onclick (contact.html:89)
+
+Network Requests:
+No network request is made (form never reaches submission)
+
+Reproduction Steps:
+1. Fill out name field: "John Doe"
+2. Fill out email field: "john@example.com"
+3. Fill out message field: "Test message"
+4. Click "Submit" button
+→ Error appears in console, nothing happens visually
+
+Environment:
+- Browser: Chrome 122
+- Device: Desktop
+- OS: macOS Sonoma 14.2
+
+Code Location:
+File: src/contact.js:45
+
+[EXPECTED vs ACTUAL]:
+- Expected: Form submits, shows success message
+- Actual: Nothing happens, silent error in console
+
+[ALREADY TRIED]:
+- Checked form HTML - all fields have correct IDs
+- Verified button onclick handler is connected
+
+Now, based on this complete context, can you identify the root cause?
+```
+
+**Why This Works:**
+
+Without context:
+- AI makes 20 guesses
+- You try 20 random fixes
+- Waste hours
+- Nothing works
+
+With context:
+- AI identifies root cause immediately
+- One targeted fix
+- Problem solved in minutes
+
+**⚠️ If you skip context gathering, AI will waste your time guessing. Always use this pattern first.**
+
+**📖 Related:** [The Human Context Problem in AI Debugging](../../troubleshooting/human-context-debugging.md)
+
+---
+
 ### Pattern 1: Runtime Error Debugging
 
 **Use when:** App crashes or throws errors during execution

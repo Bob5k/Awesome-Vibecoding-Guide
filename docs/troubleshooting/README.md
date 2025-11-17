@@ -215,6 +215,92 @@ Stuck debugging for >30 minutes?
 
 ---
 
+## 🧠 The Human Context Problem
+
+**Most debugging failures aren't AI failures—they're context failures.**
+
+### The 95/5 Rule
+
+If you're being forced to "start over" on a project, you're either:
+- **5%** - Developing something super-overly-complex on corporate level
+- **95%** - Trying to forcefully move forward instead of instructing AI properly
+
+**The real issue:** Lack of context knowledge in the HUMAN, not in the AI window.
+
+### What's Usually Missing
+
+❌ Console errors not copied
+❌ Network requests not checked
+❌ Reproduction steps not documented
+❌ Expected vs actual behavior not explained
+❌ Environment details not provided
+
+**Result:** AI guesses blindly. You waste hours. Nothing works.
+
+### The Fix: Human-First Debugging
+
+**Before asking AI to debug:**
+
+1. **Open DevTools** (F12)
+2. **Check Console** - Copy ALL errors
+3. **Check Network** - Find failed requests
+4. **Reproduce** - Write exact steps
+5. **Gather Context** - Error + behavior + environment
+
+**Then provide AI with complete picture:**
+```
+"Getting this error: [paste exact error]
+
+Console: [error message + stack trace]
+Network: [failed request + response]
+Reproduction: [exact steps]
+Expected: [what should happen]
+Actual: [what happens]
+Code: [file:line]
+
+Can you identify the root cause?"
+```
+
+### Why This Matters
+
+**Without context:**
+- AI makes 20 guesses
+- You try 20 "fixes"
+- Still broken
+- You blame AI
+
+**With context:**
+- AI identifies root cause immediately
+- One targeted fix
+- Problem solved
+- Move forward
+
+### Starting Over Is Rarely the Answer
+
+**You wouldn't throw away a 20-hour project in traditional development.**
+
+**Don't do it in AI-assisted development either.**
+
+- ✅ New chat window (fresh context) - Good
+- ❌ New project (throw away work) - Bad
+
+**Fix the process (context gathering), not the project.**
+
+---
+
+**📖 Full Guide:** [The Human Context Problem in AI Debugging](human-context-debugging.md)
+
+Learn:
+- Real-world examples (before/after)
+- Complete context gathering checklist
+- How to lead AI through complex debugging
+- When tools like DevTools MCP help
+- Common scenarios and solutions
+
+**5 minutes reading = Hours saved debugging**
+
+---
+
 ### Flowchart 3: High Token Usage / Cost
 
 ```

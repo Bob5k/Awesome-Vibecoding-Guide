@@ -45,6 +45,7 @@ Especially in the world of frontier models being **expensive** - usually it make
   - **Advanced**: Multi-step workflows • Prompt chaining • Error recovery • Optimization
   - **Templates**: 17 ready-to-use prompt templates for common scenarios
 - [Troubleshooting Guide 🔧](docs/troubleshooting/README.md)
+  - **The Human Context Problem**: Why 95% of debugging issues are context failures
   - **Quick Reference**: 40+ symptom → solution lookup tables
   - **Emergency Flowcharts**: AI producing garbage • Can't debug • High costs • Breaking changes
   - **Common Issues**: AI behavior • Code quality • Workflow bottlenecks • Tool problems
@@ -88,6 +89,7 @@ Especially in the world of frontier models being **expensive** - usually it make
 **Quick Reference:**
 - [Glossary](docs/glossary.md) → Key terms and definitions
 - [Troubleshooting](docs/troubleshooting/README.md) → Quick problem→solution lookup
+- [Human Context Debugging](docs/troubleshooting/human-context-debugging.md) → Fix 95% of debugging issues
 - [Prompt Templates](docs/prompting/template-library.md) → Copy-paste ready prompts
 - [Contributing](docs/contributing.md) → How to contribute to this guide
 
