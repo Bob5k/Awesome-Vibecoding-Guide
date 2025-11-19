@@ -7,6 +7,7 @@ A comprehensive collection of development tools optimized for vibecoding product
 ### Recommended Tools
 Development tools optimized for vibecoding productivity:
 - **[Zed.dev](./recommended-tools/zed.md)** — Primary IDE for fast, modern development
+- **[Windsurf](./recommended-tools/windsurf.md)** — High-speed AI IDE with 950 tok/s SWE-1.5 agent
 - **[Droid CLI](./recommended-tools/droid-cli.md)** — Main coding agent with BYOK support
 - **[OpenSpec CLI](./recommended-tools/openspec-cli.md)** — Specification framework for project planning
 - **[Warp](./recommended-tools/warp.md)** — Modern terminal for enhanced productivity
