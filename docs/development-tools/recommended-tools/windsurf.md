@@ -36,7 +36,7 @@ Windsurf is Codeium's AI-powered IDE (acquired by Cognition in 2025), built as a
 
 ### Pricing Model
 - **$15/month for 500 requests**: Monthly cap may limit heavy users
-- **No BYOK support**: Can't bring your own API keys like Zed
+- **No BYOK support**: Can't bring your own API keys like Zed (except for Anthropic API key)
 - **Compare to alternatives**:
   - Zed (free) + GLM ($3-6) = unlimited requests with rolling windows
   - Windsurf = faster experience but fixed monthly limit
