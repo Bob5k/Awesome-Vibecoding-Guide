@@ -235,11 +235,35 @@ git status
 
 You're now ready to start vibecoding! With proper Git workflow and AI assistance, you can develop faster, safer, and more efficiently.
 
-**Recommended Reading:**
-- [Development Tools 🛠️](../development-tools/README.md)
-- [AI Model Providers 🤖](../ai-model-providers/README.md)
-- [Workflow & Process 🔄](../workflow/README.md)
-- [Phase 1: Planning](../workflow/phase-1-planning.md)
+---
+
+## Related Documentation
+
+**Getting Started:**
+- [Introduction & Philosophy](../introduction/README.md) - Understanding Vibecoding
+- [Core Technologies](../core-technologies.md) - Astro, Tailwind, Cloudflare stack
+
+**Development Tools:**
+- [Development Tools](../development-tools/README.md) - Essential tools and setup
+- [AI Model Providers](../ai-model-providers/README.md) - Choosing your AI assistant
+- [MCP Servers](../development-tools/mcp-servers/README.md) - Extending AI capabilities
+
+**Workflow & Process:**
+- [Workflow Overview](../workflow/README.md) - Complete development process
+- [Phase 1: Planning](../workflow/phase-1-planning.md) - Project specifications
+- [Phase 2: Development](../workflow/phase-2-development.md) - Implementation guide
+- [Context Management](../context-management/README.md) - Optimizing AI interactions
+- [Prompting Guides](../prompting/README.md) - Effective AI communication
+
+**Quality & Standards:**
+- [Quality Standards](../quality-standards/README.md) - Accessibility, SEO, Performance
+- [Troubleshooting](../troubleshooting/README.md) - Common issues and solutions
+
+**Deployment & Hosting:**
+- [Hosting Tools](../hosting-tools/README.md) - Cloudflare platform guide
+- [Phase 4: Deployment](../workflow/phase-4-deployment.md) - Going to production
+
+---
 
 **Remember:** Git is your best friend in AI-powered development. The combination of version control and AI assistance creates an unstoppable development workflow!
 

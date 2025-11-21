@@ -3,11 +3,11 @@
 This guide explains the core stack I recommend for Vibecoding: Astro, Tailwind CSS and Cloudflare Pages (with Cloudflare Functions where needed). These tools are chosen for three practical goals: superb Core Web Vitals, fast developer feedback loops, and minimal operational friction (easy to host and maintain).
 
 Why Astro?
-- HTML-first SSG for great Core Web Vitals: Astro renders static HTML at build time by default, delivering minimal initial JavaScript and blazing-fast Time To First Byte (TTFB) and Largest Contentful Paint (LCP).
+- HTML-first SSG for great Core Web Vitals: Astro renders static HTML at build time by default, delivering minimal initial JavaScript and blazing-fast Time To First Byte (TTFB) and Largest Contentful Paint (LCP). [→ Performance Standards](docs/quality-standards/performance.md)
 - Island architecture: sprinkle interactivity with client-side frameworks only where needed (React, Svelte, Solid, etc.), so most pages remain lightweight.
 - Flexibility and interoperability: use React components (or other frameworks) inside Astro pages — you get the best of both static-first sites and modern interactivity.
-- Developer ergonomics: simple file-based routing, Markdown-friendly content collections, and a low-friction build process make it perfect for vibecoding sessions where you iterate quickly.
-- SEO & performance defaults: image optimizations, partial hydration, and small bundles are friendly to real-world SEO and Cumulative Layout Shift (CLS) improvements.
+- Developer ergonomics: simple file-based routing, Markdown-friendly content collections, and a low-friction build process make it perfect for vibecoding sessions where you iterate quickly. [→ Prompting Guides](docs/prompting/README.md)
+- SEO & performance defaults: image optimizations, partial hydration, and small bundles are friendly to real-world SEO and Cumulative Layout Shift (CLS) improvements. [→ Performance Standards](docs/quality-standards/performance.md)
 
 **Implementation Tools for Astro:**
 - [Zed IDE](docs/development-tools/recommended-tools/zed.md) — Optimized for Astro development workflows
@@ -44,11 +44,11 @@ How these three work together for Vibecoding
 - Add serverless endpoints for forms or integrations (Cloudflare Functions) while keeping the main site static and cacheable.
 - Ideal for portfolio sites, marketing sites, blogs, and small product UIs — everything that benefits from fast loads and easy updates.
 
-Concrete benefits you’ll notice immediately
-- Lower bundle sizes and fewer runtime JS costs → better First Contentful Paint (FCP) and LCP.
-- Fewer layout shifts thanks to predictable styling and static rendering → better CLS.
-- Faster development iterations (hot reloading / quick builds) so you can focus on design, copy, and vibes.
-- Simple hosting & deployment: push to Git, let Cloudflare Pages serve optimized assets from the edge.
+Concrete benefits you'll notice immediately
+- Lower bundle sizes and fewer runtime JS costs → better First Contentful Paint (FCP) and LCP. [→ Performance Standards](docs/quality-standards/performance.md)
+- Fewer layout shifts thanks to predictable styling and static rendering → better CLS. [→ Performance Standards](docs/quality-standards/performance.md)
+- Faster development iterations (hot reloading / quick builds) so you can focus on design, copy, and vibes. [→ Workflow Guide](docs/workflow/README.md)
+- Simple hosting & deployment: push to Git, let Cloudflare Pages serve optimized assets from the edge. [→ Hosting Tools](docs/hosting-tools/README.md)
 
 Integrations and common patterns
 - React components inside Astro for interactive widgets (forms, maps, media players).
@@ -113,6 +113,26 @@ When to consider something else
 - [ ] Deploy via [Cloudflare Pages](docs/hosting-tools/cloudflare-pages.md) for static hosting
 - [ ] Set up [Cloudflare Functions](docs/hosting-tools/cloudflare-workers.md) for backend logic
 - [ ] Monitor performance with [DevTools MCP](docs/development-tools/mcp-servers/devtools-mcp.md)
+
+---
+
+## Related Documentation
+
+**Quality Standards:**
+- [Performance Standards](docs/quality-standards/performance.md) - Core Web Vitals optimization
+- [SEO Standards](docs/quality-standards/seo.md) - Search engine optimization
+- [Accessibility Standards](docs/quality-standards/accessibility.md) - WCAG compliance
+
+**Development Workflow:**
+- [Workflow Phases](docs/workflow/README.md) - Complete development process
+- [Prompting Guides](docs/prompting/README.md) - AI-assisted development techniques
+- [Context Management](docs/context-management/README.md) - Optimizing AI interactions
+
+**Business Considerations:**
+- [Business Model](docs/business-model/README.md) - Pricing and monetization strategies
+- [Hosting Tools](docs/hosting-tools/README.md) - Deployment cost optimization
+
+---
 
 Conclusion
 Astro + Tailwind CSS + Cloudflare Pages is a practical, high-velocity stack for Vibecoding. It lets you ship pages that score well on Core Web Vitals, keeps CSS and JavaScript payloads small, and simplifies hosting and deployment.
