@@ -63,12 +63,15 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 
 **GitHub**: A cloud-based platform for hosting Git repositories, enabling collaboration, code sharing, and project management.
 
-**GitHub Speckit**: GitHub's specification tool for creating structured project plans (dropped from author's stack in favor of OpenSpec).
+**GitHub Speckit**: GitHub's specification tool for creating structured project plans (dropped from author's stack in favor of Clavix).
 
 **IDE (Integrated Development Environment)**: A software application that provides comprehensive tools for writing, testing, and debugging code all in one place.
 
-**OpenSpec**: A specification framework tool that transforms plain language descriptions into comprehensive project plans, tasks, and technical documentation.
-→ [Learn more: OpenSpec Guide](development-tools/recommended-tools/openspec.md)
+**Clavix**: An open-source prompt engineering framework using the CLEAR methodology (Concise, Logical, Explicit, Adaptive, Reflective) to transform rough ideas into polished prompts, complete PRDs, and ready-to-implement task lists.
+→ [Learn more: Clavix Guide](development-tools/recommended-tools/clavix.md)
+
+**OpenSpec**: A specification framework tool that transforms plain language descriptions into comprehensive project plans (moved to honorable mentions, replaced by Clavix).
+→ [Learn more: OpenSpec Guide](development-tools/honorable-mentions/openspec-cli.md)
 
 **Qwen CLI**: Alibaba's free, open-source coding assistant CLI that provides local or cloud-based AI assistance for development.
 → [Learn more: Development Tools](development-tools/README.md)

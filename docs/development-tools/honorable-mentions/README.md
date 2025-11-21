@@ -20,8 +20,9 @@ This section highlights tools that offer excellent value for developers seeking 
 
 These are tools I personally used in production and decided to drop from my workflow. I'm including them in honorable mentions because they're worth knowing about, and my experience can help you make informed decisions.
 
+- **[OpenSpec CLI](openspec-cli.md)** - Specification-driven development framework (replaced: excellent tool, but Clavix offers faster CLEAR-based PRD generation with better AI agent integration)
 - **[Traycer.ai](traycer.md)** - AI-powered development planning and validation (dropped: too slow, costly, frustration with hallucinations)
-- **[GitHub Speckit](github-speckit.md)** - GitHub's native specification tool (dropped: too heavyweight for fast-paced vibecoding, prefer OpenSpec)
+- **[GitHub Speckit](github-speckit.md)** - GitHub's native specification tool (dropped: too heavyweight for fast-paced vibecoding, prefer Clavix for PRD generation)
 - **[Cline / Roo Code / Kilo Code](cline-roo-kilo.md)** - VSCode plugins for GUI-based vibecoding with GLM/Synthetic.new integration (dropped: unnecessary complexity, tool/MCP call reliability issues)
 
 ### Why Share Dropped Tools?

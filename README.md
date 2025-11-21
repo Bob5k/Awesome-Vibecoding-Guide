@@ -18,13 +18,13 @@ Especially in the world of frontier models being **expensive** - usually it make
 
 ## Contents
 - [Development Tools 🛠️](docs/development-tools/README.md)
-  - **Recommended Tools**: Zed • Windsurf • Droid CLI • OpenSpec • Warp • Claude Code CLI • Clavix
+  - **Recommended Tools**: Zed • Windsurf • Droid CLI • Clavix (PRD Generator) • Warp • Claude Code CLI
   - **MCP Servers**: Context7 • DevTools • Sequential Thinking • Task Manager • Shadcn
   - **Additional**: Compatibility Guide
 - [Honorable Mentions 🏆](docs/development-tools/honorable-mentions/README.md)
   - **Free & Cost-Effective**: Qwen Coder • Gemini CLI • AmpCode • TRAE • Octofriend
   - **Native Integration**: GitHub Copilot
-  - **Tools I Dropped**: Traycer • GitHub Speckit
+  - **Tools I Dropped**: OpenSpec • Traycer • GitHub Speckit
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
   - **Primary Providers**: GLM Coding Plan • Synthetic.new
   - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter • nanoGPT • Factory AI) • Over-expensive options (Claude Subscription)

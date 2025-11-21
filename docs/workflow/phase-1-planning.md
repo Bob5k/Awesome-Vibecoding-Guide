@@ -1,10 +1,10 @@
 # Phase 1: Planning (Pre‑Development) 🗺️
 
-**Tools:** Any AI chat (ChatGPT, Claude, Gemini, etc.) + OpenSpec
+**Tools:** Any AI chat (ChatGPT, Claude, Gemini, etc.) + Clavix
 
 ## The Modern Planning Workflow
 
-Planning is where vibecoding truly starts. The recommended approach uses external AI chats to refine your ideas, then leverages OpenSpec to kickstart the project with proper structure.
+Planning is where vibecoding truly starts. The recommended approach uses external AI chats to refine your ideas, then leverages Clavix to generate comprehensive PRDs with ready-to-implement task lists.
 
 ---
 
@@ -17,7 +17,7 @@ Before touching any code or tools, use any AI chat platform to explore and valid
 - **Thought refinement**: Natural conversation helps clarify fuzzy ideas
 - **Feature validation**: AI helps identify missing requirements or edge cases
 - **Technical direction**: Get feedback on architecture and tech stack choices
-- **PRD generation**: End the conversation with a comprehensive description ready for OpenSpec
+- **PRD generation**: End the conversation with a comprehensive description ready for Clavix
 
 ### Recommended Platforms
 
@@ -51,7 +51,7 @@ Users need to collaborate on tasks, track time, and generate reports."
 and deploying to Cloudflare Pages. What do you think?"
 ```
 
-This helps the AI (and later OpenSpec) understand both **WHAT** you're building and **HOW** it should be built.
+This helps the AI (and later Clavix) understand both **WHAT** you're building and **HOW** it should be built.
 
 **4. Get a PRD at the end**
 
@@ -70,19 +70,19 @@ Format it in a way that can be used as input for project planning tools."
 
 ---
 
-## Step 2: OpenSpec Project Kickoff (MUST-HAVE)
+## Step 2: Clavix PRD Generation (MUST-HAVE)
 
-OpenSpec is essential for transforming your PRD into a structured project plan.
+Clavix is essential for transforming your ideas into structured PRDs with implementation-ready task lists.
 
-### Why OpenSpec?
+### Why Clavix?
 
-- Analyzes your PRD and generates comprehensive project structure
-- Creates feature specifications automatically
-- Breaks down features into actionable tasks
-- Understands infrastructure when you mention it
-- Provides implementation proposals
+- Uses CLEAR framework (Concise, Logical, Explicit, Adaptive, Reflective) for optimal structure
+- Generates comprehensive Product Requirements Documents automatically
+- Creates ready-to-implement task lists with clear acceptance criteria
+- Includes built-in task tracking and progress management
+- Optimizes prompts for maximum AI effectiveness
 
-### Using OpenSpec
+### Using Clavix
 
 **1. Prepare your input**
 
@@ -110,22 +110,32 @@ Features:
 ...
 ```
 
-**2. Run OpenSpec**
+**2. Run Clavix**
 
 ```bash
-openspec init
-# Follow prompts, paste your PRD when asked
+# Install Clavix globally
+npm install -g clavix
+
+# Initialize in your project
+clavix init
+
+# Generate PRD with task list
+/clavix:prd
+# Or via CLI: clavix prd
+
+# Generate implementation tasks
+clavix tasks generate
 ```
 
 **3. Review the output**
 
-OpenSpec generates structured documentation ready for development.
+Clavix generates structured PRD with implementation tasks ready for development.
 
 ---
 
 ## Step 3: Traditional Planning Steps
 
-After OpenSpec generates your project structure, you'll have:
+After Clavix generates your PRD and task lists, you'll have:
 
 ### 1. Product Requirements Document (PRD)
 Detailed feature descriptions and requirements
@@ -167,7 +177,7 @@ Features split into actionable development tasks
 
 ✅ **Invest time in the chat conversation** - A good PRD saves hours in development
 
-✅ **Always mention infrastructure** - OpenSpec needs to know both what and how
+✅ **Always mention infrastructure** - Clavix needs to know both what and how
 
 ✅ **Use Claude for plan review** - Get a second opinion on your architecture
 
@@ -214,11 +224,11 @@ If building for your own business:
 
 ## Common Issues & Troubleshooting
 
-### OpenSpec Not Generating Useful Output
-**Issue:** OpenSpec produces generic or incomplete project structure
-- **Solution:** Ensure your PRD includes BOTH what (features) AND how (tech stack, infrastructure)
-- **Tip:** Mention specific technologies: "Using Astro, Tailwind, Cloudflare Pages"
-- **See:** [Step 2: OpenSpec Project Kickoff](#step-2-openspec-project-kickoff-must-have) for proper input format
+### Clavix Not Generating Useful Output
+**Issue:** Clavix produces generic or incomplete PRD structure
+- **Solution:** Ensure your input includes BOTH what (features) AND how (tech stack, infrastructure)
+- **Tip:** Use `/clavix:deep` for comprehensive analysis of complex projects
+- **See:** [Step 2: Clavix PRD Generation](#step-2-clavix-prd-generation-must-have) for proper input format
 
 ### AI Chat Conversations Going Off-Track
 **Issue:** Ideation conversations become unfocused or overwhelming
