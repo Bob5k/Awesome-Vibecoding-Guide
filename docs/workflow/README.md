@@ -18,6 +18,13 @@ Vibecoding across five phases—from vibecoder preparation through deployment. T
 - [Phase 3: Testing, Debugging & Code Review](./phase-3-testing-debugging.md) - Automated testing, debugging, and code quality improvements
 - [Phase 4: Deployment](./phase-4-deployment.md) - CI/CD and production deployment
 
+## Additional Resources
+- [Git Strategies](./git-strategies.md) - Version control best practices for vibecoding workflows
+  - Branching strategies for solo and team development
+  - Commit message conventions
+  - Collaboration workflows
+  - See also: [Git Commands Cheat Sheet](../development-tools/cheat-sheets/git-commands.md)
+
 ## Cost-Effective Development
 
 **You DON'T need to spend $200+ to start vibecoding!** 

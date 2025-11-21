@@ -1858,9 +1858,12 @@ Target audience: [description]
 
 ## Cross-References
 
+**Interdependent Quality Standards:**
+- **[Performance Standards](./performance.md)** - Core Web Vitals are direct Google ranking factors
+- **[Accessibility Standards](./accessibility.md)** - Accessible markup improves SEO (semantic HTML, alt text, proper structure)
+- **[How These Standards Relate](./README.md#how-these-standards-relate)** - Understanding the quality triangle
+
 **Related documentation:**
-- [Performance Standards](./performance.md) - Core Web Vitals impact SEO rankings
-- [Accessibility Standards](./accessibility.md) - Accessibility improves SEO (semantic HTML, alt text, etc.)
 - [Client Management](../business-model/client-management.md) - Explaining SEO value to clients
 - [Testing & Debugging](../workflow/phase-3-testing-debugging.md) - SEO testing in your workflow
 - [Cloudflare Pages](../hosting-tools/cloudflare-pages.md) - Hosting configuration for SEO

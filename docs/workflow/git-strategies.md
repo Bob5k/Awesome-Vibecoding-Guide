@@ -1086,6 +1086,7 @@ Continue backend work on feat/backend-api branch."
 ---
 
 **Related Documentation:**
+- [Git Commands Cheat Sheet](../development-tools/cheat-sheets/git-commands.md) - Quick reference for common Git operations
 - [Phase 2: Development](./phase-2-development.md) - Development workflows
 - [Phase 4: Deployment](./phase-4-deployment.md) - Production deployment
 - [Context Management](../context-management/README.md) - Using docs/ for coordination

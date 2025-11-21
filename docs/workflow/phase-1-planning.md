@@ -29,6 +29,8 @@ Choose any AI chat you prefer:
 
 ### The Ideation Process
 
+**Pro Tip:** For effective AI collaboration during ideation, see [Mastering AI Prompts](../prompting/README.md) - learn how to structure your questions and requests for better results.
+
 **1. Start with the problem**
 ```
 "I want to build a task management app for remote teams.
@@ -207,6 +209,36 @@ If building for your own business:
 - Focus on core features that solve the main problem
 - Plan iterative improvement based on user feedback
 - Consider [budget-friendly tools](../workflow/phase-0-vibecoder-preparation.md) initially
+
+---
+
+## Common Issues & Troubleshooting
+
+### OpenSpec Not Generating Useful Output
+**Issue:** OpenSpec produces generic or incomplete project structure
+- **Solution:** Ensure your PRD includes BOTH what (features) AND how (tech stack, infrastructure)
+- **Tip:** Mention specific technologies: "Using Astro, Tailwind, Cloudflare Pages"
+- **See:** [Step 2: OpenSpec Project Kickoff](#step-2-openspec-project-kickoff-must-have) for proper input format
+
+### AI Chat Conversations Going Off-Track
+**Issue:** Ideation conversations become unfocused or overwhelming
+- **Solution:** Use structured prompts from [Mastering AI Prompts](../prompting/README.md)
+- **Tip:** Start with the problem, not the solution
+- **Break down:** Large features into smaller, manageable pieces
+
+### Unclear Project Scope
+**Issue:** Can't define clear boundaries for the project
+- **Solution:** Review [Project Scoping](#project-scoping) section in Phase 0
+- **Start with:** MVP (Minimum Viable Product) approach
+- **See also:** [Business Model Planning](../business-model/README.md) for client scoping
+
+### Planning Taking Too Long
+**Issue:** Spending days on planning without starting development
+- **Solution:** Time-box planning to 1-2 days maximum
+- **Remember:** Plans will evolve during development - don't over-optimize
+- **Move forward when:** You have clear PRD, architecture, and first features defined
+
+**For additional help:** Consult the [Troubleshooting Guide](../troubleshooting/README.md) for detailed solutions to planning challenges.
 
 ---
 

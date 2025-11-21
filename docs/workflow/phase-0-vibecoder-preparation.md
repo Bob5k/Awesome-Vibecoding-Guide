@@ -48,6 +48,15 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 
 #### 3. MCP Server Setup (Free Options)
 
+#### 4. Context Management Foundation
+Understanding how to manage context is foundational to all vibecoding work. Before starting any project:
+- **Read**: [Context Management Guide](../context-management/README.md) - Essential for efficient AI collaboration
+- **Learn**: How to keep context lean and relevant
+- **Master**: Using MCP servers for efficient documentation lookup
+- **Practice**: Context optimization techniques from the start
+
+Context management will save you more time and money than any tool upgrade. Start with good habits in Phase 0.
+
 ## Idea Validation 🔍
 
 ### Initial Idea Validation (Free)
@@ -118,7 +127,7 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 
 ### Recommended Learning Path
 1. **Master one language** deeply (Python, JavaScript, etc.)
-2. **Learn prompt engineering** for better AI collaboration
+2. **Learn prompt engineering** for better AI collaboration → [Mastering AI Prompts](../prompting/README.md)
 3. **Understand system design** principles
 4. **Practice debugging** systematically
 5. **Study project patterns** from successful projects
@@ -193,6 +202,34 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 - [ ] **ROI Tracking**: Method to measure tool value
 - [ ] **Upgrade Timeline**: When to consider paid upgrades
 - [ ] **Emergency Fund**: Buffer for unexpected needs
+
+## Common Issues & Troubleshooting
+
+### Tool Setup Problems
+**Issue:** Can't install or configure development tools
+- **Solution:** Check [Development Tools Setup](../development-tools/README.md) for detailed installation guides
+- **See also:** [Troubleshooting Guide](../troubleshooting/README.md#tool-problems) for common installation issues
+
+### Context Management Confusion
+**Issue:** Unclear how to manage context effectively
+- **Solution:** Review [Context Management Guide](../context-management/README.md) fundamentals
+- **Start with:** Basic context optimization techniques before advancing to complex scenarios
+
+### Budget Concerns
+**Issue:** Worried about costs before starting
+- **Solution:** Start with completely free tools (Qwen CLI, VS Code, free AI providers)
+- **Remember:** You can deliver commercial-quality work with $0/month tools
+- **See:** [Cost-Effective Development Strategy](#cost-effective-development-strategy) in this guide
+
+### Overwhelmed by Options
+**Issue:** Too many tools and approaches to choose from
+- **Solution:** Follow the [Free Option](#free-option-perfect-for-getting-started) stack first
+- **Upgrade only when:** You hit clear limitations in your workflow
+- **See also:** [Decision Matrix](../development-tools/decision-matrix.md) for tool selection
+
+**For additional help:** Consult the [Comprehensive Troubleshooting Guide](../troubleshooting/README.md) for detailed solutions to common problems.
+
+---
 
 ## Next Steps
 

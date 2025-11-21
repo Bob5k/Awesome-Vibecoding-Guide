@@ -87,11 +87,20 @@ Especially in the world of frontier models being **expensive** - usually it make
 14. [Context Management](docs/context-management/README.md) → Efficient workflows
 
 **Quick Reference:**
+- [Cross-Reference Guide](docs/cross-reference.md) → Navigate between related topics and find connections
 - [Glossary](docs/glossary.md) → Key terms and definitions
 - [Troubleshooting](docs/troubleshooting/README.md) → Quick problem→solution lookup
 - [Human Context Debugging](docs/troubleshooting/human-context-debugging.md) → Fix 95% of debugging issues
 - [Prompt Templates](docs/prompting/template-library.md) → Copy-paste ready prompts
-- [Contributing](docs/contributing.md) → How to contribute to this guide
+
+**Cheat Sheets:**
+- [Git Commands](docs/development-tools/cheat-sheets/git-commands.md) → Essential Git operations
+- [Cloudflare CLI](docs/development-tools/cheat-sheets/cloudflare-cli.md) → Wrangler commands reference
+- [Common Prompts](docs/development-tools/cheat-sheets/common-prompts.md) → Frequently used AI prompts
+- [Debugging Commands](docs/development-tools/cheat-sheets/debugging-commands.md) → Quick debugging reference
+
+**Contributing:**
+- [Contributing Guide](docs/contributing.md) → How to contribute to this guide
 
 ---
 

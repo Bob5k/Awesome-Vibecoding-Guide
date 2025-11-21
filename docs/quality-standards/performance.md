@@ -1823,9 +1823,12 @@ Cloudflare provides automatic performance optimizations.
 
 ## Cross-References
 
+**Interdependent Quality Standards:**
+- **[SEO Standards](./seo.md)** - Core Web Vitals are direct Google ranking factors
+- **[Accessibility Standards](./accessibility.md)** - Clean, accessible markup improves performance
+- **[How These Standards Relate](./README.md#how-these-standards-relate)** - Understanding the quality triangle
+
 **Related documentation:**
-- [SEO Standards](./seo.md) - Performance affects SEO rankings (Core Web Vitals)
-- [Accessibility Standards](./accessibility.md) - Performance and accessibility overlap
 - [Testing & Debugging](../workflow/phase-3-testing-debugging.md) - Performance testing in your workflow
 - [Cloudflare Pages](../hosting-tools/cloudflare-pages.md) - Hosting configuration for performance
 - [Cloudflare CDN](../hosting-tools/cloudflare-cdn.md) - CDN configuration
