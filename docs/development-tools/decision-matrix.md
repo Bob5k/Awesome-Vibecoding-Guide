@@ -80,10 +80,10 @@ Cost-effectiveness = (Features you'll actually use × Reliability) / Total cost
 
 Detailed comparison of AI coding assistants:
 
-| Feature | Qwen CLI | GLM | Claude Code | Cursor |
-|---------|----------|-----|-------------|--------|
-| **Monthly Cost** | $0 | $15 | $200 | $20 |
-| **Annual Cost** | $0 | $180 | $2,400 | $240 |
+| Feature | Qwen CLI | GLM Lite / Pro | Claude Code | Cursor |
+|---------|----------|----------------|-------------|--------|
+| **Monthly Cost** | $0 | $3 / $15 | $200 | $20 |
+| **Annual Cost** | $0 | $36 / $180 | $2,400 | $240 |
 | **Model** | Qwen 2.5 72B | GLM-4-Plus | Claude Sonnet 4 | Multiple |
 | **Local/Remote** | Remote (Factory API) | Remote (GLM API) | Remote (Anthropic) | Remote |
 | **Context Window** | 128k tokens | 128k tokens | 200k tokens | Varies |
@@ -141,41 +141,70 @@ qwen chat "Create a contact form component"
 **Real-world example:**
 > "I built my entire SaaS MVP using Qwen CLI (free). Only upgraded to GLM when I started billing clients and needed faster responses." - Freelancer using this guide
 
-### GLM ($15/month)
+### GLM Coding Plan
+
+> **Pricing Note:** For current GLM pricing and plans, visit [z.ai/subscribe](https://z.ai/subscribe?ic=CUEFJ9ALMX). Prices may change - always check the provider's website for the latest information.
+
+GLM offers multiple tiers to fit different usage patterns. **For most developers, start with Lite.**
+
+#### GLM Lite ($3/month) - **RECOMMENDED FOR MOST USERS**
 
 **Best for:**
-- Freelancers billing clients
-- Developers who want good value
-- Production work needing reliability
-- Projects requiring consistent quality
+- Most vibecoding developers (majority use case)
+- Freelancers building websites and apps
+- Production work with moderate AI usage
+- Cost-conscious professionals
 
 **Pros:**
-- ✅ Affordable ($15/mo)
+- ✅ Very affordable ($3/mo - less than a coffee)
 - ✅ Excellent model (GLM-4-Plus)
-- ✅ Good rate limits
+- ✅ Sufficient for most development workflows
 - ✅ Reliable API
 - ✅ Large context window
-- ✅ Consistent responses
+- ✅ Great value for professional work
 
 **Cons:**
 - ❌ CLI only (no IDE integration)
 - ❌ Requires manual git commands
-- ❌ Limited advanced features
-- ❌ Chinese company (if that matters for your clients)
+- ❌ Limited to Lite tier rate limits
 
 **When to upgrade from Qwen:**
 - You're billing clients and can expense it
-- You hit Qwen's rate limits
 - You need more reliable/faster responses
-- You can justify $15/mo ($0.50/day)
+- You can justify $3/mo ($0.10/day)
 
-**ROI calculation:**
+#### GLM Pro ($15/month) - **FOR HEAVY USERS ONLY**
+
+**Best for:**
+- Heavy users working in 5-hour intensive sessions
+- Developers needing 600 prompts within 5h windows
+- Multiple projects running simultaneously
+- Enterprise-level work with high AI demands
+
+**Pros:**
+- ✅ High rate limits (600 prompts/5h)
+- ✅ Same excellent GLM-4-Plus model
+- ✅ Reliable for intensive workloads
+- ✅ Still affordable compared to alternatives
+
+**Cons:**
+- ❌ Overkill for most developers
+- ❌ 5x the cost of Lite plan
+- ❌ Most users won't hit Lite limits
+
+**When to upgrade from Lite:**
+- You consistently hit Lite rate limits
+- You work in intensive 5h coding sessions
+- You can justify $15/mo for heavy usage
+- ROI calculation shows clear benefit
+
+**ROI calculation (Pro tier):**
 ```
 $15/month = $0.50/day
-If GLM saves you 15 minutes/day
+If GLM Pro saves you 30 minutes/day vs Lite limits
 Your time worth $40/hour
-Savings: (15/60) × $40 = $10/day
-ROI: $10/day - $0.50/day = $9.50/day profit
+Savings: (30/60) × $40 = $20/day
+ROI: $20/day - $0.50/day = $19.50/day profit
 ```
 
 ### Claude Code ($200/month)
