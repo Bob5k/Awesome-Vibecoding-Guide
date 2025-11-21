@@ -2,6 +2,8 @@
 
 **Tools:** CI/CD platform + Hosting provider
 
+**Prerequisites:** Ensure [Phase 3: Testing & Debugging](./phase-3-testing-debugging.md) is complete and all [Quality Standards](../quality-standards/README.md) are met before deployment.
+
 ## Recommended Platforms
 
 ### Cloudflare Pages/Workers ⭐ **Best for Professional Projects**
@@ -768,6 +770,48 @@ Before deploying to production:
 - [ ] Uptime monitoring configured
 - [ ] Backup system running
 - [ ] Logs accessible
+
+---
+
+## Common Issues & Troubleshooting
+
+### Deployment Fails with Build Errors
+**Issue:** Build succeeds locally but fails in production environment
+- **Solution:** Check Node version compatibility between local and production
+- **Common cause:** Missing environment variables in production settings
+- **See:** [Environment Variables & Configuration](#environment-variables--configuration) section
+
+### Site Shows 404 or Blank Page After Deployment
+**Issue:** Deployment succeeds but site doesn't load correctly
+- **Solution:** Verify build output directory matches platform configuration
+- **Check:** Asset paths are relative, not absolute
+- **See also:** [Production Deployment Checklist](#production-deployment-checklist)
+
+### Environment Variables Not Working
+**Issue:** Application can't access environment variables in production
+- **Solution:** Ensure variables are set in hosting platform dashboard
+- **Tip:** Use platform-specific prefixes (e.g., `PUBLIC_` for Astro)
+- **See:** [Production Environment Setup](#production-environment-setup)
+
+### SSL/HTTPS Not Working
+**Issue:** Site doesn't load over HTTPS or shows certificate errors
+- **Solution:** Check DNS is properly configured and SSL certificate is issued
+- **Wait time:** SSL certificates can take 10-60 minutes to provision
+- **See:** [Domain Setup](#domain-setup) section
+
+### Performance Issues in Production
+**Issue:** Site is slower in production than in development
+- **Solution:** Check [Performance Optimization Post-Deployment](#performance-optimization-post-deployment)
+- **Verify:** CDN is properly configured and assets are cached
+- **See also:** [Quality Standards: Performance](../quality-standards/performance.md)
+
+### Database Connection Failures
+**Issue:** Application can't connect to production database
+- **Solution:** Verify DATABASE_URL is correctly set in environment variables
+- **Check:** Database firewall rules allow connections from hosting platform
+- **Test:** Connection strings are for production database, not development
+
+**For additional help:** Consult the [Troubleshooting Guide](../troubleshooting/README.md) for comprehensive deployment troubleshooting and the [Hosting Tools Guide](../hosting-tools/README.md) for platform-specific issues.
 
 ---
 

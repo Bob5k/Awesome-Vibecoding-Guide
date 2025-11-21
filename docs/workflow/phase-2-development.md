@@ -2,6 +2,8 @@
 
 **Tools:** Your preferred IDE/CLI + Coding agent + MCP servers
 
+**Essential Skills:** Effective AI communication is critical in this phase. See [Mastering AI Prompts](../prompting/README.md) for task-specific patterns, debugging techniques, and ready-to-use templates.
+
 ---
 
 ## Prerequisites: Environment Setup
@@ -143,7 +145,7 @@ git commit -m "feat: implement user authentication"
 
 ### 3. Context Management
 
-Keep context clean and relevant:
+Keep context clean and relevant. See [Context Management Guide](../context-management/README.md) for comprehensive strategies.
 
 **Do:**
 - ✅ Load only the current feature spec

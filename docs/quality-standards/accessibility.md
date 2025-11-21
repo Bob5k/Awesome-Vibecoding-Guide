@@ -1544,12 +1544,15 @@ It's a win-win situation."
 
 ## Cross-References
 
+**Interdependent Quality Standards:**
+- **[SEO Standards](./seo.md)** - Accessibility directly improves SEO (semantic HTML, alt text, proper structure)
+- **[Performance Standards](./performance.md)** - Accessible sites often perform better (clean markup, lighter DOM)
+- **[How These Standards Relate](./README.md#how-these-standards-relate)** - Understanding the quality triangle
+
 **Related documentation:**
 - [Testing & Debugging Workflow](../workflow/phase-3-testing-debugging.md) - Accessibility testing workflows
 - [Client Management](../business-model/client-management.md) - Communicating accessibility value to clients
 - [Quality Standards Overview](./README.md) - Back to quality standards home
-- [SEO Standards](./seo.md) - Accessibility's impact on SEO
-- [Performance Standards](./performance.md) - Performance and accessibility overlap
 
 ---
 

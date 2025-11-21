@@ -6,6 +6,11 @@
 
 This phase combines testing, debugging, and code review into a comprehensive quality assurance process. The goal is to ensure your code works correctly, performs well, and meets quality standards before deployment.
 
+**Essential Resources:**
+- **[Troubleshooting Guide](../troubleshooting/README.md)** - Emergency flowcharts, symptom lookup tables, and recovery patterns
+- **[Mastering AI Prompts: Debugging](../prompting/task-specific-patterns.md#debugging-prompts)** - Effective prompts for debugging with AI
+- **[Quality Standards](../quality-standards/README.md)** - Accessibility, SEO, and Performance requirements
+
 ---
 
 ## 🚀 Part 1: Automated Testing & Debugging
@@ -1413,6 +1418,45 @@ When debugging isn't working:
 - [ ] Used [Debug Template](../prompting/template-library.md#template-4-runtime-error-debugging)?
 - [ ] Described expected vs actual?
 - [ ] Listed what you've tried?
+
+---
+
+## 🎯 Quality Standards Verification
+
+**Before deployment, verify compliance with quality standards:**
+
+### Accessibility Standards
+- [ ] Review [Accessibility Guide](../quality-standards/accessibility.md) for compliance
+- [ ] WCAG 2.1 Level AA compliance verified
+- [ ] Keyboard navigation fully functional
+- [ ] Screen reader compatibility tested
+- [ ] Color contrast ratios meet standards (4.5:1 minimum)
+- [ ] ARIA labels properly implemented
+- [ ] Form inputs have associated labels
+
+### SEO Optimization
+- [ ] Review [SEO Guide](../quality-standards/seo.md) for best practices
+- [ ] Meta tags properly configured (title, description, OG tags)
+- [ ] Semantic HTML structure implemented
+- [ ] Image alt text provided
+- [ ] Internal linking structure optimized
+- [ ] Sitemap generated
+- [ ] robots.txt configured
+- [ ] Page load speed optimized for SEO
+
+### Performance Standards
+- [ ] Review [Performance Guide](../quality-standards/performance.md) for optimization
+- [ ] Core Web Vitals meet targets:
+  - LCP (Largest Contentful Paint) < 2.5s
+  - FID (First Input Delay) < 100ms
+  - CLS (Cumulative Layout Shift) < 0.1
+- [ ] Lighthouse performance score > 90
+- [ ] Images optimized and properly sized
+- [ ] Code splitting implemented
+- [ ] Caching strategies in place
+- [ ] Bundle sizes minimized
+
+**See also:** [Quality Standards Overview](../quality-standards/README.md) for comprehensive testing procedures and checklists.
 
 ---
 

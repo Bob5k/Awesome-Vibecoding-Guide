@@ -8,8 +8,9 @@ Ensuring professional-grade quality in your vibecoding projects. This section co
 - Professional reputation
 - Client satisfaction and referrals
 - Competitive advantage
-- Justifies your pricing
+- **Justifies your pricing** - See [Business Model: Pricing & Economics](../business-model/pricing-economics.md)
 - Reduces support issues
+- **Higher profit margins** - Quality work commands premium rates ([Value Proposition](../business-model/value-proposition.md))
 
 **For Your Clients:**
 - Better Google rankings (SEO + Performance)
@@ -92,6 +93,48 @@ Making your websites load fast and run smoothly.
 
 **Quick Win:**
 Optimize images and implement lazy loading.
+
+---
+
+## How These Standards Relate
+
+The three quality pillars are interdependent and reinforce each other:
+
+### Accessibility → SEO
+- **Semantic HTML** improves search engine understanding
+- **Alt text on images** helps search engines index visual content
+- **Proper heading hierarchy** improves content structure for crawlers
+- **Fast, accessible sites** rank better in search results
+
+**Learn more:** [Accessibility Guide](./accessibility.md) → [SEO Guide](./seo.md)
+
+### Performance → SEO
+- **Core Web Vitals** are direct Google ranking factors
+- **Page speed** affects search rankings
+- **Mobile performance** is critical for mobile-first indexing
+- **Fast sites** get crawled more frequently by search engines
+
+**Learn more:** [Performance Guide](./performance.md) → [SEO Guide](./seo.md)
+
+### Accessibility → Performance
+- **Semantic HTML** requires less CSS/JavaScript
+- **Proper structure** reduces DOM complexity
+- **Keyboard navigation** often means lighter interactions
+- **Clean markup** improves rendering performance
+
+**Learn more:** [Accessibility Guide](./accessibility.md) → [Performance Guide](./performance.md)
+
+### The Quality Triangle
+```
+      Accessibility
+          /   \
+         /     \
+        /       \
+       /         \
+   SEO --------- Performance
+```
+
+**Key Insight:** Improving any one pillar often improves the others. A fast, accessible site naturally ranks better in search engines.
 
 ---
 
