@@ -30,23 +30,24 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 - **Total Cost**: $0/month
 
 #### Budget Option (Professional Grade) - RECOMMENDED
-- **Coding Agent**: [Synthetic](../ai-model-providers/synthetic-new.md) subscription or [GLM Coding Plan](../ai-model-providers/glm-coding-plan.md)
+- **Coding Agent**: [GLM Lite](../ai-model-providers/glm-coding-plan.md) ($3/mo - most users) or [Synthetic Standard](../ai-model-providers/synthetic-new.md) ($20/mo - model variety)
 - **IDE**: [Zed](../development-tools/recommended-tools/zed.md) with premium features
 - **Terminal**: [Warp](../development-tools/recommended-tools/warp.md) for enhanced productivity
 - **MCP Servers**: [Context7](../development-tools/mcp-servers/context7-mcp.md) + [DevTools](../development-tools/mcp-servers/devtools-mcp.md)
-- **Total Cost**: $0-20/month (main recommended range for optimal ROI)
+- **Total Cost**: $3-20/month (main recommended range for optimal ROI)
+- **Note**: Start with GLM Lite ($3/mo). Upgrade to GLM Pro ($15/mo) only if you're a heavy user. [Check current pricing](https://z.ai/subscribe?ic=CUEFJ9ALMX)
 
 #### Premium Option
-- **Coding Agent**: Advanced AI providers (GLM Max $30, Synthetic Pro $60)
+- **Coding Agent**: Advanced AI providers (GLM Max, Synthetic Pro $60)
 - **IDE**: Same as budget + additional premium tools
-- **Total Cost**: $30-50/month
-- **When to use**: Heavier workloads or specialized requirements
-- **Note**: Not required for commercial-quality work
+- **Total Cost**: $30-60/month
+- **When to use**: Very heavy workloads or specialized requirements (rare for most developers)
+- **Note**: Not required for commercial-quality work. Check [current pricing](https://z.ai/subscribe?ic=CUEFJ9ALMX) and [Synthetic pricing](https://synthetic.new/?referral=IDyp75aoQpW9YFt)
 
 #### Experimentation Only ($50+/month)
 - **Total Cost**: $50-100+/month
 - **Only recommended if**: You're comfortable with this spend and want to experiment with multiple premium providers
-- **Important**: This range is for experimentation only - stick to $0-20 for optimal ROI
+- **Important**: This range is for experimentation only - stick to $3-20 for optimal ROI
 
 ### Essential Setup Steps
 

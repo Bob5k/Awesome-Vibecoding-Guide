@@ -24,7 +24,7 @@ Especially in the world of frontier models being **expensive** - usually it make
 - [Honorable Mentions 🏆](docs/development-tools/honorable-mentions/README.md)
   - **Free & Cost-Effective**: Qwen Coder • Gemini CLI • AmpCode • TRAE • Octofriend
   - **Native Integration**: GitHub Copilot
-  - **Tools I Dropped**: Traycer • GitHub Speckit
+  - **Tools I Dropped**: Traycer • GitHub Speckit • Cline • Roo Code • Kilo Code (VSCode plugins)
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
   - **Primary Providers**: GLM Coding Plan • Synthetic.new
   - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter • nanoGPT • Factory AI) • Over-expensive options (Claude Subscription)
@@ -111,8 +111,8 @@ Tip: Keep context lean. Link only relevant files in your prompts and use MCPs (e
 ## 🫶 Support the Author
 
 If you've found this guide helpful and want to support my work, consider using these referral links for the tools I recommend:
-- **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Generous, 5h limit, privacy-first AI provider with extensive open-sourcemodel library and competitive pricing ($10 first month on standard plan)
-- **[GLM Coding Plan](https://z.ai/subscribe?ic=CUEFJ9ALMX)** - Cheap and reliable provider of a coding plan with generous 5h limit and GLM model(s) support
+- **[Synthetic.new](https://synthetic.new/?referral=IDyp75aoQpW9YFt)** - Privacy-first AI provider with 20+ frontier models. Standard plan $20/mo (save $10 with referral link), Pro $60/mo (save $20 with referral link)
+- **[GLM Coding Plan](https://z.ai/subscribe?ic=CUEFJ9ALMX)** - Cost-effective provider with generous 5h usage windows. Lite $3/mo (most users), Pro $15/mo (heavy usage). [Check current pricing](https://z.ai/subscribe?ic=CUEFJ9ALMX)
 
 
 Using these links helps me continue maintaining and expanding this guide while you get access to excellent tools. No pressure though - the guide will always remain free and open source! ⭐
