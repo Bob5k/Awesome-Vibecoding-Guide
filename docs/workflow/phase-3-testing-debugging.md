@@ -176,7 +176,705 @@ Agent will:
 
 ---
 
-## 🔍 Part 2: Code Review & Refactoring
+## 🎯 Part 2: Chrome DevTools Mastery
+
+### Chrome DevTools Basics
+
+**Essential Resource:**
+[Chrome DevTools Official Documentation](https://developer.chrome.com/docs/devtools)
+
+**Why Learn DevTools:**
+- AI can automate testing, but YOU need to understand what's happening
+- Manual testing still required for final QA
+- Essential for understanding AI-reported issues
+- Professional developers know their browser tools
+
+### Essential DevTools Knowledge
+
+#### Console Tab Essentials
+
+**What It Does:**
+- Displays JavaScript errors and warnings
+- Logs custom messages (`console.log()`)
+- Allows interactive JavaScript execution
+- Shows network errors
+
+**Key Actions:**
+```javascript
+// Filtering
+// Click "Errors" "Warnings" "Info" to filter
+
+// Clear console
+Cmd/Ctrl + K  or  Clear console button
+
+// Search within console
+Cmd/Ctrl + F
+
+// Preserve log on navigation
+☑ Preserve log
+```
+
+**Common Issues to Look For:**
+```
+❌ Uncaught TypeError: Cannot read property 'X' of undefined
+   → Something is null/undefined when it shouldn't be
+
+❌ 404 (Not Found) - Failed to load resource
+   → File path incorrect or file missing
+
+❌ CORS policy: No 'Access-Control-Allow-Origin' header
+   → Backend not configured for cross-origin requests
+
+⚠️  Deprecated API warning
+   → Using outdated methods (won't break now, but future issue)
+```
+
+**Pro Tips:**
+- Always check console first when something breaks
+- `console.log()` is your friend during development
+- `console.table()` for displaying arrays/objects nicely
+- `console.error()` for highlighting important errors
+
+#### Network Tab Essentials
+
+**What It Does:**
+- Shows all HTTP requests
+- Displays request/response details
+- Monitors loading times
+- Debugs API failures
+
+**Key Columns:**
+```
+Name       - Request URL
+Status     - HTTP status code (200, 404, 500, etc.)
+Type       - Resource type (document, script, xhr, etc.)
+Initiator  - What triggered the request
+Size       - Response size
+Time       - How long it took
+Waterfall  - Visual timeline
+```
+
+**Common Issues:**
+```
+❌ Status 404 - Not Found
+   → Check URL spelling and file location
+
+❌ Status 500 - Internal Server Error
+   → Backend problem, check server logs
+
+❌ Status 401/403 - Unauthorized/Forbidden
+   → Authentication or permission issue
+
+⏱️  Request taking >3 seconds
+   → Performance issue, optimize or cache
+
+🔴 Failed (red) request
+   → Network error, CORS, or blocked request
+```
+
+**Inspect API Calls:**
+```
+1. Filter by "XHR" or "Fetch" for API calls
+2. Click request to see:
+   - Headers (request/response)
+   - Payload (what you sent)
+   - Preview (response data formatted)
+   - Response (raw response)
+   - Timing (breakdown of request time)
+```
+
+**Pro Tips:**
+- Right-click request → "Copy as cURL" to reproduce in terminal
+- "Preserve log" to keep requests across page navigations
+- Throttle network (Fast 3G, Slow 3G) to test slow connections
+- "Disable cache" when testing changes
+
+#### Elements/Inspector Essentials
+
+**What It Does:**
+- Inspect HTML structure
+- Modify CSS live
+- Test responsive layouts
+- Debug visual issues
+
+**Key Actions:**
+```
+Inspect element: Right-click element → Inspect
+or: Cmd/Ctrl + Shift + C (inspector mode)
+
+Modify HTML: Double-click element in tree
+Modify CSS: Add/edit styles in Styles panel
+Test states: :hover :active :focus in Styles panel
+```
+
+**Responsive Design Mode:**
+```
+1. Click device icon (or Cmd/Ctrl + Shift + M)
+2. Select device:
+   - iPhone 12/13 Pro
+   - iPad
+   - Custom dimensions
+3. Test:
+   - Portrait and landscape
+   - Touch events
+   - Device pixel ratio
+```
+
+**Common Issues:**
+```
+❌ Element not visible but exists in DOM
+   → CSS: display: none, opacity: 0, or positioned off-screen
+
+❌ Layout breaking at certain width
+   → Missing media query or hardcoded widths
+
+❌ Styles not applying
+   → Specificity issue (check Computed tab for overrides)
+   → Wrong selector
+```
+
+**Pro Tips:**
+- Use "Computed" tab to see final applied styles
+- Check "Event Listeners" to see attached JavaScript events
+- "Accessibility" tab shows ARIA labels and role
+- Use color picker in Styles panel for quick color adjustments
+
+#### Performance Tab Basics
+
+**When to Use:**
+- Site feels slow
+- Investigating load times
+- Optimizing animations
+- Finding performance bottlenecks
+
+**How to Profile:**
+```
+1. Open Performance tab
+2. Click Record (●)
+3. Perform the slow action
+4. Click Stop
+5. Analyze the recording
+```
+
+**What to Look For:**
+```
+🔴 Large red bars - Long tasks blocking main thread
+🟡 Yellow sections - JavaScript execution
+🟣 Purple sections - Rendering/layout
+🟢 Green sections - Painting
+
+Look for:
+- Long tasks (>50ms)
+- Excessive reflows
+- JavaScript taking too long
+- Too many function calls
+```
+
+**Quick Wins:**
+```
+❌ JavaScript running on every scroll
+   → Debounce or throttle scroll handler
+
+❌ Large images loading slowly
+   → Compress and lazy load
+
+❌ Too many DOM manipulations
+   → Batch updates or use virtual DOM (React)
+```
+
+---
+
+## 📱 Part 3: Mobile-First Testing Strategy
+
+### The Critical Reality
+
+**85%+ of traffic is mobile for most small business websites.**
+
+**The Most Common Mistake:**
+Testing on laptop (where you develop) instead of optimizing for mobile first.
+
+**Why This Matters:**
+- User experience = Mobile experience
+- Google uses mobile-first indexing for SEO
+- Slow mobile site = lost customers
+- Most bugs appear on mobile, not desktop
+
+### The Mobile-First Approach
+
+**Workflow:**
+```
+1. Mobile testing FIRST (always)
+2. Tablet testing SECOND
+3. Desktop testing LAST
+```
+
+**NOT:**
+```
+❌ Desktop first, mobile "if I have time"
+❌ Desktop only, assuming mobile "works"
+❌ Mobile testing as afterthought
+```
+
+### Mobile Testing Workflow
+
+#### Step 1: Chrome DevTools Mobile Emulation
+
+**Open Device Mode:**
+```
+Cmd/Ctrl + Shift + M
+or
+Click device icon in DevTools toolbar
+```
+
+**Test These Devices:**
+```
+Priority 1 (Most Common):
+- iPhone 13/14 Pro (390 x 844)
+- iPhone 13/14 Pro Max (428 x 926)
+- Samsung Galaxy S21/S22 (360 x 800)
+
+Priority 2 (Common):
+- iPhone SE (375 x 667) - Small screen
+- iPad (768 x 1024) - Tablet
+- iPad Pro (1024 x 1366) - Large tablet
+```
+
+**Test Both Orientations:**
+- Portrait (default, 90% of usage)
+- Landscape (especially for forms and content)
+
+#### Step 2: Touch Interaction Testing
+
+**Common Touch Issues:**
+```
+❌ Buttons too small (< 44x44 pixels)
+   → Fingers can't tap accurately
+
+❌ Links too close together
+   → Accidental taps on wrong link
+
+❌ Hover effects that don't work on touch
+   → No hover on mobile, use :active or :focus
+
+❌ Dropdown menus that need hover
+   → Convert to click/tap menus
+```
+
+**Test With Touch Emulation:**
+```
+DevTools → Settings → Devices → Add custom device
+Enable "Touch" for custom devices
+```
+
+**Touch-Friendly Design:**
+```css
+/* Minimum touch target size */
+button, a {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 12px;
+}
+
+/* Adequate spacing between tappable elements */
+.button-group button {
+  margin: 8px;
+}
+
+/* Remove hover-only interactions */
+.dropdown:hover .menu {
+  display: block;  /* ❌ Doesn't work on mobile */
+}
+
+/* Use click/tap instead */
+.dropdown.active .menu {
+  display: block;  /* ✅ Works on mobile */
+}
+```
+
+#### Step 3: Real Device Testing
+
+**DevTools Emulation ≠ Real Device**
+
+**After DevTools testing, test on real devices:**
+- Your phone (at minimum)
+- Tablet (if possible)
+- Client's device (ideal)
+
+**How to Test on Real Device:**
+
+**Option 1: Local Network Access**
+```bash
+# Find your local IP
+# macOS/Linux: ifconfig | grep "inet "
+# Windows: ipconfig
+
+# Start dev server
+npm run dev
+# Usually: http://localhost:3000
+
+# Access on phone
+http://192.168.1.X:3000
+(Replace with your IP)
+```
+
+**Option 2: Cloudflare Tunnel (Preview)**
+```bash
+# Deploy branch to Cloudflare Pages
+git push origin feat/your-feature
+
+# Access preview URL from phone
+https://feat-your-feature.project.pages.dev
+```
+
+**Option 3: Chrome Remote Debugging**
+```
+1. Enable USB debugging on Android phone
+2. Connect phone via USB
+3. Chrome DevTools → More tools → Remote devices
+4. Inspect and debug directly on phone
+```
+
+#### Step 4: Mobile-Specific Testing Checklist
+
+**Visual Layout:**
+- [ ] All text readable without zooming
+- [ ] Images scaled properly
+- [ ] No horizontal scrolling (unless intentional)
+- [ ] Navigation accessible and usable
+- [ ] Forms fit on screen
+- [ ] Buttons large enough to tap
+- [ ] Spacing adequate between interactive elements
+
+**Performance:**
+- [ ] Page loads in < 3 seconds on 3G
+- [ ] No layout shift during load (CLS)
+- [ ] Smooth scrolling
+- [ ] Fast tap responses
+- [ ] Efficient image loading
+
+**Functionality:**
+- [ ] Forms submittable
+- [ ] Links tappable
+- [ ] Dropdown menus accessible
+- [ ] Modals/popups usable
+- [ ] No JavaScript errors in console
+- [ ] API calls working
+
+**User Experience:**
+- [ ] Text large enough (16px minimum)
+- [ ] Contrast sufficient (4.5:1 ratio)
+- [ ] Forms use appropriate input types (email, tel, number)
+- [ ] Keyboard shows appropriate layout (numeric for phone)
+- [ ] Auto-complete works on forms
+- [ ] Back button works as expected
+
+### Common Mobile Issues and Fixes
+
+#### Issue 1: Text Too Small
+
+**Problem:**
+```css
+body {
+  font-size: 14px;  /* ❌ Too small on mobile */
+}
+```
+
+**Fix:**
+```css
+body {
+  font-size: 16px;  /* ✅ Readable minimum */
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;  /* Larger on desktop if desired */
+  }
+}
+```
+
+#### Issue 2: Horizontal Scrolling
+
+**Problem:**
+```css
+.container {
+  width: 1200px;  /* ❌ Fixed width overflows on mobile */
+}
+```
+
+**Fix:**
+```css
+.container {
+  width: 100%;  /* ✅ Fluid width */
+  max-width: 1200px;
+  padding: 0 16px;  /* Add padding for edges */
+}
+```
+
+#### Issue 3: Buttons Too Small
+
+**Problem:**
+```html
+<a href="/contact">Contact</a>
+<!-- Text link hard to tap -->
+```
+
+**Fix:**
+```html
+<a href="/contact" class="button">Contact</a>
+
+<style>
+.button {
+  display: inline-block;
+  padding: 12px 24px;  /* Large tap target */
+  min-height: 44px;
+  text-align: center;
+}
+</style>
+```
+
+#### Issue 4: Forms Difficult to Fill
+
+**Problem:**
+```html
+<input type="text" name="email">
+<!-- No autocomplete, wrong keyboard -->
+```
+
+**Fix:**
+```html
+<input
+  type="email"
+  name="email"
+  autocomplete="email"
+  placeholder="your@email.com"
+>
+<!-- Correct keyboard, autocomplete enabled -->
+```
+
+### Performance Testing on Mobile
+
+**Chrome DevTools Network Throttling:**
+```
+Network tab → Throttling dropdown:
+- Slow 3G (testing worst case)
+- Fast 3G (average mobile)
+- No throttling (Wi-Fi)
+```
+
+**Lighthouse Mobile Audit:**
+```
+1. Open Lighthouse tab in DevTools
+2. Select "Mobile" device
+3. Click "Analyze page load"
+4. Review scores:
+   - Performance (target: 90+)
+   - Accessibility (target: 100)
+   - Best Practices (target: 100)
+   - SEO (target: 100)
+```
+
+**Target Metrics (Mobile):**
+```
+✅ First Contentful Paint: < 1.8s
+✅ Largest Contentful Paint: < 2.5s
+✅ Time to Interactive: < 3.8s
+✅ Cumulative Layout Shift: < 0.1
+✅ Total page size: < 1MB
+```
+
+---
+
+## 💼 Part 4: Client-Specific Testing
+
+### Understanding Your Client's Audience
+
+**Critical Question to Ask Client:**
+"Who is your typical customer and how do they access your website?"
+
+**Why This Matters:**
+- B2B vs. B2C have different usage patterns
+- Industry affects device usage
+- Audience affects testing priorities
+
+### B2B (Business-to-Business) Clients
+
+**Typical Scenario:**
+- Office workers during business hours
+- Desktop/laptop primary device
+- Professional environment
+- Corporate networks
+
+**Examples:**
+- Accounting firms
+- Legal services
+- B2B SaaS companies
+- Manufacturing suppliers
+- Corporate consulting
+
+**Testing Priority:**
+```
+1. Desktop (60-80% of traffic)
+2. Mobile (20-40% of traffic)
+3. Tablet (5-10% of traffic)
+```
+
+**Desktop-Specific Considerations:**
+- Larger forms are acceptable
+- More complex navigation is fine
+- Hover interactions work
+- Detailed data tables usable
+- Multiple columns in layout
+
+**Client Communication:**
+```
+"Based on your B2B audience, I'm prioritizing desktop testing
+since most of your customers will be accessing the site from
+office computers. Mobile will work great too, but the experience
+is optimized for desktop users."
+```
+
+### B2C (Business-to-Consumer) Clients
+
+**Typical Scenario:**
+- Consumers browsing anytime
+- Mobile primary device (especially local businesses)
+- On-the-go searching
+- Quick decision making
+
+**Examples:**
+- Restaurants
+- Plumbers, electricians, HVAC
+- Hair salons, barbershops
+- Retail stores
+- Local services
+
+**Testing Priority:**
+```
+1. Mobile (70-90% of traffic)
+2. Desktop (10-25% of traffic)
+3. Tablet (5-10% of traffic)
+```
+
+**Mobile-Specific Considerations:**
+- Click-to-call prominent
+- Simple navigation
+- Quick loading
+- Minimal form fields
+- Large, tappable buttons
+- Google Maps integration
+- Easy-to-find hours and location
+
+**Client Communication:**
+```
+"Since you're a local service business, I'm optimizing primarily
+for mobile users. Most people will find you while searching on
+their phone, so mobile performance and usability are critical."
+```
+
+### Industry-Specific Patterns
+
+#### Restaurants and Food Services
+```
+Mobile: 85-90%
+Peak times: Lunch (11am-2pm), Dinner (5pm-8pm)
+Priority: Menu, phone, directions, hours
+```
+
+#### Professional Services (Lawyers, Accountants)
+```
+Mobile: 50-60%
+Desktop: 40-50%
+Priority: Credentials, services, contact forms
+```
+
+#### Home Services (Plumbers, Electricians)
+```
+Mobile: 80-90%
+Often emergency situations
+Priority: Phone number, service area, availability
+```
+
+#### E-commerce
+```
+Mobile: 60-70% (and growing)
+Desktop: 30-40%
+Priority: Product images, checkout flow, mobile payments
+```
+
+#### Healthcare
+```
+Mobile: 65-75%
+Desktop: 25-35%
+Priority: Appointments, directions, insurance, forms
+```
+
+### Client Discovery Questions
+
+**Ask During Initial Consultation:**
+
+**Question 1: Audience Demographics**
+```
+"Who is your typical customer?"
+- Age range
+- Tech-savviness
+- When they search for services
+```
+
+**Question 2: Current Traffic Data**
+```
+"Do you have Google Analytics for your current site?"
+- Check mobile vs. desktop split
+- Review actual data vs. assumptions
+```
+
+**Question 3: Customer Journey**
+```
+"How do customers usually find you?"
+- Google search (usually mobile)
+- Referrals (mixed devices)
+- Direct URL (usually desktop)
+- Social media (usually mobile)
+```
+
+**Question 4: Primary Action**
+```
+"What do you want visitors to do on your site?"
+- Call you (mobile-friendly CTA critical)
+- Fill out form (desktop-friendly if complex)
+- Browse products (mobile and desktop equal)
+- Book appointment (works on both, but test mobile)
+```
+
+### Adjusting Testing Strategy
+
+**For Desktop-Heavy Clients:**
+```
+Testing order:
+1. Desktop functionality ✓
+2. Desktop design ✓
+3. Mobile responsive ✓
+4. Mobile functionality ✓
+
+Okay to optimize FOR desktop while ensuring mobile WORKS.
+```
+
+**For Mobile-Heavy Clients:**
+```
+Testing order:
+1. Mobile functionality ✓
+2. Mobile performance ✓
+3. Mobile design ✓
+4. Desktop (should just work) ✓
+
+Optimize FOR mobile; desktop gets simpler, wider layout.
+```
+
+**When in Doubt: Mobile First**
+Default assumption: **85% mobile traffic** until client data says otherwise.
+
+---
+
+## 🔍 Part 5: Code Review & Refactoring
 
 ### Debugging Deep Dive
 
