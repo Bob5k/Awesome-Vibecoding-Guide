@@ -72,6 +72,7 @@ Examples:
 - Examples and references
 
 ## Astro i18n Setup
+[→ See also: Core Technologies - Astro Framework](../core-technologies.md)
 
 ### Project Structure
 
@@ -427,6 +428,7 @@ const currentPath = Astro.url.pathname.replace(`/${currentLang}`, '');
 ```
 
 ## AI-Assisted Translation Workflows
+[→ See also: Prompting Guides](../prompting/README.md)
 
 ### Initial Translation
 
@@ -920,12 +922,30 @@ const message = t('greeting')
   .replace('{count}', count.toString());
 ```
 
-## Cross-References
+---
 
-**Related documentation:**
-- [Core Technologies](../core-technologies.md) - Astro basics
-- [SEO Standards](../quality-standards/seo.md) - Hreflang and i18n SEO
+## Related Documentation
+
+**Core Technologies:**
+- [Core Technologies](../core-technologies.md) - Astro framework basics and setup
+- [Development Tools](../development-tools/README.md) - Tools for international projects
+
+**Quality Standards:**
+- [SEO Standards](../quality-standards/seo.md) - Hreflang tags and i18n SEO optimization
+- [Accessibility Standards](../quality-standards/accessibility.md) - WCAG for multiple languages
+- [Performance Standards](../quality-standards/performance.md) - Optimizing multi-language sites
+
+**Development Workflow:**
+- [Prompting Guides](../prompting/README.md) - AI-assisted translation techniques
+- [Workflow Phases](../workflow/README.md) - Integrating i18n into development process
+- [Phase 2: Development](../workflow/phase-2-development.md) - Building multilingual features
+
+**Business Considerations:**
 - [Client Management](../business-model/client-management.md) - Pricing i18n projects
+- [Business Model](../business-model/README.md) - Monetizing international services
+
+**Troubleshooting:**
+- [Troubleshooting Guide](../troubleshooting/README.md) - Common i18n issues
 
 ---
 

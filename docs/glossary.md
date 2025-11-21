@@ -13,24 +13,32 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **Cascade**: Windsurf's AI agent that helps with coding tasks by referencing documentation and workflows automatically.
 
 **Context Compression**: The process of summarizing or condensing conversation history to free up space in an AI model's context window while preserving essential information.
+→ [Learn more: Context Management](context-management/README.md)
 
 **Context Debt**: The accumulation of unnecessary or outdated information in a conversation that degrades AI performance over time, similar to technical debt in software development.
+→ [Learn more: Context Management](context-management/README.md)
 
 **Context Window**: The maximum amount of text (measured in tokens) that an AI model can consider and remember in a single conversation or interaction.
+→ [Learn more: Context Management](context-management/README.md)
 
 **Dialog Compression**: See **Context Compression**.
 
 **Markdown Memory Pattern**: A workflow strategy where important information is saved to .md files instead of kept in conversation, reducing context usage and providing persistent knowledge storage.
+→ [Learn more: Context Management](context-management/README.md)
 
 **Plan Mode**: A development mode where you discuss and create a comprehensive project plan with the AI before any code is written, often saving the plan to a markdown file.
+→ [Learn more: Workflow Phases](workflow/README.md)
 
 **Spec-Driven Development**: An approach where you create detailed specifications and plans before coding, allowing AI agents to implement features more accurately and consistently.
+→ [Learn more: Workflow Phases](workflow/README.md)
 
 **The 60-85% Rule**: A context management guideline suggesting optimal AI performance occurs when using 60-85% of the context window; going beyond 85% can degrade response quality.
 
 **Vibecoder**: A developer who uses AI assistants as collaborative partners in software development, emphasizing efficient workflows and cost-effective tool combinations.
+→ [Learn more: Introduction & Philosophy](introduction/README.md)
 
 **Vibecoding**: An approach to software development where you collaborate with AI as a coding partner, using natural language and structured workflows to build applications efficiently.
+→ [Learn more: Introduction & Philosophy](introduction/README.md)
 
 ---
 
@@ -39,12 +47,15 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **AmpCode**: An alternative AI coding assistant CLI tool with a free tier, offering MCP server support and active development.
 
 **Claude Code**: Anthropic's official CLI tool for AI-assisted coding, integrated with Claude's language model capabilities.
+→ [Learn more: Development Tools](development-tools/README.md)
 
 **CLI (Command-Line Interface)**: A text-based interface where you type commands to interact with software, as opposed to clicking buttons in a graphical interface.
 
 **Cursor**: An AI-powered code editor (IDE) with built-in AI assistance and support for external AI models.
+→ [Learn more: Development Tools](development-tools/README.md)
 
 **Droid CLI**: A command-line coding agent with autonomous planning capabilities, permission management, and Bring Your Own Key support.
+→ [Learn more: Droid CLI Guide](development-tools/recommended-tools/droid-cli.md)
 
 **Gemini CLI**: Google's command-line interface for accessing Gemini AI models, offering a generous free tier for development work.
 
@@ -57,8 +68,10 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **IDE (Integrated Development Environment)**: A software application that provides comprehensive tools for writing, testing, and debugging code all in one place.
 
 **OpenSpec**: A specification framework tool that transforms plain language descriptions into comprehensive project plans, tasks, and technical documentation.
+→ [Learn more: OpenSpec Guide](development-tools/recommended-tools/openspec.md)
 
 **Qwen CLI**: Alibaba's free, open-source coding assistant CLI that provides local or cloud-based AI assistance for development.
+→ [Learn more: Development Tools](development-tools/README.md)
 
 **Terminal**: A text-based interface for interacting with your computer's operating system by typing commands.
 
@@ -71,26 +84,35 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **Warp**: A modern, GPU-accelerated terminal emulator with AI-powered command assistance and personalization options.
 
 **Windsurf**: An AI-enhanced code editor with the Cascade agent and advanced context management features.
+→ [Learn more: Windsurf Guide](development-tools/recommended-tools/windsurf.md)
 
 **Zed**: A fast, AI-first code editor built specifically for AI-assisted development with minimal resource usage and native AI integration.
+→ [Learn more: Zed Guide](development-tools/recommended-tools/zed.md)
 
 ---
 
 ## MCP (Model Context Protocol)
 
 **Context7 MCP**: An MCP server that provides access to framework documentation and technical knowledge, helping AI assistants resolve issues by retrieving relevant documentation.
+→ [Learn more: Context7 MCP](development-tools/mcp-servers/context7-mcp.md)
 
 **DevTools MCP**: An MCP server for browser automation and testing, enabling AI agents to automatically navigate websites, collect errors, and debug frontend issues using Chrome DevTools.
+→ [Learn more: DevTools MCP](development-tools/mcp-servers/devtools-mcp.md)
 
 **MCP (Model Context Protocol)**: A standard protocol that allows AI assistants to connect to external data sources and tools, extending their capabilities beyond their built-in knowledge.
+→ [Learn more: MCP Servers](development-tools/mcp-servers/README.md)
 
 **MCP Server**: A service that implements the Model Context Protocol, providing AI assistants with access to specific external resources like documentation, databases, or development tools.
+→ [Learn more: MCP Servers](development-tools/mcp-servers/README.md)
 
 **Sequential Thinking MCP**: An MCP server that forces AI assistants to think through problems systematically in structured steps before providing solutions, improving debugging quality and preventing impulsive decisions.
+→ [Learn more: Sequential Thinking MCP](development-tools/mcp-servers/sequential-thinking-mcp.md)
 
 **Shadcn MCP**: An MCP server that enables AI assistants to browse, search, and install professional UI components from the shadcn/ui library.
+→ [Learn more: Shadcn MCP](development-tools/mcp-servers/shadcn-mcp.md)
 
 **Task Manager MCP**: An MCP server that maintains task lists across different AI conversation sessions, ensuring development context is preserved and tasks require approval before completion.
+→ [Learn more: Task Manager MCP](development-tools/mcp-servers/task-manager-mcp.md)
 
 ---
 
@@ -119,8 +141,10 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **Open-Source Model**: An AI model whose code and weights are publicly available, allowing anyone to use, modify, or run it locally.
 
 **Prompt**: The text input you provide to an AI model to request a specific response or action.
+→ [Learn more: Prompting Guides](prompting/README.md)
 
 **Prompt Engineering**: The practice of crafting effective prompts to get better results from AI models.
+→ [Learn more: Prompting Guides](prompting/README.md)
 
 **Rate Limiting**: Restrictions on how many requests you can make to an AI service within a specific time period.
 
@@ -131,30 +155,38 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 ## AI Model Providers
 
 **Factory AI**: An AI platform offering competitive token pricing with advanced caching, providing access to models like GPT-5-high and codex at reduced costs through the Droid CLI tool.
+→ [Learn more: AI Model Providers](ai-model-providers/README.md)
 
 **GLM (GLM Coding Plan)**: A cost-effective AI model provider offering state-of-the-art open-source models with generous usage limits, serving as the author's main LLM for development work.
+→ [Learn more: GLM Coding Plan](ai-model-providers/glm-coding-plan.md)
 
 **Synthetic.new**: A privacy-first AI model provider offering access to 20+ frontier open-source models with competitive pricing and high rate limits, emphasizing code privacy and fast performance.
+→ [Learn more: AI Model Providers](ai-model-providers/README.md)
 
 ---
 
 ## Web Development & Technologies
 
 **Astro**: A modern web framework focused on generating static HTML with minimal JavaScript, optimized for fast-loading websites and excellent performance scores.
+→ [Learn more: Core Technologies](core-technologies.md)
 
 **bcrypt**: A password hashing algorithm used to securely store user passwords by converting them into irreversible encrypted strings.
 
 **CDN (Content Delivery Network)**: A network of servers distributed globally that deliver web content to users from the closest server, improving loading speed.
 
 **Cloudflare Functions**: Serverless backend functions that run on Cloudflare's edge network, allowing you to add dynamic features to static sites.
+→ [Learn more: Cloudflare Workers](hosting-tools/cloudflare-workers.md)
 
 **Cloudflare Pages**: A free static website hosting platform with global CDN, automatic deployments from Git, and built-in support for serverless functions.
+→ [Learn more: Cloudflare Pages](hosting-tools/cloudflare-pages.md)
 
 **Cloudflare Workers**: Serverless compute platform that runs JavaScript code on Cloudflare's global network, offering 100,000 free requests per day.
+→ [Learn more: Cloudflare Workers](hosting-tools/cloudflare-workers.md)
 
 **CORS (Cross-Origin Resource Sharing)**: A security mechanism that controls which websites can access your API or resources from a different domain.
 
 **D1 Database**: Cloudflare's serverless SQL database service, designed to work seamlessly with Cloudflare Workers and Pages.
+→ [Learn more: D1 Database](hosting-tools/cloudflare-d1.md)
 
 **Edge Functions**: Small pieces of code that run on CDN edge servers close to users, providing fast response times for dynamic content.
 
@@ -177,6 +209,7 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **Svelte**: A modern JavaScript framework that compiles components into highly efficient vanilla JavaScript at build time, resulting in smaller bundle sizes.
 
 **Tailwind CSS**: A utility-first CSS framework that provides small, composable classes for styling HTML directly, enabling rapid UI development without writing custom CSS.
+→ [Learn more: Core Technologies](core-technologies.md)
 
 **Turnstile**: Cloudflare's privacy-focused alternative to CAPTCHA for protecting websites from spam and bots.
 
@@ -253,18 +286,23 @@ A comprehensive reference guide for all technical terms, concepts, and acronyms 
 **Bundle Size**: The total file size of JavaScript and CSS that browsers must download to run a web application, affecting loading speed.
 
 **CLS (Cumulative Layout Shift)**: A Core Web Vitals metric measuring visual stability - how much page content unexpectedly shifts during loading.
+→ [Learn more: Performance Standards](quality-standards/performance.md)
 
 **Core Web Vitals (CWV)**: Google's set of metrics measuring website performance and user experience, including loading speed, interactivity, and visual stability.
+→ [Learn more: Performance Standards](quality-standards/performance.md)
 
 **FCP (First Contentful Paint)**: A performance metric measuring how long it takes for the first piece of content to appear on screen.
+→ [Learn more: Performance Standards](quality-standards/performance.md)
 
 **Hydration**: The process of making a static HTML page interactive by attaching JavaScript event handlers and state.
 
 **Lazy Loading**: Delaying the loading of images or content until they're needed (e.g., when scrolling into view), improving initial page load time.
 
 **LCP (Largest Contentful Paint)**: A Core Web Vitals metric measuring how long it takes for the largest visible content element to load.
+→ [Learn more: Performance Standards](quality-standards/performance.md)
 
 **PageSpeed**: Google's tool and metrics for measuring website performance and providing optimization recommendations.
+→ [Learn more: Performance Standards](quality-standards/performance.md)
 
 **Partial Hydration**: Loading JavaScript only for interactive components rather than the entire page, reducing initial bundle size.
 

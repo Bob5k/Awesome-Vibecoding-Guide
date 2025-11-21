@@ -10,10 +10,10 @@ This section covers powerful hosting tools that enable you to build and deploy p
 
 Cloudflare's ecosystem offers a unique combination of benefits:
 
-- **Cost-Effective**: Generous free tiers and affordable scaling
-- **Global Performance**: 300+ edge locations worldwide
+- **Cost-Effective**: Generous free tiers and affordable scaling [→ Business Model](../business-model/README.md)
+- **Global Performance**: 300+ edge locations worldwide [→ Performance Standards](../quality-standards/performance.md)
 - **Integrated Stack**: All services work seamlessly together
-- **Developer Experience**: Simple deployment, excellent tooling
+- **Developer Experience**: Simple deployment, excellent tooling [→ Deployment Guide](../workflow/phase-4-deployment.md)
 - **Production-Ready**: Enterprise-grade reliability and security
 - **No Infrastructure Management**: Fully serverless
 
@@ -123,6 +123,7 @@ Pages + R2 + KV (caching) + D1 (metadata)
 ## Cost Comparison
 
 ### Traditional Hosting vs. Cloudflare Stack
+[→ See also: Business Model & Pricing Strategies](../business-model/README.md)
 
 **Example**: Web application with 10,000 users
 
@@ -408,5 +409,27 @@ The Cloudflare edge platform aligns perfectly with the vibecoding philosophy:
 - **Ship confidently**: Production-ready infrastructure
 
 Whether you're building a side project, client website, or the next big SaaS, these tools provide everything you need at a fraction of the cost of traditional hosting.
+
+---
+
+## Related Documentation
+
+**Deployment & Workflow:**
+- [Phase 4: Deployment](../workflow/phase-4-deployment.md) - Step-by-step deployment guide
+- [Workflow Overview](../workflow/README.md) - Complete development process
+- [Core Technologies](../core-technologies.md) - Astro + Tailwind + Cloudflare stack
+
+**Quality & Performance:**
+- [Performance Standards](../quality-standards/performance.md) - Core Web Vitals optimization
+- [SEO Standards](../quality-standards/seo.md) - Search engine optimization
+
+**Business & Pricing:**
+- [Business Model](../business-model/README.md) - Pricing strategies and cost optimization
+- [Client Management](../business-model/client-management.md) - Project pricing guidance
+
+**Troubleshooting:**
+- [Troubleshooting Guide](../troubleshooting/README.md) - Common issues and solutions
+
+---
 
 **Ready to build? Pick a service and dive in!**
