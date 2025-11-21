@@ -11,23 +11,34 @@ A curated selection of AI model providers and services optimized for vibecoding 
 - **[Synthetic.new](./synthetic-new.md)** — Privacy-first provider with extensive model library and competitive pricing
 
 ### Choosing Between GLM and Synthetic
-**Choose GLM if:**
-- You're on a budget ($3-30/month range)
-- You need heavy usage within 5-hour windows (Pro plan: 600 prompts/5h, Max plan: 2,400 prompts/5h)
-- You want the most cost-effective option for intensive development work
-- Budget recommendation: GLM Pro ($15/month) for heavy 5h window usage
 
-**Choose Synthetic if:**
+> **Pricing Note:** Always check current pricing at [GLM Pricing](https://z.ai/subscribe?ic=CUEFJ9ALMX) and [Synthetic Pricing](https://synthetic.new/?referral=IDyp75aoQpW9YFt) as prices may change.
+
+**Choose GLM Lite ($3/month) if:**
+- You're most developers (this is the sweet spot for majority)
+- You're on a tight budget but want professional AI assistance
+- You have moderate AI usage patterns
+- You want the most cost-effective option
+- **Recommended starting point for most vibecoding workflows**
+
+**Choose GLM Pro ($15/month) if:**
+- You're a heavy user working in intensive 5-hour sessions
+- You need 600 prompts within 5h windows
+- You consistently hit GLM Lite rate limits
+- You work on multiple projects simultaneously with high AI demands
+
+**Choose Synthetic Standard ($20/month) if:**
 - You have a moderate budget (~$20/month)
 - You value model flexibility and want access to 20+ frontier models
 - Privacy is a top concern for your code
-- You have moderately heavy usage spread across 5-hour windows (135 messages/5h on Standard plan)
+- You have moderately heavy usage spread across 5-hour windows (135 messages/5h)
 - You want 3x more messages than Claude's $20 plan
 
 **Budget Summary:**
-- **$0-20/month**: GLM as primary (Lite $3, Pro $15) or Synthetic Standard ($20)
-- **Heavy 5h usage + $15-20 budget**: GLM Pro is optimal
-- **Moderate 5h usage + $20 budget**: Synthetic Standard for flexibility
+- **$0-3/month**: Qwen CLI (free) or GLM Lite ($3) - optimal for most users
+- **$3-15/month**: GLM Lite ($3) for majority, GLM Pro ($15) only if you're a heavy user
+- **$20/month**: Synthetic Standard if you need model variety and privacy focus
+- **$15-20 sweet spot**: GLM Pro ($15) for heavy 5h usage OR Synthetic Standard ($20) for model flexibility
 
 ## Honorable Mentions
 Services I've used but don't recommend for primary development work:

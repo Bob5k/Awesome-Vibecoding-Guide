@@ -36,10 +36,11 @@ Vibecoding across five phases—from vibecoder preparation through deployment. T
 - **Commercial Viability**: Yes, can deliver professional websites and applications
 
 ### Budget Option (Professional Grade) - RECOMMENDED
-- **Tools**: Synthetic / GLM subscription + Zed + MCP servers
-- **Cost**: $0-20/month (main recommended range)
+- **Tools**: GLM Lite / Synthetic Standard + Zed + MCP servers
+- **Cost**: $3-20/month (main recommended range)
 - **Capabilities**: Enhanced AI assistance, better integrations
 - **Commercial Viability**: Enterprise-level project delivery
+- **Note**: GLM Lite ($3/mo) sufficient for most users, GLM Pro ($15/mo) only for heavy usage. Check [current GLM pricing](https://z.ai/subscribe?ic=CUEFJ9ALMX)
 
 ### Premium Option
 - **Tools**: Advanced AI providers + premium integrations
