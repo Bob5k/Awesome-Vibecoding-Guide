@@ -98,6 +98,23 @@ If you're migrating from other development environments:
 2. Check [honorable mentions](./honorable-mentions/README.md) for free alternatives
 3. See [tools I dropped](./tools-i-dropped.md) for migration experiences
 
+## Tool Selection & Quick Reference
+
+### [Tool Selection Decision Matrix](./decision-matrix.md)
+Comprehensive comparison of AI coding tools, providers, and IDEs with cost-benefit analysis:
+- Coding agents comparison (Qwen, GLM, Claude Code, Cursor)
+- AI providers (Factory AI, Synthetic, GLM Direct, Anthropic, OpenAI)
+- IDE comparison (Zed, VS Code, Cursor, Windsurf)
+- ROI scenarios for different budgets
+- Migration guides from expensive to budget tools
+
+### [Cheat Sheets](./cheat-sheets/README.md)
+Quick-reference guides for daily development:
+- **[Git Commands](./cheat-sheets/git-commands.md)** — Essential git workflows and recovery
+- **[Cloudflare CLI](./cheat-sheets/cloudflare-cli.md)** — Wrangler commands for Pages, Workers, D1, KV, R2
+- **[Common Prompts](./cheat-sheets/common-prompts.md)** — AI prompt templates for features, debugging, refactoring
+- **[Debugging Commands](./cheat-sheets/debugging-commands.md)** — Chrome DevTools, performance profiling, network inspection
+
 ## Support & Community
 
 - Each tool has detailed documentation linked above
