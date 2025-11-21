@@ -9,10 +9,9 @@ Development tools optimized for vibecoding productivity:
 - **[Zed.dev](./recommended-tools/zed.md)** — Primary IDE for fast, modern development
 - **[Windsurf](./recommended-tools/windsurf.md)** — High-speed AI IDE with 950 tok/s SWE-1.5 agent
 - **[Droid CLI](./recommended-tools/droid-cli.md)** — Main coding agent with BYOK support
-- **[OpenSpec CLI](./recommended-tools/openspec-cli.md)** — Specification framework for project planning
+- **[Clavix](./recommended-tools/clavix.md)** — CLEAR-based PRD generator with seamless task list creation
 - **[Warp](./recommended-tools/warp.md)** — Modern terminal for enhanced productivity
 - **[Claude Code CLI](./recommended-tools/claude-code-cli.md)** — Backup AI coding assistant
-- **[Clavix](./recommended-tools/clavix.md)** — Prompt optimization engine for maximum AI effectiveness
 
 ### MCP Servers
 Model Context Protocol servers for enhanced capabilities:
@@ -40,7 +39,7 @@ Model Context Protocol servers for enhanced capabilities:
 ### When to Use This Guide
 This tool stack is designed for **Phase 0-2** of the vibecoding workflow:
 - [Phase 0: Vibecoder Preparation](../workflow/phase-0-vibecoder-preparation.md) - Initial tool selection
-- [Phase 1: Planning](../workflow/phase-1-planning.md) - OpenSpec integration
+- [Phase 1: Planning](../workflow/phase-1-planning.md) - Clavix PRD generation
 - [Phase 2: Development](../workflow/phase-2-development.md) - Daily coding workflow
 
 ### 1. Essential Setup (Phase 0)

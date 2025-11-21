@@ -10,7 +10,7 @@ Welcome to the Awesome Vibecoding Guide! This quickstart will get you up and run
 - Set clear success criteria
 
 ### 2. Create Specifications
-- Use OpenSpec or your preferred format for detailed feature specs
+- Use Clavix for CLEAR-based PRD generation with ready-to-implement task lists
 - Break down complex features into manageable tasks
 - Define technical requirements and constraints
 
