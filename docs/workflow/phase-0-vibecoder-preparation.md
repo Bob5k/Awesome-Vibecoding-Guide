@@ -29,12 +29,24 @@ Have in mind that you don't need frontier or State-Of-The-Art tools to deliver c
 - **AI Providers**: [Budget AI Options](../ai-model-providers/README.md#honorable-mentions) - Free tiers available
 - **Total Cost**: $0/month
 
-#### Budget Option (Professional Grade)
+#### Budget Option (Professional Grade) - RECOMMENDED
 - **Coding Agent**: [Synthetic](../ai-model-providers/synthetic-new.md) subscription or [GLM Coding Plan](../ai-model-providers/glm-coding-plan.md)
 - **IDE**: [Zed](../development-tools/recommended-tools/zed.md) with premium features
 - **Terminal**: [Warp](../development-tools/recommended-tools/warp.md) for enhanced productivity
 - **MCP Servers**: [Context7](../development-tools/mcp-servers/context7-mcp.md) + [DevTools](../development-tools/mcp-servers/devtools-mcp.md)
-- **Total Cost**: $5-20/month
+- **Total Cost**: $0-20/month (main recommended range for optimal ROI)
+
+#### Premium Option
+- **Coding Agent**: Advanced AI providers (GLM Max $30, Synthetic Pro $60)
+- **IDE**: Same as budget + additional premium tools
+- **Total Cost**: $30-50/month
+- **When to use**: Heavier workloads or specialized requirements
+- **Note**: Not required for commercial-quality work
+
+#### Experimentation Only ($50+/month)
+- **Total Cost**: $50-100+/month
+- **Only recommended if**: You're comfortable with this spend and want to experiment with multiple premium providers
+- **Important**: This range is for experimentation only - stick to $0-20 for optimal ROI
 
 ### Essential Setup Steps
 

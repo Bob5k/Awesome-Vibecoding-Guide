@@ -1,17 +1,22 @@
 # GLM Coding Plan — Main LLM 🧠
 
 ## Pricing
-- Lite: $3/month — 120 prompts per 5 hours
-- Pro: $15/month — 600 prompts per 5 hours
-- Max: $30/month — 2,400 prompts per 5 hours
+- Lite: $3/month (first month/quarter/year paid upfront), then $6/month
+- Pro: $15/month (first month/quarter/year paid upfront), then $30/month
+- Max: $30/month (first month/quarter/year paid upfront), then $60/month
 - Practicality of limits: Very hard to hit even with 2–5 parallel agents on Pro and Max plans
-- Note: prices are for first month, but can be preserved on this level aswell for quarterly or yearly-basis plans
-- Note2: I'm on Max plan currently, but haven't hit limits when I was on Pro plan for over a month in the past aswell
-- **IMPORTANT:** Currently the fastest combo of working with GLM is to conenct it to Claude Code. However - the most efficient combo is to connect it to Droid CLI - due to superior planning and following the plan architecture of Droid.
+- **Lite**: 120 prompts per 5 hours
+- **Pro**: 600 prompts per 5 hours
+- **Max**: 2,400 prompts per 5 hours
+- Note: I'm on Max plan currently, but haven't hit limits when I was on Pro plan for over a month in the past aswell
+- **IMPORTANT Integration Tools:** Claude Code and Droid CLI are generally on par when it comes to efficiency in most cases. Main differences:
+  - **Claude Code**: Faster to work with and iterate on code from my experience
+  - **Droid CLI**: Better planning mode overall for complex architectures
+  - **Tip**: Planning capabilities can be improved for both tools using [Clavix](https://clavix.dev) for prompt optimization
 - Optional: 10% off referral link (disclosure): <https://z.ai/subscribe?ic=CUEFJ9ALMX>
 
 ## Why GLM?
-- Lowest cost while keeping quality around Sonnet 4 level
+- Lowest cost while keeping quality around modern, commercial LLMs level
 - State‑of‑the‑art open‑source model
 - Can autonomously resolve bugs for 10–15 minutes without intervention
 - Handles complex projects (Next.js + complex database + backend)

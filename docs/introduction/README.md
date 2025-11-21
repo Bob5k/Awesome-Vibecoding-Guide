@@ -20,7 +20,7 @@ The key takeaway: Often, the combination of multiple specialized, cost-effective
 
 ## What will you learn?
 
-- How to save ~70% on AI tool costs without sacrificing quality
+- How to save ~70% on AI tool costs without sacrificing quality (average across different tool combinations and compared to premium all-in-one solutions like Cursor Pro + Claude Subscription)
 - How to manage context effectively in long‑term projects
 - How to avoid pitfalls and the most common vibecoding mistakes
 - How to build a reliable tool stack tailored to your needs
@@ -49,7 +49,7 @@ But the most important thing here (potentially):
   - Focus on performance (aim for 85+ on Performance and 100 on other PageSpeed metrics), good UX, structured data, and proper meta tags — not just keyword stuffing.
   - A well‑built, high‑performing site usually converts and brings referrals — one happy client tends to lead to more.
 - The pitch in one line: fast, modern, low‑maintenance sites that actually perform — a better fit for most small businesses than a heavyweight WordPress setup.
-- Also **have in mind** that you could potentially sell such sites for less than usual WP site - as with vibecoding - development is seamless and with proper stack - which I'm talking in this repo about - it's like chatting with your project usually (and it's not expensive, so it pays for a year of your stack after your first, demo gig for $200)
+- Also **have in mind** that you could potentially sell such sites for competitive prices compared to typical WordPress sites ($500-1,000 range) - as with vibecoding - development is seamless and with proper stack - which I'm talking in this repo about - it's like chatting with your project usually (and it's not expensive, so it pays for a year of your stack after your first gig at $300+ minimum)
 
 ---
 

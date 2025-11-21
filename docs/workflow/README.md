@@ -27,7 +27,7 @@ Vibecoding across five phases—from vibecoder preparation through deployment. T
 
 ## Cost-Effective Development
 
-**You DON'T need to spend $200+ to start vibecoding!** 
+**You DON'T need to spend $200+ to start vibecoding!**
 
 ### Free Option (Perfect for Beginners)
 - **Tools**: Qwen CLI + VS Code + MCP servers
@@ -35,11 +35,22 @@ Vibecoding across five phases—from vibecoder preparation through deployment. T
 - **Capabilities**: Full-stack web development, APIs, databases
 - **Commercial Viability**: Yes, can deliver professional websites and applications
 
-### Budget Option (Professional Grade)
+### Budget Option (Professional Grade) - RECOMMENDED
 - **Tools**: Synthetic / GLM subscription + Zed + MCP servers
-- **Cost**: $5-20/month  
+- **Cost**: $0-20/month (main recommended range)
 - **Capabilities**: Enhanced AI assistance, better integrations
 - **Commercial Viability**: Enterprise-level project delivery
+
+### Premium Option
+- **Tools**: Advanced AI providers + premium integrations
+- **Cost**: $30-50/month
+- **When to use**: Heavier workloads or specialized requirements
+- **Note**: Not required for commercial-quality work
+
+### Experimentation Only ($50+/month)
+- **Cost**: $50-100+/month
+- **Only recommended if**: You're comfortable with this spend and want to experiment with multiple premium providers
+- **Important**: This range is for experimentation only - stick to $0-20 for optimal ROI
 
 **Key Insight**: The LLM model matters less than your technique. With proper vibecoding methods, even free tools can deliver commercial-quality results.
 
