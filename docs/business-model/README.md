@@ -25,8 +25,8 @@ Unlike the common narrative of "build a SaaS and get rich with vibecoding," this
 
 ## Quick Stats
 
-- **Typical Website**: 4-6 hours of work
-- **Price Range**: $300-700 (sometimes more)
+- **Typical Website**: 4-6 hours of work (for standard single-page site with 7-10 sections)
+- **Price Range**: $300-700+ (minimum $300)
 - **Income Goal**: ~$1000/month = 2 websites
 - **Tech Stack**: Astro + Tailwind + Cloudflare Pages (free hosting)
 - **Target Clients**: Local service businesses

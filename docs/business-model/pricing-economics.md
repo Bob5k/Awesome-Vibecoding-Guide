@@ -32,6 +32,7 @@
 - Map/contact info
 - Privacy policy
 
+**Complexity Definition:** 5-6 sections, single page OR multipage with max homepage + 2 subpages
 **Time:** 3-4 hours
 **Example Clients:** Handyman, cleaner, single-service contractor
 
@@ -46,6 +47,7 @@
 - Map/contact details
 - Privacy policy
 
+**Complexity Definition:** 7-10 sections, up to 5 subpages usually
 **Time:** 4-6 hours
 **Example Clients:** Electrician, plumber, HVAC, landscaping
 
@@ -251,11 +253,30 @@ Don't sacrifice quality for speed. But do:
 
 ## Payment Structure
 
-### What I Recommend / Prefer
-- Get paid after work done - worst case scenario you're losing time. Best case scenario - you'll win loyal client
-- This shows your trust and essentially builds relationship from start
-**Cons:** Client might disappear before paying 
-**Pros:** It's safe, because if you'll deploy the website for client and they'll not pay - you just turn website down. So it's a safety net for you
+### What I Recommend / Prefer (European Market Context)
+**My Approach:** Get paid after work is completed and delivered
+
+**Why This Works for Me:**
+- **Market Context:** This is my preference based on the European market where I operate
+- **Trust Building:** Shows confidence in your work and builds immediate trust with clients
+- **Safety Net:** If client doesn't pay after seeing the completed website, the work remains yours - they can't clone or publish the demo you built
+- **Client Psychology:** Clients are more willing to pay after seeing results rather than paying upfront, especially when you're not yet established in the market
+
+**When This Works Best:**
+- **Starting out:** Works well when building your reputation and portfolio
+- **Local markets:** Especially effective in European markets where trust-based business is valued
+- **Not required:** You don't need an established reputation for this to work - it actually helps BUILD that reputation
+
+**Risks and Mitigation:**
+- **Risk:** Client might resign after work is done
+- **Mitigation:** Work remains yours; they can't use it without payment
+- **Advantage over upfront payment:** If client pays upfront then resigns, you face the dilemma of refunding (losing time) or keeping payment (risking negative reviews)
+
+**Why I Avoid Upfront Payment:**
+- Client pays → resigns → you either refund (lose time) OR keep payment (client posts negative review)
+- With post-payment: worst case is lost time, but you keep the work and no payment dispute
+
+**Important:** This is MY preference based on MY market conditions. Assess what works best for your local market and risk tolerance.
 
 ### Other options, best to worst IMO
 
@@ -378,20 +399,36 @@ But don't work for free. Even non-profits have budgets.
 
 ### Your Costs Per Website
 
-**Tools (Monthly, Amortized):**
-- AI provider: $50-100/month
-- Domain for testing: $12/year
+**Tools (Monthly, Amortized) - Budget Setup:**
+- AI provider: $0-20/month (using recommended budget options: free tools, GLM Lite $3, GLM Pro $15, or Synthetic Standard $20)
+- Domain for testing: $12/year (~$1/month)
 - Design tools: $0-20/month
-- **Total: ~$15-25 per website** (if doing 4/month)
+- **Total: ~$5-10 per website** (if doing 4/month with budget setup)
+
+**Tools (Monthly, Amortized) - Premium Setup:**
+- AI provider: $30-50/month (GLM Max $30, Synthetic Pro $60, or other premium options)
+- Domain for testing: $12/year (~$1/month)
+- Design tools: $0-20/month
+- **Total: ~$10-20 per website** (if doing 4/month with premium setup)
+
+**Tools (Monthly, Amortized) - Experimentation Only ($50+/month):**
+- AI provider: $50-100+/month
+- **Only recommended if**: You're comfortable spending this amount and want to experiment with multiple premium providers
+- **Not necessary**: For commercial-quality work - stick to $0-20 range for optimal ROI
 
 **Time (Opportunity Cost):**
 - 6 hours at $50/hour = $300
 - This is your minimum viable price
 
-**Net Profit Targets:**
-- $300 website - $25 costs = $275 net (~$46/hour)
-- $500 website - $25 costs = $475 net (~$79/hour)
-- $700 website - $25 costs = $675 net (~$112/hour)
+**Net Profit Targets (Budget Setup):**
+- $300 website - $5-10 costs = $290-295 net (~$48-49/hour for 6h work)
+- $500 website - $5-10 costs = $490-495 net (~$82-83/hour for 6h work)
+- $700 website - $5-10 costs = $690-695 net (~$115-116/hour for 6h work)
+
+**Net Profit Targets (Premium Setup):**
+- $300 website - $10-20 costs = $280-290 net (~$47-48/hour for 6h work)
+- $500 website - $10-20 costs = $480-490 net (~$80-82/hour for 6h work)
+- $700 website - $10-20 costs = $680-690 net (~$113-115/hour for 6h work)
 
 ## Minimum Viable Pricing
 

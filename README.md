@@ -18,16 +18,16 @@ Especially in the world of frontier models being **expensive** - usually it make
 
 ## Contents
 - [Development Tools 🛠️](docs/development-tools/README.md)
-  - **Recommended Tools**: Zed • Droid CLI • OpenSpec • Warp • Claude Code CLI • Clavix
+  - **Recommended Tools**: Zed • Windsurf • Droid CLI • OpenSpec • Warp • Claude Code CLI • Clavix
   - **MCP Servers**: Context7 • DevTools • Sequential Thinking • Task Manager • Shadcn
   - **Additional**: Compatibility Guide
 - [Honorable Mentions 🏆](docs/development-tools/honorable-mentions/README.md)
-  - **Free & Cost-Effective**: Qwen Coder • Gemini CLI • AmpCode • TRAE • Windsurf • Octofriend
+  - **Free & Cost-Effective**: Qwen Coder • Gemini CLI • AmpCode • TRAE • Octofriend
   - **Native Integration**: GitHub Copilot
   - **Tools I Dropped**: Traycer • GitHub Speckit
 - [AI Model Providers 🤖](docs/ai-model-providers/README.md)
-  - **Primary Providers**: GLM Coding Plan • Factory AI • Synthetic.new
-  - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter • nanoGPT) • Over-expensive options (Claude Subscription)
+  - **Primary Providers**: GLM Coding Plan • Synthetic.new
+  - **Honorable Mentions**: Budget platforms (Chutes.ai • OpenRouter • nanoGPT • Factory AI) • Over-expensive options (Claude Subscription)
 - [Core Technologies 🧰](docs/core-technologies.md)
   - Astro • Tailwind CSS • Cloudflare Pages
 - [Hosting Tools 🌐](docs/hosting-tools/README.md)
