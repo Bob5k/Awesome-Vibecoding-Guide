@@ -1,15 +1,15 @@
-# Cline / Roo Code / Kilo Code
+# Cline / Roo Code
 
 ## Overview
-Cline, Roo Code, and Kilo Code are VSCode plugins for AI-assisted coding, with Roo Code and Kilo Code being forks of the original Cline project. These tools bring vibecoding capabilities directly into Visual Studio Code through a GUI-based interface, making AI-assisted development accessible without leaving your familiar editor. They're commonly used across the vibecoding industry and are known for rapid development cycles with frequent updates.
+Cline and Roo Code are VSCode plugins for AI-assisted coding, with Roo Code being a fork of the original Cline project. These tools bring vibecoding capabilities directly into Visual Studio Code through a GUI-based interface, making AI-assisted development accessible without leaving your familiar editor. They're commonly used across the vibecoding industry and are known for rapid development cycles with frequent updates.
 
 ## Key Strengths
 - **Seamless VSCode Integration**: Work within your existing editor without switching contexts
 - **GUI-Based Vibecoding**: User-friendly interface for AI interactions, perfect for developers preferring visual workflows
-- **Fast Development Pace**: All three tools are actively developed with frequent updates and new features
+- **Fast Development Pace**: Both tools are actively developed with frequent updates and new features
 - **Provider Integration**: Seamless integration with [GLM Coding Plan](../../ai-model-providers/glm-coding-plan.md) and [Synthetic.new](../../ai-model-providers/synthetic-new.md) subscriptions
 - **Plugin Ecosystem**: Access to VSCode's extensive plugin library alongside AI capabilities
-- **Multiple Forks**: Three actively maintained variants give users choice based on specific features or development direction
+- **Multiple Options**: Two actively maintained variants give users choice based on specific features or development direction
 
 ## Limitations / Current Issues
 - **Unnecessary Complexity**: Add layers of abstraction that aren't needed for standard vibecoding workflows
@@ -28,11 +28,11 @@ Cline, Roo Code, and Kilo Code are VSCode plugins for AI-assisted coding, with R
 ## Who Should Consider Alternatives
 - **Fast-paced vibecoding practitioners**: The added complexity can slow down workflows that benefit from direct, streamlined interactions
 - **MCP-heavy workflows**: If you rely on less common or custom MCP servers, expect reliability issues
-- **CLI-first developers**: If you prefer command-line tools, the GUI overhead may feel unnecessary
+- **CLI-first developers**: If you prefer command-line tools, the GUI overhead may feel unnecessary (consider [Kilo CLI](../recommended-tools/kilocode.md) instead)
 - **Simplicity seekers**: Developers who value minimal abstraction layers between themselves and the AI
 
 ## Why I Dropped Them
-I used all three of these tools (Cline, Roo Code, and Kilo Code) for extended periods in my workflow. While they're well-crafted and popular in the vibecoding community, I ultimately moved away from them because:
+I used both Cline and Roo Code for extended periods in my workflow. While they're well-crafted and popular in the vibecoding community, I ultimately moved away from them because:
 
 1. **Complexity vs. Value**: They add architectural layers that aren't necessary for standard vibecoding. The GUI and plugin infrastructure introduce overhead without proportional benefits for my fast-paced workflow.
 
@@ -44,9 +44,11 @@ I used all three of these tools (Cline, Roo Code, and Kilo Code) for extended pe
 
 That said, these are genuinely popular tools in the vibecoding industry for good reason—they make AI-assisted coding accessible within VSCode and have strong integration with major providers. They just didn't align with my specific workflow preferences for speed and simplicity.
 
+## Note on Kilo Code
+Kilo Code started as a fork of Cline but has since diverged significantly with the release of their CLI tool. It's now recommended as a separate tool due to its dual-platform approach (VSCode + CLI) and unique features like intelligent modes and BYOK support. See [Kilo Code](../recommended-tools/kilocode.md) in the recommended tools section.
+
 ## Official Resources
 - **Cline**: [github.com/cline/cline](https://github.com/cline/cline)
 - **Roo Code**: [github.com/RooVetGit/Roo-Cline](https://github.com/RooVetGit/Roo-Cline)
-- **Kilo Code**: [Official website](https://kilocode.ai/)
 
 Back: [Honorable Mentions](README.md)
