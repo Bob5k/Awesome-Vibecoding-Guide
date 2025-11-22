@@ -143,8 +143,8 @@ Kilo offers three flexible pricing options to fit different needs:
 
 ### Enterprise Solutions
 Kilo provides robust enterprise support for organizations:
-- **Teams Plan** ($29/user/month): Centralized billing and team management
-- **Enterprise Plan** ($299/user/month): Adds SSO, audit logs, and dedicated support
+- **Teams Plan** ($15/user/month): Centralized billing and team management
+- **Enterprise Plan** (Custom pricing): Contact for SSO, audit logs, and dedicated support
 - Strong support for enterprise workflows and compliance needs
 
 This pricing model makes Kilo exceptionally accessible while scaling economically with your needs—from individual developers to large enterprises.
