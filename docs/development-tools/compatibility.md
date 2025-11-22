@@ -19,6 +19,7 @@ This guide describes in general how tools should be compatible with the Awesome 
 ### CLI-Based Coding Agents
 - **Droid CLI**: Command-line interface with BYOK support
 - **Claude Code**: Anthropic's CLI tool with API integration
+- **Kilo CLI**: Multi-platform assistant with intelligent modes and BYOK support (see [Recommended Tools](./recommended-tools/kilocode.md))
 - **AmpCode**: Alternative CLI coding assistant (see [Honorable Mentions](./honorable-mentions.md) for free tier)
 - **Codex**: GitHub's coding assistant tool
 - **Other similar CLI agents**: Any tool supporting external LLM APIs
@@ -30,7 +31,7 @@ This guide describes in general how tools should be compatible with the Awesome 
 - **Cursor AI**: Advanced AI integration capabilities
 
 ### AI Assistant Plugins
-- **Kilo**: AI coding assistant plugin
+- **Kilo VSCode Plugin**: AI coding assistant with dual CLI/IDE support (see [Recommended Tools](./recommended-tools/kilocode.md))
 - **Roo**: Development assistant with external integration
 - **Cline**: Enhanced AI assistant for development
 - **Continue**: Open-source AI assistant with BYOK support

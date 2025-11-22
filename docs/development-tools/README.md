@@ -9,6 +9,7 @@ Development tools optimized for vibecoding productivity:
 - **[Zed.dev](./recommended-tools/zed.md)** — Primary IDE for fast, modern development
 - **[Windsurf](./recommended-tools/windsurf.md)** — High-speed AI IDE with 950 tok/s SWE-1.5 agent
 - **[Droid CLI](./recommended-tools/droid-cli.md)** — Main coding agent with BYOK support
+- **[Kilo Code](./recommended-tools/kilocode.md)** — Multi-platform AI assistant with intelligent modes, BYOK, and dual support (VSCode + CLI)
 - **[Clavix](./recommended-tools/clavix.md)** — CLEAR-based PRD generator with seamless task list creation
 - **[Warp](./recommended-tools/warp.md)** — Modern terminal for enhanced productivity
 - **[Claude Code CLI](./recommended-tools/claude-code-cli.md)** — Backup AI coding assistant
