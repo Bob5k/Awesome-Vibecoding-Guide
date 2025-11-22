@@ -13,24 +13,27 @@ After using the Kilo CLI extensively in recent projects, I can confidently say i
 
 ## Key Strengths
 
-### 🎯 Intelligent Modes
+### Intelligent Modes
 Kilo's different operational modes are arguably its strongest feature. Instead of one-size-fits-all interactions, you can choose the right mode for your specific task:
-- **Fast Mode**: Quick iterations and rapid development
-- **Deep Mode**: Complex problem-solving and architectural decisions
-- **Custom Modes**: Tailor behavior for specific workflows
+- **Code Mode** (Default): General-purpose coding tasks and development with full tool access
+- **Architect Mode**: Planning, technical leadership, and system design with restricted editing (markdown only)
+- **Ask Mode**: Answering questions and providing information without modifying code (read-only)
+- **Debug Mode**: Systematic problem diagnosis and troubleshooting with full tool access
+- **Orchestrator Mode**: Strategic workflow coordination that breaks down complex tasks and delegates to specialized modes
+- **Custom Modes**: Create your own specialized assistants with custom tool access and behavior
 
 This mode flexibility means you're not wasting tokens on over-thinking simple tasks, nor are you under-resourced on complex challenges. It's intelligent efficiency built into the tool.
 
-### 🔑 Bring Your Own Key (BYOK) + Free Models
-What sets Kilo apart is the dual offering:
-- **BYOK Support**: Connect your own API keys from any major provider (Anthropic, OpenAI, Google, etc.)
-- **Free Models Included**: Built-in access to free models without needing your own keys
+### Flexible Pricing Model
+What sets Kilo apart is the triple offering:
+- **Free Models**: Built-in access to free models without needing your own keys
+- **Pay-As-You-Go via Kilo**: Use Kilo's hosted models with pay-as-you-go pricing at exact provider rates with no markup
+- **Bring Your Own Key (BYOK)**: Connect your own API keys from any major provider (Anthropic, OpenAI, Google, etc.)
 - **Provider Flexibility**: Easily switch between providers based on task requirements
-- **Cost Control**: Pay-as-you-go with your own keys or use free tier for learning/testing
 
-This combination is rare and incredibly valuable. You can start completely free to test workflows, then seamlessly transition to BYOK when you're ready to scale or need premium models. No vendor lock-in, no forced subscriptions—just pure flexibility.
+This combination is rare and incredibly valuable. You can start completely free to test workflows, use Kilo's pay-as-you-go service for convenience, or bring your own keys for maximum control. No vendor lock-in, no forced subscriptions—just pure flexibility.
 
-### 🌐 Universal Provider Support
+### Universal Provider Support
 Kilo supports virtually every major LLM provider on the market:
 - Anthropic (Claude)
 - OpenAI (GPT models)
@@ -39,7 +42,7 @@ Kilo supports virtually every major LLM provider on the market:
 
 The ease of provider configuration makes it simple to experiment with different models for different tasks or switch providers based on pricing/performance needs.
 
-### ⚡ Excellent Output Quality
+### Excellent Output Quality
 Across multiple projects and use cases, Kilo consistently delivers high-quality output:
 - Clean, well-structured code
 - Thoughtful architectural decisions
@@ -48,7 +51,7 @@ Across multiple projects and use cases, Kilo consistently delivers high-quality 
 
 The output quality rivals or exceeds many premium tools, especially when using appropriate modes for the task complexity.
 
-### 🔄 Multi-Layered Support (IDE + CLI)
+### Multi-Layered Support (IDE + CLI)
 The dual-platform approach is brilliant for different scenarios:
 - **VSCode Plugin**: When you want tight IDE integration, debugging, and visual feedback
 - **CLI Tool**: When you want lightweight, fast interactions without IDE overhead
@@ -78,12 +81,10 @@ This multi-layered support makes Kilo accessible to a wider range of developers 
 ### Current Constraints
 - **Newer CLI**: The CLI is still relatively new compared to established tools like Claude Code or Droid
 - **Documentation**: CLI documentation is evolving as the tool matures
-- **Community Size**: Smaller community compared to Cline/Cursor (though growing rapidly)
 - **VSCode Plugin History**: The plugin still shares some architectural heritage with Cline
 
 ### Not Ideal For:
 - Users needing extensive battle-tested documentation for every edge case
-- Teams requiring enterprise support contracts
 - Developers who never switch between providers (simpler tools might suffice)
 
 ## Why It's Now Recommended
@@ -106,56 +107,75 @@ The CLI release fundamentally changed Kilo's value proposition for me:
 
 ### Quick Setup
 1. **Choose Your Path**: Decide between CLI, VSCode plugin, or both
-2. **Configure Providers**: Add your API keys or start with free models
-3. **Select Default Mode**: Choose your primary mode (Fast/Deep/Custom)
+2. **Configure Providers**: Add your API keys, use Kilo's pay-as-you-go, or start with free models
+3. **Select Default Mode**: Choose your primary mode (Code/Architect/Ask/Debug/Orchestrator/Custom)
 4. **Start Coding**: Begin with simple tasks to learn the workflow
 
 ### Recommended Workflow
 - **Learning Phase**: Start with free models to understand Kilo's capabilities
 - **Mode Exploration**: Test different modes to see which fits your tasks
-- **BYOK Transition**: Add your own keys when ready for production work
+- **Scale Up**: Choose between pay-as-you-go via Kilo or BYOK when ready for production
 - **Hybrid Usage**: Use CLI for quick tasks, VSCode plugin for complex debugging
 
 ## Pricing & Value
 
-### Free Tier
-- Built-in free models for testing and learning
-- No credit card required to start
-- Perfect for evaluating the tool and building basic projects
+Kilo offers three flexible pricing options to fit different needs:
 
-### BYOK (Bring Your Own Key)
-- Pay only for actual LLM API usage
+### 1. Free Models
+- Built-in access to free open-source models
+- No credit card required to start
+- Perfect for evaluating the tool, learning, and building basic projects
+- Can also run local models via Ollama and LM Studio for $0 cost
+
+### 2. Pay-As-You-Go via Kilo
+- Access to Kilo's hosted models
+- Pay exactly what the provider charges—no markup or commission
+- $20 in free credits to get started
+- Simple credit system: $1 = 1 Kilo Credit
+- No subscriptions, no waste—only pay for what you use
+
+### 3. Bring Your Own Key (BYOK)
+- Connect your own API keys from any major provider
+- Pay providers directly for LLM API usage
 - No Kilo subscription fees
 - Full control over costs and model selection
 - Ability to optimize spending across providers
 
-This pricing model makes Kilo exceptionally accessible while scaling economically with your needs.
+### Enterprise Solutions
+Kilo provides robust enterprise support for organizations:
+- **Teams Plan** ($15/user/month): Centralized billing and team management
+- **Enterprise Plan** (Custom pricing): Contact for SSO, audit logs, and dedicated support
+- Strong support for enterprise workflows and compliance needs
+
+This pricing model makes Kilo exceptionally accessible while scaling economically with your needs—from individual developers to large enterprises.
 
 ## Official Resources
 - **Website**: [kilo.ai](https://kilo.ai/)
+- **Documentation**: [kilo.ai/docs](https://kilo.ai/docs)
 - **CLI Tool**: [kilo.ai/cli](https://kilo.ai/cli)
 - **VSCode Plugin**: Available in VS Code marketplace
+- **Pricing**: [kilo.ai/pricing](https://kilo.ai/pricing)
 
 ## Comparison with Other Tools
 
 ### vs. Claude Code CLI
-- **Kilo Advantages**: Mode selection, BYOK flexibility, free models, multi-provider support
+- **Kilo Advantages**: Multiple specialized modes (Code/Architect/Ask/Debug/Orchestrator), three pricing options (free/PAYG/BYOK), multi-provider support
 - **Claude Code Advantages**: More mature documentation, Anthropic-native integration
 
 ### vs. Droid CLI
-- **Kilo Advantages**: Free model option, easier provider switching, VSCode fallback option
-- **Droid Advantages**: Longer track record, more established community
+- **Kilo Advantages**: Free models, pay-as-you-go option, easier provider switching, VSCode fallback option
+- **Droid Advantages**: Longer track record
 
 ### vs. Cursor/Windsurf
-- **Kilo Advantages**: BYOK flexibility, no subscription lock-in, CLI option
-- **Cursor/Windsurf Advantages**: More polished IDE experience, larger ecosystems
+- **Kilo Advantages**: Multiple pricing options (free/PAYG/BYOK), no subscription lock-in, CLI option, enterprise support
+- **Cursor/Windsurf Advantages**: More polished IDE experience
 
 ## Bottom Line
 
-Kilo Code has seriously become one of my favorite agents, and the CLI release is the main reason why. The combination of intelligent modes, universal provider support (both BYOK and free models), excellent output quality, and the freedom to choose between IDE and CLI makes it a standout tool in the vibecoding ecosystem.
+Kilo Code has seriously become one of my favorite agents, and the CLI release is the main reason why. The combination of intelligent specialized modes (Code, Architect, Ask, Debug, Orchestrator), universal provider support with three flexible pricing options (free models, pay-as-you-go, and BYOK), excellent output quality, and the freedom to choose between IDE and CLI makes it a standout tool in the vibecoding ecosystem.
 
-If you're looking for a flexible, cost-effective AI coding assistant that doesn't lock you into a specific workflow or provider, Kilo deserves serious consideration. Start with the free models to test it out, and you'll likely find yourself adding your own API keys and making it a permanent part of your toolkit.
+If you're looking for a flexible, cost-effective AI coding assistant that doesn't lock you into a specific workflow or provider, Kilo deserves serious consideration. Start with the free models to test it out, upgrade to pay-as-you-go for convenience, or bring your own keys for maximum control. For organizations, Kilo's enterprise solutions provide the team management, security, and support features needed at scale.
 
-The dual-platform strategy (VSCode + CLI) is exactly the kind of forward-thinking move that makes Kilo a recommended tool for both traditional developers and vibecoding practitioners. It's proof that you can have power, flexibility, and accessibility in a single package.
+The dual-platform strategy (VSCode + CLI) is exactly the kind of forward-thinking move that makes Kilo a recommended tool for both traditional developers and vibecoding practitioners. It's proof that you can have power, flexibility, and accessibility in a single package—from individual developers to enterprise teams.
 
 Back: [Development Tools](../README.md)
