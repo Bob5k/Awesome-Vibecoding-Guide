@@ -15,11 +15,12 @@ After using the Kilo CLI extensively in recent projects, I can confidently say i
 
 ### Intelligent Modes
 Kilo's different operational modes are arguably its strongest feature. Instead of one-size-fits-all interactions, you can choose the right mode for your specific task:
-- **Code Mode**: General-purpose coding tasks and development
-- **Architect Mode**: Planning, technical leadership, and system design
-- **Ask Mode**: Answering questions and providing information
-- **Debug Mode**: Systematic problem diagnosis and troubleshooting
-- **Custom Modes**: Tailor behavior for specific workflows
+- **Code Mode** (Default): General-purpose coding tasks and development with full tool access
+- **Architect Mode**: Planning, technical leadership, and system design with restricted editing (markdown only)
+- **Ask Mode**: Answering questions and providing information without modifying code (read-only)
+- **Debug Mode**: Systematic problem diagnosis and troubleshooting with full tool access
+- **Orchestrator Mode**: Strategic workflow coordination that breaks down complex tasks and delegates to specialized modes
+- **Custom Modes**: Create your own specialized assistants with custom tool access and behavior
 
 This mode flexibility means you're not wasting tokens on over-thinking simple tasks, nor are you under-resourced on complex challenges. It's intelligent efficiency built into the tool.
 
@@ -107,7 +108,7 @@ The CLI release fundamentally changed Kilo's value proposition for me:
 ### Quick Setup
 1. **Choose Your Path**: Decide between CLI, VSCode plugin, or both
 2. **Configure Providers**: Add your API keys, use Kilo's pay-as-you-go, or start with free models
-3. **Select Default Mode**: Choose your primary mode (Code/Architect/Ask/Debug/Custom)
+3. **Select Default Mode**: Choose your primary mode (Code/Architect/Ask/Debug/Orchestrator/Custom)
 4. **Start Coding**: Begin with simple tasks to learn the workflow
 
 ### Recommended Workflow
@@ -158,7 +159,7 @@ This pricing model makes Kilo exceptionally accessible while scaling economicall
 ## Comparison with Other Tools
 
 ### vs. Claude Code CLI
-- **Kilo Advantages**: Multiple modes (Code/Architect/Ask/Debug), three pricing options (free/PAYG/BYOK), multi-provider support
+- **Kilo Advantages**: Multiple specialized modes (Code/Architect/Ask/Debug/Orchestrator), three pricing options (free/PAYG/BYOK), multi-provider support
 - **Claude Code Advantages**: More mature documentation, Anthropic-native integration
 
 ### vs. Droid CLI
@@ -171,7 +172,7 @@ This pricing model makes Kilo exceptionally accessible while scaling economicall
 
 ## Bottom Line
 
-Kilo Code has seriously become one of my favorite agents, and the CLI release is the main reason why. The combination of intelligent modes (Code, Architect, Ask, Debug), universal provider support with three flexible pricing options (free models, pay-as-you-go, and BYOK), excellent output quality, and the freedom to choose between IDE and CLI makes it a standout tool in the vibecoding ecosystem.
+Kilo Code has seriously become one of my favorite agents, and the CLI release is the main reason why. The combination of intelligent specialized modes (Code, Architect, Ask, Debug, Orchestrator), universal provider support with three flexible pricing options (free models, pay-as-you-go, and BYOK), excellent output quality, and the freedom to choose between IDE and CLI makes it a standout tool in the vibecoding ecosystem.
 
 If you're looking for a flexible, cost-effective AI coding assistant that doesn't lock you into a specific workflow or provider, Kilo deserves serious consideration. Start with the free models to test it out, upgrade to pay-as-you-go for convenience, or bring your own keys for maximum control. For organizations, Kilo's enterprise solutions provide the team management, security, and support features needed at scale.
 
