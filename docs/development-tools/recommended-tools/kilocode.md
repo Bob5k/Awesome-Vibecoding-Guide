@@ -27,7 +27,7 @@ This mode flexibility means you're not wasting tokens on over-thinking simple ta
 ### Flexible Pricing Model
 What sets Kilo apart is the triple offering:
 - **Free Models**: Built-in access to free models without needing your own keys
-- **Pay-As-You-Go via Kilo**: Use Kilo's hosted models (400+ options) with pay-as-you-go pricing at exact provider rates with no markup
+- **Pay-As-You-Go via Kilo**: Use Kilo's hosted models with pay-as-you-go pricing at exact provider rates with no markup
 - **Bring Your Own Key (BYOK)**: Connect your own API keys from any major provider (Anthropic, OpenAI, Google, etc.)
 - **Provider Flexibility**: Easily switch between providers based on task requirements
 
@@ -128,7 +128,7 @@ Kilo offers three flexible pricing options to fit different needs:
 - Can also run local models via Ollama and LM Studio for $0 cost
 
 ### 2. Pay-As-You-Go via Kilo
-- Access to 400+ hosted models
+- Access to Kilo's hosted models
 - Pay exactly what the provider charges—no markup or commission
 - $20 in free credits to get started
 - Simple credit system: $1 = 1 Kilo Credit
